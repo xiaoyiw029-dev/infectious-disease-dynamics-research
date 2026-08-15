@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#1f2937"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#2563eb"/>
+    </marker>
+    <style>
+      .title { font-family: "Times New Roman", "Microsoft YaHei", serif; font-size: 34px; font-weight: 700; fill: #111827; }
+      .section { font-family: "Microsoft YaHei", "Times New Roman", serif; font-size: 24px; font-weight: 700; fill: #111827; }
+      .box { fill: #ffffff; stroke: #15803d; stroke-width: 6; rx: 12; }
+      .boxText { font-family: "Times New Roman", "Microsoft YaHei", serif; font-size: 36px; font-weight: 700; fill: #111827; }
+      .arrow { stroke: #1f2937; stroke-width: 3.2; fill: none; marker-end: url(#arrow); }
+      .dash { stroke: #2563eb; stroke-width: 3.2; stroke-dasharray: 9 8; fill: none; marker-end: url(#arrowBlue); }
+      .death { stroke: #6b7280; stroke-width: 2.8; fill: none; marker-end: url(#arrow); }
+      .label { font-family: "Times New Roman", "Microsoft YaHei", serif; font-size: 28px; fill: #111827; }
+      .blueLabel { font-family: "Times New Roman", "Microsoft YaHei", serif; font-size: 30px; font-weight: 700; fill: #2563eb; }
+      .tag { fill: #ffffff; stroke: #bfdbfe; stroke-width: 1.6; rx: 8; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1400" height="720" fill="#ffffff"/>
+
+  <text x="700" y="62" text-anchor="middle" class="title">SEIR-SEI 基础人-蚊传播模型</text>
+
+  <text x="100" y="145" class="section">宿主</text>
+  <text x="100" y="430" class="section">蚊媒</text>
+
+  <!-- Human compartments -->
+  <rect x="110" y="185" width="130" height="92" class="box"/>
+  <text x="175" y="244" text-anchor="middle" class="boxText">Sₕ</text>
+
+  <rect x="405" y="185" width="130" height="92" class="box"/>
+  <text x="470" y="244" text-anchor="middle" class="boxText">Eₕ</text>
+
+  <rect x="700" y="185" width="130" height="92" class="box"/>
+  <text x="765" y="244" text-anchor="middle" class="boxText">Iₕ</text>
+
+  <rect x="995" y="185" width="130" height="92" class="box"/>
+  <text x="1060" y="244" text-anchor="middle" class="boxText">Rₕ</text>
+
+  <path d="M240 231 L405 231" class="arrow"/>
+  <text x="322" y="210" text-anchor="middle" class="label">λₕ</text>
+
+  <path d="M535 231 L700 231" class="arrow"/>
+  <text x="617" y="210" text-anchor="middle" class="label">σₕ</text>
+
+  <path d="M830 231 L995 231" class="arrow"/>
+  <text x="912" y="210" text-anchor="middle" class="label">γₕ</text>
+
+  <!-- Mosquito compartments -->
+  <rect x="405" y="470" width="130" height="92" class="box"/>
+  <text x="470" y="529" text-anchor="middle" class="boxText">Sᵥ</text>
+
+  <rect x="700" y="470" width="130" height="92" class="box"/>
+  <text x="765" y="529" text-anchor="middle" class="boxText">Eᵥ</text>
+
+  <rect x="995" y="470" width="130" height="92" class="box"/>
+  <text x="1060" y="529" text-anchor="middle" class="boxText">Iᵥ</text>
+
+  <path d="M535 516 L700 516" class="arrow"/>
+  <text x="617" y="495" text-anchor="middle" class="label">λᵥ</text>
+
+  <path d="M830 516 L995 516" class="arrow"/>
+  <text x="912" y="495" text-anchor="middle" class="label">σᵥ</text>
+
+  <!-- Cross transmission indicators, separated for readability -->
+  <path d="M1060 470 C1000 345, 360 330, 215 277" class="dash"/>
+  <rect x="1010" y="355" width="74" height="48" class="tag"/>
+  <text x="1047" y="388" text-anchor="middle" class="blueLabel">βₕ</text>
+
+  <path d="M765 277 C640 340, 340 345, 445 470" class="dash"/>
+  <rect x="350" y="350" width="74" height="48" class="tag"/>
+  <text x="387" y="383" text-anchor="middle" class="blueLabel">βᵥ</text>
+
+  <!-- Mosquito recruitment -->
+  <path d="M295 516 L405 516" class="arrow"/>
+  <text x="343" y="495" text-anchor="middle" class="label">Λᵥ</text>
+
+  <!-- Mosquito deaths -->
+  <path d="M470 562 L470 642" class="death"/>
+  <text x="500" y="617" class="label">μᵥ</text>
+
+  <path d="M765 562 L765 642" class="death"/>
+  <text x="795" y="617" class="label">μᵥ</text>
+
+  <path d="M1060 562 L1060 642" class="death"/>
+  <text x="1090" y="617" class="label">μᵥ</text>
+</svg>

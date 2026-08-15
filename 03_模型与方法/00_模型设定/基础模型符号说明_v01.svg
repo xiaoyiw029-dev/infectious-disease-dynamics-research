@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <defs>
+    <style>
+      .title { font-family: "Times New Roman", "Microsoft YaHei", serif; font-size: 36px; font-weight: 700; fill: #111827; }
+      .section { font-family: "Microsoft YaHei", "Times New Roman", serif; font-size: 24px; font-weight: 700; fill: #111827; }
+      .symbol { font-family: "Times New Roman", "Microsoft YaHei", serif; font-size: 29px; font-weight: 700; fill: #065f46; }
+      .meaning { font-family: "Microsoft YaHei", "Times New Roman", serif; font-size: 21px; fill: #111827; }
+      .panel { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.4; rx: 12; }
+      .head { fill: #ecfdf5; stroke: #d1d5db; stroke-width: 1.2; rx: 10; }
+      .line { stroke: #e5e7eb; stroke-width: 1.2; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1400" height="760" fill="#ffffff"/>
+  <text x="700" y="62" text-anchor="middle" class="title">SEIR-SEI 基础模型符号说明</text>
+
+  <!-- Left panel: state variables -->
+  <rect x="70" y="110" width="610" height="525" class="panel"/>
+  <rect x="90" y="130" width="570" height="46" class="head"/>
+  <text x="115" y="161" class="section">状态变量</text>
+
+  <text x="115" y="215" class="symbol">Sₕ</text>
+  <text x="190" y="215" class="meaning">易感宿主，尚未感染且可被感染蚊媒感染的人群</text>
+  <line x1="95" y1="240" x2="655" y2="240" class="line"/>
+
+  <text x="115" y="275" class="symbol">Eₕ</text>
+  <text x="190" y="275" class="meaning">暴露宿主，已经感染但尚未具有传染性的人群</text>
+  <line x1="95" y1="300" x2="655" y2="300" class="line"/>
+
+  <text x="115" y="335" class="symbol">Iₕ</text>
+  <text x="190" y="335" class="meaning">感染宿主，具有传染性并可感染易感蚊媒的人群</text>
+  <line x1="95" y1="360" x2="655" y2="360" class="line"/>
+
+  <text x="115" y="395" class="symbol">Rₕ</text>
+  <text x="190" y="395" class="meaning">康复宿主，感染恢复后获得免疫的人群</text>
+  <line x1="95" y1="420" x2="655" y2="420" class="line"/>
+
+  <text x="115" y="455" class="symbol">Sᵥ</text>
+  <text x="190" y="455" class="meaning">易感蚊媒，尚未感染但可通过叮咬感染宿主而感染</text>
+  <line x1="95" y1="480" x2="655" y2="480" class="line"/>
+
+  <text x="115" y="515" class="symbol">Eᵥ</text>
+  <text x="190" y="515" class="meaning">暴露蚊媒，已经感染但尚未具有传播能力的蚊媒</text>
+  <line x1="95" y1="540" x2="655" y2="540" class="line"/>
+
+  <text x="115" y="575" class="symbol">Iᵥ</text>
+  <text x="190" y="575" class="meaning">感染蚊媒，具有传播能力并可感染易感宿主</text>
+
+  <!-- Right panel: parameters -->
+  <rect x="720" y="110" width="610" height="525" class="panel"/>
+  <rect x="740" y="130" width="570" height="46" class="head"/>
+  <text x="765" y="161" class="section">参数</text>
+
+  <text x="765" y="215" class="symbol">λₕ</text>
+  <text x="840" y="215" class="meaning">宿主感染力，Sₕ 进入 Eₕ 的速率</text>
+  <line x1="745" y1="240" x2="1305" y2="240" class="line"/>
+
+  <text x="765" y="275" class="symbol">σₕ</text>
+  <text x="840" y="275" class="meaning">宿主潜伏期结束速率，Eₕ 进入 Iₕ</text>
+  <line x1="745" y1="300" x2="1305" y2="300" class="line"/>
+
+  <text x="765" y="335" class="symbol">γₕ</text>
+  <text x="840" y="335" class="meaning">宿主恢复率，Iₕ 进入 Rₕ</text>
+  <line x1="745" y1="360" x2="1305" y2="360" class="line"/>
+
+  <text x="765" y="395" class="symbol">λᵥ</text>
+  <text x="840" y="395" class="meaning">蚊媒感染力，Sᵥ 进入 Eᵥ 的速率</text>
+  <line x1="745" y1="420" x2="1305" y2="420" class="line"/>
+
+  <text x="765" y="455" class="symbol">σᵥ</text>
+  <text x="840" y="455" class="meaning">蚊媒外潜伏期结束速率，Eᵥ 进入 Iᵥ</text>
+  <line x1="745" y1="480" x2="1305" y2="480" class="line"/>
+
+  <text x="765" y="515" class="symbol">Λᵥ</text>
+  <text x="840" y="515" class="meaning">易感蚊媒补充率，新成蚊进入 Sᵥ</text>
+  <line x1="745" y1="540" x2="1305" y2="540" class="line"/>
+
+  <text x="765" y="575" class="symbol">μᵥ</text>
+  <text x="840" y="575" class="meaning">蚊媒死亡率，蚊媒从各仓室自然死亡移出</text>
+
+  <!-- Bottom panel: cross-transmission parameters -->
+  <rect x="70" y="665" width="1260" height="62" class="panel"/>
+  <text x="115" y="704" class="symbol">βₕ</text>
+  <text x="190" y="704" class="meaning">蚊媒到宿主的传播参数</text>
+  <text x="720" y="704" class="symbol">βᵥ</text>
+  <text x="795" y="704" class="meaning">宿主到蚊媒的传播参数</text>
+</svg>
