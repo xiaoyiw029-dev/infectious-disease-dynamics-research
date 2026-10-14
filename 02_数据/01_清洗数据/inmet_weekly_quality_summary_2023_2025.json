@@ -1,0 +1,112 @@
+{
+  "source": "INMET annual automatic-station historical data",
+  "time_basis": "INMET UTC timestamp converted to station local civil date before Sunday-Saturday grouping",
+  "timezone_lookup": {
+    "timezonefinder": "9.0.0",
+    "timezonefinder_data": "3.2026.4",
+    "tzdata": "2026.3"
+  },
+  "week_definition": "Sunday through Saturday, keyed to case week_start/week_end",
+  "station_week_thresholds_hours": {
+    "temperature": 135,
+    "rainfall": 160,
+    "humidity": 135,
+    "expected": 168
+  },
+  "sources": [
+    {
+      "year": 2023,
+      "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2023.zip",
+      "bytes": 107069252,
+      "sha256": "b17391392cc1219151977cc2c46a7ab24368d821fd780311da9fff62a627bfd8",
+      "station_csv_files": 567
+    },
+    {
+      "year": 2024,
+      "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2024.zip",
+      "bytes": 102772199,
+      "sha256": "0a7f89de57427f79b6f82943b2f7f2e932202d9253e34bf25629ed088d108ae7",
+      "station_csv_files": 565
+    },
+    {
+      "year": 2025,
+      "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2025.zip",
+      "bytes": 90898634,
+      "sha256": "14988d0b736ba969b48881589f602f3a6d7e97b95bd1de934456851fdac2cb89",
+      "station_csv_files": 594
+    }
+  ],
+  "raw_record_counts": {
+    "raw_rows": 14950128,
+    "invalid_utc_timestamps": 0,
+    "duplicate_hours_within_file": 0,
+    "rows_in_case_calendar": 14893190,
+    "station_weeks_over_168_hours": 0
+  },
+  "unique_stations": 599,
+  "states_with_a_station": 27,
+  "stations_by_uf": {
+    "AC": 7,
+    "AL": 7,
+    "AM": 19,
+    "AP": 4,
+    "BA": 45,
+    "CE": 16,
+    "DF": 5,
+    "ES": 12,
+    "GO": 26,
+    "MA": 17,
+    "MG": 69,
+    "MS": 27,
+    "MT": 44,
+    "PA": 33,
+    "PB": 9,
+    "PE": 13,
+    "PI": 21,
+    "PR": 26,
+    "RJ": 26,
+    "RN": 8,
+    "RO": 4,
+    "RR": 1,
+    "RS": 70,
+    "SC": 24,
+    "SE": 6,
+    "SP": 40,
+    "TO": 20
+  },
+  "population_source": {
+    "api": "https://servicodados.ibge.gov.br/api/v3/agregados/6579/periodos/2024/variaveis/9324?localidades=N3%5Ball%5D",
+    "reference_year": 2024,
+    "total_population": 212583750,
+    "weights_fixed_across_weeks": true,
+    "missing_state_weights_renormalized": true
+  },
+  "weekly_rows": 156,
+  "baseline_weeks_matched": 63,
+  "baseline_coverage": {
+    "temp": {
+      "min_states": 26,
+      "median_states": 27.0,
+      "max_states": 27,
+      "weeks_all_27_states": 32,
+      "weeks_with_no_states": 0,
+      "min_population_coverage": 0.9966281853622396
+    },
+    "rain": {
+      "min_states": 25,
+      "median_states": 27.0,
+      "max_states": 27,
+      "weeks_all_27_states": 32,
+      "weeks_with_no_states": 0,
+      "min_population_coverage": 0.9858508940594001
+    },
+    "humidity": {
+      "min_states": 26,
+      "median_states": 27.0,
+      "max_states": 27,
+      "weeks_all_27_states": 32,
+      "weeks_with_no_states": 0,
+      "min_population_coverage": 0.9966281853622396
+    }
+  }
+}

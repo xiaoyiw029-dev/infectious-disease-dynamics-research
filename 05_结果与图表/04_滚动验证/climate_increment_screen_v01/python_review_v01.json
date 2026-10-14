@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "language": "python",
+  "reviewed_at": "2026-10-07",
+  "decision_id": "supplement_peak_trend_climate_screen_20261007",
+  "reviewed_files": ["18_screen_climate_increment.py", "test_screen_climate_increment.py"],
+  "checks": {
+    "syntax": {"status": "PASS", "evidence": ["Runner completed; 4 tests passed."]},
+    "input_contract": {"status": "PASS", "evidence": ["63 unique matching week labels/start/end dates; finite climate features; population-weighted 168-hour rainfall source; source hashes recorded."]},
+    "method_alignment": {"status": "PASS", "evidence": ["Paired raw-count direct-horizon ridge regressions, fixed alpha=1; common observation features and identical training pairs.", "Exploratory statistical information screen, not a change to A2/A4 or a confirmed mechanistic climate model."]},
+    "reproducibility": {"status": "PASS", "evidence": ["All 250 forecasts independently rerun and matched.", "Ridge solution checked against augmented least squares; constant climate columns reproduce the no-climate model."]},
+    "output_contract": {"status": "PASS", "evidence": ["250 forecasts; per-fold scales/coefficients; 21 paired scope/horizon metrics independently recalculated."]},
+    "leakage": {"status": "PASS", "evidence": ["Future observation/weather mutation tests passed.", "Historical training origins s satisfy s+h<=n; per-fold scaling uses only eligible pairs.", "Current-week climate availability is assumed and disclosed; no future actual weather used."]}
+  },
+  "findings": [
+    "Minimum training pairs is 13; correlated features and limited early data constrain interpretation.",
+    "Climate reduced paired-model MAE at horizons 2/4 but worsened horizon 1; climate model remains worse than A2 and Trend4 in aggregate MAE/RMSE.",
+    "No attribution to individual climate variables, causality, significance or independent validation.",
+    "Specific feature/penalty choices are exploratory and not final model approval."
+  ],
+  "verdict": "PASSED",
+  "verdict_scope": "Implementation and exploratory evidence only."
+}

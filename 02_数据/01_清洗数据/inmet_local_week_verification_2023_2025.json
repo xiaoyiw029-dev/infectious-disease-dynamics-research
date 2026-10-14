@@ -1,0 +1,76 @@
+{
+  "checks_passed": [
+    "156 weeks match source case calendar",
+    "63 baseline week keys and probable counts unchanged",
+    "unique station-week keys and hourly counts within 168",
+    "all stations have an IANA timezone",
+    "A001 cross-year local week contains 168 hours",
+    "all national population-weighted values independently recalculated",
+    "three synthetic boundary/missingness tests passed"
+  ],
+  "timezone_station_counts": {
+    "America/Sao_Paulo": 298,
+    "America/Fortaleza": 71,
+    "America/Bahia": 45,
+    "America/Cuiaba": 44,
+    "America/Belem": 29,
+    "America/Campo_Grande": 27,
+    "America/Araguaina": 20,
+    "America/Manaus": 18,
+    "America/Maceio": 13,
+    "America/Recife": 13,
+    "America/Santarem": 8,
+    "America/Rio_Branco": 7,
+    "America/Porto_Velho": 4,
+    "America/Eirunepe": 1,
+    "America/Boa_Vista": 1
+  },
+  "record_hours": 14893190,
+  "valid_hours": {
+    "temp": 11646846,
+    "rain": 10519428,
+    "humidity": 10986950
+  },
+  "eligible_station_weeks": {
+    "temp_mean": 67368,
+    "rainfall_sum": 56355,
+    "humidity_mean": 61865
+  },
+  "baseline_state_weeks_missing": {
+    "temp_mean": {
+      "RR": 31
+    },
+    "rainfall_sum": {
+      "RR": 31,
+      "SE": 1
+    },
+    "humidity_mean": {
+      "RR": 31
+    }
+  },
+  "baseline_rain_168h_sensitivity": {
+    "min_states": 25,
+    "weeks_all_27_states": 30,
+    "min_population_coverage": 0.9848525392933374,
+    "mean_abs_difference_mm": 0.5336443573599132,
+    "max_abs_difference_mm": 3.5437342115428834
+  },
+  "utc_reference_sha256": "dec935f90b53d7ca4d627fcda91da501c5ea987003278b0ec533f950ce656071",
+  "baseline_local_minus_utc": {
+    "temp_mean_population_weighted": {
+      "mean_absolute_difference": 0.023474962169359966,
+      "max_absolute_difference": 0.0994275335018564,
+      "max_difference_week": "2024-W33"
+    },
+    "rainfall_sum_population_weighted": {
+      "mean_absolute_difference": 0.4205159232891194,
+      "max_absolute_difference": 1.8565446200099203,
+      "max_difference_week": "2024-W42"
+    },
+    "humidity_mean_population_weighted": {
+      "mean_absolute_difference": 0.07127263202387994,
+      "max_absolute_difference": 0.23716798383873083,
+      "max_difference_week": "2024-W33"
+    }
+  }
+}

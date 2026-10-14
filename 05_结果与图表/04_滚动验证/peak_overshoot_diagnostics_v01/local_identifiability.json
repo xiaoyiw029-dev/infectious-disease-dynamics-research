@@ -1,0 +1,86 @@
+[
+  {
+    "model": "A2",
+    "origin_n": 23,
+    "parameter_names": [
+      "beta_h",
+      "beta_v",
+      "N_eff",
+      "E_h0",
+      "I_h0",
+      "i_v0"
+    ],
+    "singular_values": [
+      15.695228174264301,
+      0.14732043506088466,
+      0.0001460164203941016,
+      8.604860435676788e-05,
+      1.3500349591959904e-05,
+      1.9110095532537016e-09
+    ],
+    "condition_number": 8213055841.370059,
+    "beta_sensitivity_column_cosine": 0.9999999971016256,
+    "note": "Feasible finite differences of scaled training outputs in log parameters; not a confidence interval."
+  },
+  {
+    "model": "A2",
+    "origin_n": 24,
+    "parameter_names": [
+      "beta_h",
+      "beta_v",
+      "N_eff",
+      "E_h0",
+      "I_h0",
+      "i_v0"
+    ],
+    "singular_values": [
+      12.143432010407086,
+      0.4588944466292487,
+      0.06300387922774378,
+      0.00209645803654674,
+      7.595473557261075e-05,
+      2.408764985252502e-08
+    ],
+    "condition_number": 504135193.12819695,
+    "beta_sensitivity_column_cosine": 0.9998101531200596,
+    "note": "Feasible finite differences of scaled training outputs in log parameters; not a confidence interval."
+  },
+  {
+    "model": "A4",
+    "origin_n": 23,
+    "parameter_names": [
+      "beta_h",
+      "beta_v",
+      "N_eff",
+      "i_v0"
+    ],
+    "singular_values": [
+      15.367203297900105,
+      0.00036659632032843187,
+      0.00021230709843496546,
+      3.7248307277073788e-09
+    ],
+    "condition_number": 4125611181.09079,
+    "beta_sensitivity_column_cosine": 0.9999999998830029,
+    "note": "Feasible finite differences of scaled training outputs in log parameters; not a confidence interval."
+  },
+  {
+    "model": "A4",
+    "origin_n": 24,
+    "parameter_names": [
+      "beta_h",
+      "beta_v",
+      "N_eff",
+      "i_v0"
+    ],
+    "singular_values": [
+      15.911961943084677,
+      0.11001276989937621,
+      7.602637498581613e-05,
+      1.0255981394831694e-05
+    ],
+    "condition_number": 1551481.1630901755,
+    "beta_sensitivity_column_cosine": 0.9999999955396139,
+    "note": "Feasible finite differences of scaled training outputs in log parameters; not a confidence interval."
+  }
+]

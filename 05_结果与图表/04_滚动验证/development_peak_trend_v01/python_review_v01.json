@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "language": "python",
+  "reviewed_at": "2026-10-07",
+  "decision_id": "supplement_peak_trend_climate_screen_20261007",
+  "reviewed_files": ["17_validate_peak_trend.py", "test_validate_peak_trend.py"],
+  "checks": {
+    "syntax": {"status": "PASS", "evidence": ["Runner completed; 7 tests passed."]},
+    "input_contract": {"status": "PASS", "evidence": ["63 ordered weeks; 43/42/40 forecasts for each model; exact input/model/prior-run hash guards."]},
+    "method_alignment": {"status": "PASS", "evidence": ["Weekly new flow; existing equations/bounds/initial-state definitions retained.", "User authorized earlier origins and a trend comparator. Specific 20-week/4-week settings remain exploratory, not a final human model choice."]},
+    "reproducibility": {"status": "PASS", "evidence": ["Deterministic A4 n=20 refit: SSE 4651391.911315235, difference 0.", "Forecasts reproduced: 6830.373634075315, 8425.205632772457, 12818.026146907363.", "66 prior fits reused; saved prior forecast values independently compared."]},
+    "output_contract": {"status": "PASS", "evidence": ["86 fits; 1118 optimization records; 500 predictions; 7 scoring scopes.", "Both PNG plots visually checked; large peak errors remain visible."]},
+    "leakage": {"status": "PASS", "evidence": ["Future-mutation test passed; targets only appended after predictions; trend uses last four available values."]},
+    "numerical_precision": {"status": "PASS", "evidence": ["All 86 fits checked against DOP853 rtol=1e-11/atol=1e-14 reference trajectories at max_step=1 and 0.5 days.", "Final new-fit max reference discrepancy 0.07627; reused max discrepancy 0.01617.", "All selected fits converged; 84 have at least one parameter-bound hit."]}
+  },
+  "repairs": [
+    "Initial old-tolerance run aborted on a 1.29444563 count training-prefix discrepancy.",
+    "Independent reference audit then rejected A4 n20 with a 10.06848086 count discrepancy.",
+    "New fits use rtol=1e-10/atol=1e-13; original model source files unchanged. Reused fits retain original tolerances and all pass independent reference audit."
+  ],
+  "findings": [
+    "Four-week peak-ahead forecasts overestimate severely; this is not explained by the remaining numerical error.",
+    "Observed-peak/tail subsets are retrospective diagnostics; no independent final-test, significance, or forecast-interval claim.",
+    "Formal selection of model and supplemental settings remains with the project owner."
+  ],
+  "verdict": "PASSED",
+  "verdict_scope": "Implementation and exploratory evidence only, not final scientific model approval."
+}

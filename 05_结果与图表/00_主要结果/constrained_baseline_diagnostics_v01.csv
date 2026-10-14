@@ -1,0 +1,16 @@
+﻿metric,value
+n_weeks,63
+n_starts,100
+best_start_id,96
+best_sse,58743170.7183612
+best_rmse,965.6248139126441
+best_mae,709.073570809193
+best_R0,1.5477150727432745
+near_best_count_1pct_sse,71
+jacobian_condition_number_log_space,40350317.74654048
+min_state_best,0.0
+max_human_mass_error_best,4.440892098500626e-16
+max_vector_mass_error_best,9.992007221626409e-16
+any_bound_hit_best,True
+observed_total,278088.0
+model_total,267456.79911669495

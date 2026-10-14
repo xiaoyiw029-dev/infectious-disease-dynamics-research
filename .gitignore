@@ -1,0 +1,41 @@
+/02_数据/00_原始数据/inmet/*.zip
+
+# Local environments, caches, and generated temporary files
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.ipynb_checkpoints/
+/.codex_tmp_pydeps/
+/.codex/
+/tmp/
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.tmp
+*.bak
+*.swp
+~$*
+.DS_Store
+Thumbs.db
+debug.log
+
+# Raw records and regenerable intermediate data remain local
+/02_数据/00_原始数据/
+/02_数据/02_中间数据/
+
+# Local credentials must not be committed
+.env
+.env.*
+!.env.example
+!.env.template
+.aws/
+.ssh/
+*.pem
+*.key

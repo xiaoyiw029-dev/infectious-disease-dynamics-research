@@ -1,0 +1,34 @@
+{
+  "decision_id": "dev_rolling_30_1_2_4_20261007",
+  "date": "2026-10-07",
+  "initial_train_weeks": 30,
+  "horizons": [
+    1,
+    2,
+    4
+  ],
+  "models": [
+    "A2",
+    "A4",
+    "Naive"
+  ],
+  "A4_fixed_initials": [
+    189.0,
+    63.0
+  ],
+  "seed": 20261007,
+  "starts_per_fit": 12,
+  "max_nfev": 250,
+  "refine_nfev": 1000,
+  "workers": 6,
+  "input_sha256": "88f6f804bb2b29997a90e1163dc5f40f776709762a3ca7330223fb3a121547d3",
+  "model_source_sha256": {
+    "A2": "ae44884f75e8352659febe868c89f0153282020077db038940149f91580e7c6f",
+    "A4": "663bab89ec3d6e8a7d925e6ab0d27b994ec026cf224ddd47eb90304e57166b62"
+  },
+  "runner_sha256": "2f750dc6aa752c4a88fe62ddd5882a8236845fd6cd14443abc371c94c4fdcf15",
+  "selection": "lowest finite training SSE across starts and one best-start refinement",
+  "initialization": "3 generic training-only seeds + log-space Latin hypercube; no saved fit anchors",
+  "data_availability": "revised snapshots; retrospective development validation, not real-time",
+  "status": "completed"
+}

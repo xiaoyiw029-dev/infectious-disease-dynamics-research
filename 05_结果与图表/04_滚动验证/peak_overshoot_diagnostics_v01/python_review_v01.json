@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "language": "python",
+  "reviewed_at": "2026-10-07",
+  "decision_id": "diagnose_prepeak_overshoot_20261007",
+  "reviewed_files": ["19_diagnose_peak_overshoot.py", "test_diagnose_peak_overshoot.py"],
+  "checks": {
+    "syntax": {"status": "PASS", "evidence": ["Runner completed; 6 unit/evidence checks passed."]},
+    "input_contract": {"status": "PASS", "evidence": ["Data/model/prior-run source hashes checked; 22 selected origins and 286 saved optimization records."]},
+    "method_alignment": {"status": "PASS", "evidence": ["Unchanged SEIR-SEI equations/bounds; training-only fixed-scale profiles; three declared near-optimal thresholds.", "No model selected by future observation errors."]},
+    "reproducibility": {"status": "PASS", "evidence": ["A2 n23, N_eff=1000000 profile independently repeated with training SSE delta=0 and four-week forecast delta=0."]},
+    "output_contract": {"status": "PASS", "evidence": ["32 profiles, 128 optimization attempts, 66 near-optimal summaries and four local Jacobian diagnostics.", "Both diagnostic PNGs inspected; PDF counterparts saved; ranges explicitly not confidence intervals."]},
+    "numerical_precision": {"status": "PASS", "evidence": ["All selected profile fits converged; maximum step-halving reference difference below 6.2e-9.", "State sums, nonnegativity and target indexing tested."]},
+    "leakage": {"status": "PASS", "evidence": ["Code inspection: profile worker receives only y[:n], no evaluation targets; selected initialization comes from the same origin.", "Evaluation uses known development data and is explicitly retrospective."]},
+    "mathematical_identity": {"status": "PASS", "evidence": ["Linear growth characteristic polynomial and product-preserving ratio changes independently checked."]}
+  },
+  "findings": [
+    "Large parameter variation does not imply large forecast dispersion at the same origin; origin23 near-optimal forecasts all overpredict.",
+    "Updating from origin23 to origin24 changes effective scale and reconstructed states sharply.",
+    "Finite profile searches and finite-difference Jacobians do not prove global optimality or structural non-identifiability.",
+    "Climate causation is not established. Single-temperature direction was subsequently approved, but climate model has not been fitted."
+  ],
+  "verdict": "PASSED",
+  "verdict_scope": "Retrospective diagnostic implementation; not a final predictive or causal claim."
+}

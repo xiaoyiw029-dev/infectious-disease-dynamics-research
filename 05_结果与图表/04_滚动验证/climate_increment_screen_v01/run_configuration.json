@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-07",
+  "status": "completed",
+  "scope": "exploratory matched climate information screen; not a confirmed mechanistic model",
+  "initial_train_weeks": 20,
+  "horizons": [
+    1,
+    2,
+    4
+  ],
+  "ridge_alpha": 1.0,
+  "features": [
+    "latest_weekly_count",
+    "recent4_slope",
+    "temp_mean_c",
+    "humidity_mean_pct",
+    "rainfall_168h_mm"
+  ],
+  "target": "raw weekly new counts",
+  "negative_forecasts": "clip to zero and retain raw values",
+  "preprocessing": "feature mean/std from each horizon's eligible training pairs only",
+  "historical_pairs": "origins s>=4 with s+h<=current origin n",
+  "climate_availability": "weather through origin week only; assumes available at that origin",
+  "hyperparameter_selection": "none; exploratory fixed alpha=1, recent4 trend, three current-week climate inputs",
+  "case_sha256": "88f6f804bb2b29997a90e1163dc5f40f776709762a3ca7330223fb3a121547d3",
+  "climate_sha256": "d819df6fb9d4d18bac89f606291211d1a7d2061f83750b35f8c4782a39e7f23c",
+  "baseline_predictions_sha256": "d9416188951664cb19258b1721976daf291f240c7b1b005d52347630a799cd8e",
+  "runner_sha256": "576a900e3bde2fb7a1ff63a7a6592739aeed27c2551ac3e6aac5ff883ab26d10",
+  "dependency_runner_sha256": "678995864a434425e0571dd972b1839345809aac0e9976bf42936ac25d23ed35"
+}

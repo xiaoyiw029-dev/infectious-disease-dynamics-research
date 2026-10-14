@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>研究决策总档案 阅读版</title>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <style>
+    body {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 36px 28px 72px;
+      color: #1f2933;
+      font-family: "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+      line-height: 1.72;
+      background: #fbfbf8;
+    }
+    h1, h2 {
+      line-height: 1.3;
+      color: #14342b;
+    }
+    h1 {
+      border-bottom: 2px solid #d8ded6;
+      padding-bottom: 12px;
+      margin-bottom: 8px;
+    }
+    h2 {
+      margin-top: 34px;
+      border-left: 5px solid #2f7d5c;
+      padding-left: 12px;
+    }
+    .meta, .note {
+      color: #5b6770;
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 20px;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid #d8ded6;
+      padding: 8px 10px;
+      text-align: left;
+    }
+    th {
+      background: #edf4ee;
+    }
+    .formula {
+      overflow-x: auto;
+      background: #fff;
+      border: 1px solid #d8ded6;
+      padding: 10px 12px;
+      margin: 12px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>研究决策总档案</h1>
+  <p class="meta">更新时间：2026-10-07</p>
+  <p class="note">阅读版说明：本页面用于阅读展示，公式由 MathJax 渲染。持续编辑源文件为 <strong>研究决策总档案.md</strong>。</p>
+
+  <h2>当前正式每周输出（2026-10-04 确认）</h2>
+  <p>正式观测量为每周新增流量。设 \(y_k\) 为第 \(k\) 周按症状开始日期汇总的全国 probable 数据Y数，\(e_h(t)\) 为归一化暴露宿主比例，\(a_h'(t)=\sigma_he_h(t)\)。模型以天为时间单位，\(t=0\) 对应 2023-08-27 00:00，第 \(k\) 周为 \([7(k-1),7k)\)。</p>
+  <div class="formula">\[
+    \widehat y_k(\theta)=qN_{\mathrm{eff}}\int_{7(k-1)}^{7k}\sigma_he_h(t;\theta)\,dt
+    =qN_{\mathrm{eff}}\left[a_h(7k;\theta)-a_h(7(k-1);\theta)\right],\qquad q=1.
+  \]</div>
+  <div class="formula">\[
+    \widehat\theta=\underset{\theta}{\operatorname{argmin}}\sum_{k=1}^{63}\left[\widehat y_k(\theta)-y_k\right]^2.
+  \]</div>
+  <p>A 组按上述周流量定义拟合。A2（自由初值）与 A4（固定 \(E_h(0)=189,I_h(0)=63\)）已完成本轮开发期滚动验证，尚未确定最终模型。B 组以周末感染存量拟合每周报告数，其原始结果仅作历史对照。潜伏期结束流量与症状开始周的对应是观测近似；\(q=1\) 是首轮等效尺度设定，不意味着真实报告率为 100%。</p>
+
+  <h2>开发期滚动验证（2026-10-07 确认并执行）</h2>
+  <p>原 63 周以前 30 周起训，此后逐周扩展，每轮重新估计并预测未来第 1、2、4 周新增量，不使用气候。A2 与 A4 各完成 33 组训练，共保存 285 条含朴素对照的预测。每组采用 12 个新起点加一次最佳训练解继续优化，不使用原全窗口拟合参数作为起点。朴素对照保持上一周的观测值。</p>
+  <table>
+    <tr><th>跨度</th><th>起点数</th><th>A2 MAE</th><th>A4 MAE</th><th>朴素 MAE</th></tr>
+    <tr><td>1 周</td><td>33</td><td>489.25</td><td>619.33</td><td>525.73</td></tr>
+    <tr><td>2 周</td><td>32</td><td>473.18</td><td>579.94</td><td>778.75</td></tr>
+    <tr><td>4 周</td><td>30</td><td>493.73</td><td>620.81</td><td>1,456.00</td></tr>
+  </table>
+  <p>A2 相对朴素对照的 MAE 分别降低 6.94%、39.24%、66.09%，本轮三个跨度的 MAE、RMSE 均优于 A4。共同 30 个起点的结果方向一致；但末 10 个目标周的事后检查中，朴素对照更好。</p>
+  <p><strong>限制：</strong>最高峰在第 27 周，早于首次预测起点，因此没有检验主峰提前预警。原 63 周曾用于探索，本轮不是独立最终测试。66 组所选解均收敛，但也均至少有一个参数贴边；参数唯一性、预测区间和气候增益均未得到确认。8 项测试通过，首个 A4 训练段重复计算结果一致。</p>
+  <p>结果目录为 <code>05_结果与图表/04_滚动验证/development_rolling_v01/</code>；详细记录见 <code>04_代码与计算/03_运行记录/开发期滚动验证_运行记录_v01.md</code>。当前不自动选择最终模型；后续峰前补充验证与趋势对照见下节。</p>
+  <h2>峰前过冲诊断与已确认的单温度扩展（2026-10-07）</h2>
+  <p>重放 286 条优化记录，完成 32 个有效规模剖面点及 128 次优化尝试。6 项检查通过，一处剖面点重复计算结果一致；原方程和旧结果未修改。</p>
+  <p>第 23 周 A2 的近优参数中，两项传播参数各自可相差约 38.87 倍，比值可相差约 1,510.69 倍，但第 4 周预测都在 34,866.74 至 34,899.75，实际为 17,479。A4 的近优解也一致预测约 31,542。因此不能把过冲主要归咎于偶然选中了坏的优化解；多组解都在延续偏强增长。近优范围不是置信区间。</p>
+  <p>第 24 周出现一次短暂回落后，A2 的 N_eff 从约 2.13 亿降至 30 万，对同一第 27 周的预测从 34,885.85 降至 16,067.34。模型重估了整段历史的隐藏状态，不代表真实人口或易感比例在一周内如此改变。剖面结果同样支持：峰前规模上限弱约束，模型通过有效规模与易感者耗竭补偿减速；这不是实际流行变化原因的因果证明。</p>
+  <p>负责人已选择“先做单温度项的最小机制扩展，保留无气候对照”：首轮固定四周滞后，沿用原仓室与周新增流量。实现草案为：</p>
+  <div class="formula">\[
+  \kappa_k=\kappa_0\exp(\eta z_{T,k-4}),\qquad
+  \beta_{h,k}=\sqrt{\rho\kappa_k},\qquad
+  \beta_{v,k}=\sqrt{\kappa_k/\rho}.
+  \]</div>
+  <p>其中 \(\kappa_0=\beta_{h0}\beta_{v0}\)、\(\rho=\beta_{h0}/\beta_{v0}\)。只增加一个温度作用系数，不预设两方向传播率真实相等。比例情景、系数边界和动态传播率范围待拟合前冻结；四周滞后只是首轮可用性选择，指数项不等于完整温度生命史机制。</p>
+  <p>63 周所需滞后温度全部有值，最低 26 个有效 UF，有效州人口占比最低 99.663%；125 个滚动预测目标均不需要起点之后的温度周。η=0 及乘积/比值代数核查通过。实际发布时间尚需考虑；时变 ODE 和气候模型未拟合，不得将此前统计筛查增益当作本模型结果。</p>
+  <p>详见 <a href="../04_代码与计算/03_运行记录/峰前过冲诊断_v01.md">峰前过冲诊断</a> 与 <a href="../03_模型与方法/01_参数估计/单温度机制扩展_方案_v01.md">单温度机制扩展方案</a>；图：<a href="../05_结果与图表/04_滚动验证/peak_overshoot_diagnostics_v01/parameter_forecast_diagnostics.png">参数与预测</a>、<a href="../05_结果与图表/04_滚动验证/peak_overshoot_diagnostics_v01/population_profile_diagnostics.png">有效规模剖面</a>。</p>
+  <h2>峰前补充验证与气候信息筛查（2026-10-07）</h2>
+  <p>负责人提出补充峰前起点、简单趋势对照和气候增益判断。本次以前 20 周起训，预测未来第 1、2、4 周；趋势对照用最近 4 周新增量拟合直线，负预测截为零。这些具体长度为本次提出并执行的探索设置，不记作已经单独确认的最终方案。原 30 周起训结果不覆盖。</p>
+  <p>新增 20 组拟合，复用并核查原 66 组，共 86 组拟合和 500 条含对照预测。峰前计算发现积分精度问题，新增拟合提高精度，并对所有结果用高精度、步长减半的独立轨迹核查。新增与复用输出的最大参考误差分别为 0.07627、0.01617。全部所选解收敛，但 84 组仍有参数贴边。</p>
+  <table>
+    <tr><th>跨度</th><th>起点数</th><th>A2 MAE</th><th>A4 MAE</th><th>上一周值 MAE</th><th>4 周趋势 MAE</th></tr>
+    <tr><td>1 周</td><td>43</td><td>700.40</td><td>784.62</td><td>806.02</td><td>749.65</td></tr>
+    <tr><td>2 周</td><td>42</td><td>907.91</td><td>1,056.67</td><td>1,247.76</td><td>1,112.47</td></tr>
+    <tr><td>4 周</td><td>40</td><td>1,666.38</td><td>1,841.42</td><td>2,297.68</td><td>2,221.33</td></tr>
+  </table>
+  <p>A2 的总体 MAE 最低，但 4 周 RMSE 为 3,880.06，高于上一周值对照的 3,144.55 和趋势对照的 3,550.15。只看主峰当周及之前的目标周，趋势对照在三个跨度的 MAE、RMSE 都优于 A2、A4。提前 4 周预测第 27 周时，A2 为 34,885.85，A4 为 31,541.60，实际为 17,479，分别高估 99.59%、80.45%。这是指定目标周的量值误差，不是峰时误差。</p>
+  <p>另做统计气候筛查：同样的岭回归模型，以最近新增量和 4 周趋势为基础，对照加入起点当周温度、湿度及完整 168 小时降雨。每个历史训练对的目标均已在当次起点被观测；标准化只用该次训练对，不使用未来天气，惩罚系数固定为 1。此实验不改变 A2、A4 传播方程。</p>
+  <table>
+    <tr><th>跨度</th><th>无气候统计模型 MAE</th><th>加气候统计模型 MAE</th><th>MAE 降幅</th></tr>
+    <tr><td>1 周</td><td>956.05</td><td>1,049.13</td><td>-9.74%</td></tr>
+    <tr><td>2 周</td><td>1,518.85</td><td>1,465.85</td><td>3.49%</td></tr>
+    <tr><td>4 周</td><td>4,608.79</td><td>3,625.02</td><td>21.35%</td></tr>
+  </table>
+  <p>2、4 周有所改善，1 周变差。加入气候后的三个跨度总体 MAE、RMSE 均未超过 A2 或简单趋势；不能将降幅写成“A2 加气候”的改善，也不能由此解释因果作用。最早 4 周预测只有 13 个训练对；同周气候及时可得仍属业务假设。原 63 周为开发数据，不是独立最终测试。</p>
+  <p>7 项峰前/趋势检查与 4 项气候检查通过；气候 250 条预测复算一致，A4 的 20 周训练段重复拟合结果一致。下一步建议先核查峰前 4 周过冲及近优解预测分散，再由负责人确定气候扩展形式，不自动决定最终模型。</p>
+  <p>详细记录：<a href="../04_代码与计算/03_运行记录/峰前验证与趋势对照_运行记录_v01.md">峰前验证与趋势对照运行记录</a>。图形：<a href="../05_结果与图表/04_滚动验证/development_peak_trend_v01/peak_forecasts.png">峰前预测</a>、<a href="../05_结果与图表/04_滚动验证/development_peak_trend_v01/expanded_forecasts.png">全窗口预测</a>。气候配对结果：<code>05_结果与图表/04_滚动验证/climate_increment_screen_v01/paired_climate_gain.csv</code>。</p>
+
+  <h2>全国气候主候选（2026-10-05 确认）</h2>
+  <p>采用<strong>人口加权州均值</strong>作为全国气候主候选，降雨优先使用<strong>完整 168 小时站点周</strong>。UF 内合格站点先等权平均，再按固定 IBGE 2024 年州人口加权；缺值 UF 不参与当周分母。温度和湿度暂沿用至少 135 个有效小时的要求。等州、等站点和 160 小时降雨版本保留作对照。</p>
+  <p>当前主候选表为 <code>02_数据/01_清洗数据/brazil_weekly_climate_main_candidate_2023_2025_v02.csv</code>，按站点当地星期日到星期六归周，包含有效 UF 数、有效州人口占比和原 63 周窗口标记。有效州人口占比不等于实际人口空间覆盖率。原 63 周完整降雨最低覆盖 25 个 UF，有效州人口占比最低为 98.485%。历史 156 周版保留不覆盖。</p>
+  <p><strong>2025 年覆盖限制：</strong>W43 完整降雨覆盖 20 个 UF、有效州人口占比 79.169%；W52 仅 1 个 UF、1.365%，不能用作全国降雨输入。独立解析原始文件后，两周汇总与现有周表一致，缺口来自原始空白字段，不能据此确定上游故障原因。不自动改用 160 小时版本补缺，也不把缺测记为零。</p>
+  <p><strong>W53 已补齐：</strong>取得 2026 年小时资料后，已拼接 2025-12-28 至 2026-01-03 的跨年周，主候选由 156 周扩为 157 周，原有 156 周数值不变。W53 完整雨量有 253 个合格站、覆盖 25 个 UF，有效州人口占比 98.841%。四项新增解析及跨年边界测试通过。日历完整不等于每周空间覆盖合格；详见 <code>02_数据/04_数据质量控制/2025年降雨缺口与跨年周核查_v01.md</code>。</p>
+  <p>项目负责人不确定 2025 年是否曾参与拟合或模型选择。现存四个主要拟合脚本和运行记录只发现原 63 周窗口，但不足以排除其他运行或人工选模。2025 年使用历史仍记为尚未确认，不称为完全未接触的独立测试集。</p>
+  <p>原 63 周开发期已于 2026-10-07 确认并执行 30 周起训、未来第 1、2、4 周预测。2024-W46 至 W52 衔接期及 2025-W01 至 W53 跨年度验证仍为候选，须处理气候缺口与使用历史问题。详见 <code>03_模型与方法/01_参数估计/训练与验证划分方案_v01.md</code>。</p>
+
+  <h2>1. 项目总目标</h2>
+  <p>本课题目标是围绕巴西疾病X开展传染病动力学建模研究，力争形成一篇具有 SCI 三区投稿潜力的论文。</p>
+  <ol>
+    <li>先做巴西全国尺度模型。</li>
+    <li>主打真实监测数据预测和气候因子解释。</li>
+    <li>保留严谨的数学动力学分析。</li>
+    <li>第一版参数估计采用最小二乘拟合。</li>
+    <li>后续根据模型表现考虑气候扩展、区域稳健性和统计基线模型比较。</li>
+  </ol>
+
+  <h2>2. 当前论文核心路线</h2>
+  <p>当前建议主线是：经典 \(SEIR\)-\(SEI\) 人-蚊传播骨架 + 显式数据Y观测层 + 真实周数据Y拟合 + 气候解释与预测验证。</p>
+  <p>基础模型负责传播机制、非负性、有界性、疾病消除平衡点和 \(R_0\) 推导；扩展模型负责气候解释、预测改进和有效蚊人比机制。</p>
+
+  <h2>3. 基础模型结构</h2>
+  <table>
+    <tr><th>宿主仓室</th><th>含义</th></tr>
+    <tr><td>\(S_h(t)\)</td><td>易感宿主</td></tr>
+    <tr><td>\(E_h(t)\)</td><td>暴露宿主</td></tr>
+    <tr><td>\(I_h(t)\)</td><td>感染宿主</td></tr>
+    <tr><td>\(R_h(t)\)</td><td>康复宿主</td></tr>
+  </table>
+  <table>
+    <tr><th>蚊媒仓室</th><th>含义</th></tr>
+    <tr><td>\(S_v(t)\)</td><td>易感蚊媒</td></tr>
+    <tr><td>\(E_v(t)\)</td><td>暴露蚊媒</td></tr>
+    <tr><td>\(I_v(t)\)</td><td>感染蚊媒</td></tr>
+  </table>
+  <div class="formula">\[N_h(t)=S_h(t)+E_h(t)+I_h(t)+R_h(t)\]</div>
+  <div class="formula">\[N_v(t)=S_v(t)+E_v(t)+I_v(t)\]</div>
+  <div class="formula">\[\frac{dN_h(t)}{dt}=0\]</div>
+  <div class="formula">\[\frac{dN_v(t)}{dt}=\Lambda_v-\mu_vN_v(t)\]</div>
+
+  <h2>4. 感染力定义</h2>
+  <div class="formula">\[\lambda_h(t)=\beta_h\frac{I_v(t)}{N_v(t)}\]</div>
+  <div class="formula">\[\lambda_v(t)=\beta_v\frac{I_h(t)}{N_h(t)}\]</div>
+  <p>当前选择的优点是参数较少、便于拟合和理论推导；代价是 \(R_0\) 中不显式出现蚊媒平衡数量 \(\Lambda_v/\mu_v\)。</p>
+
+  <h2>5. 基础模型方程</h2>
+  <div class="formula">
+  \[
+  \begin{aligned}
+  \frac{dS_h}{dt} &= -\lambda_h(t)S_h,\\
+  \frac{dE_h}{dt} &= \lambda_h(t)S_h-\sigma_hE_h,\\
+  \frac{dI_h}{dt} &= \sigma_hE_h-\gamma_hI_h,\\
+  \frac{dR_h}{dt} &= \gamma_hI_h,\\
+  \frac{dS_v}{dt} &= \Lambda_v-\lambda_v(t)S_v-\mu_vS_v,\\
+  \frac{dE_v}{dt} &= \lambda_v(t)S_v-\sigma_vE_v-\mu_vE_v,\\
+  \frac{dI_v}{dt} &= \sigma_vE_v-\mu_vI_v.
+  \end{aligned}
+  \]
+  </div>
+
+  <h2>6. 观测层</h2>
+  <p>真实周报告数据Y不直接等于 \(I_h(t)\)，而是通过从暴露宿主进入感染宿主的新发流量连接。</p>
+  <div class="formula">\[C_k=q\int_{\mathrm{week}\ k}\sigma_hE_h(t)\,dt\]</div>
+  <div class="formula">\[C_k\approx q\sum_{d\in \mathrm{week}\ k}\sigma_hE_h(d)\]</div>
+
+  <h2>7. 数学性质</h2>
+  <p>已完成非负性和有界性证明。若初始条件非负，且 \(N_h(0)>0\)、\(N_v(0)>0\)，则所有状态变量保持非负。</p>
+  <div class="formula">\[N_h(t)=N_h(0)\]</div>
+  <div class="formula">\[N_v(t)=N_v(0)e^{-\mu_vt}+\frac{\Lambda_v}{\mu_v}\left(1-e^{-\mu_vt}\right)\]</div>
+  <div class="formula">\[N_v(t)\le \max\left\{N_v(0),\frac{\Lambda_v}{\mu_v}\right\}\]</div>
+
+  <h2>8. 疾病消除平衡点</h2>
+  <div class="formula">\[E_h=I_h=E_v=I_v=0\]</div>
+  <div class="formula">\[E_0=\left(S_h^0,0,0,R_h^0,\frac{\Lambda_v}{\mu_v},0,0\right),\qquad S_h^0+R_h^0=N_h\]</div>
+  <p>无既往免疫假设下：</p>
+  <div class="formula">\[E_0=\left(N_h,0,0,0,\frac{\Lambda_v}{\mu_v},0,0\right)\]</div>
+
+  <h2>9. 基本再生数</h2>
+  <div class="formula">
+  \[
+  R_0=
+  \sqrt{
+  \frac{\beta_h\beta_v\sigma_v}
+  {\gamma_h\mu_v(\sigma_v+\mu_v)}
+  }
+  \]
+  </div>
+  <div class="formula">
+  \[
+  \mathcal{R}(S_h^0)=
+  \sqrt{
+  \frac{\beta_h\beta_v\sigma_v}
+  {\gamma_h\mu_v(\sigma_v+\mu_v)}
+  \cdot
+  \frac{S_h^0}{N_h}
+  }
+  \]
+  </div>
+  <p>当前 \(R_0\) 不显式出现 \(\Lambda_v/\mu_v\)，这是感染力采用 \(I_v/N_v\) 比例形式导致的结果，不是推导错误。</p>
+
+  <h2>10. 疾病消除平衡点局部稳定性</h2>
+  <p>由于当前基础模型没有宿主出生死亡项，疾病消除平衡点不是单个孤立点，而是一族平衡点。因此，稳定性结论应表述为疾病消除平衡点集合在感染方向上的局部稳定性。</p>
+  <div class="formula">
+  \[
+  J=
+  \begin{pmatrix}
+  -\sigma_h & 0 & 0 & a\\
+  \sigma_h & -\gamma_h & 0 & 0\\
+  0 & b & -(\sigma_v+\mu_v) & 0\\
+  0 & 0 & \sigma_v & -\mu_v
+  \end{pmatrix}
+  \]
+  </div>
+  <div class="formula">\[a=\beta_h\frac{S_h^0}{N_v^0},\qquad b=\beta_v\frac{S_v^0}{N_h}\]</div>
+  <p>根据下一代矩阵理论，若 \(\mathcal{R}(S_h^0)<1\)，则感染扰动在 DFE 附近衰减；若 \(\mathcal{R}(S_h^0)>1\)，则感染扰动可以增长。在完全易感假设下，可写为：当 \(R_0<1\) 时，DFE 集合在感染方向局部渐近稳定；当 \(R_0>1\) 时，DFE 在感染方向不稳定。</p>
+
+  <h2>11. R0 局部敏感性分析</h2>
+  <p>当前基础模型的归一化局部敏感性指数定义为：</p>
+  <div class="formula">\[\Upsilon_p^{R_0}=\frac{\partial R_0}{\partial p}\frac{p}{R_0}\]</div>
+  <table>
+    <tr><th>参数</th><th>敏感性指数</th><th>方向</th></tr>
+    <tr><td>\(\beta_h\)</td><td>\(1/2\)</td><td>正向</td></tr>
+    <tr><td>\(\beta_v\)</td><td>\(1/2\)</td><td>正向</td></tr>
+    <tr><td>\(\gamma_h\)</td><td>\(-1/2\)</td><td>负向</td></tr>
+    <tr><td>\(\sigma_v\)</td><td>\(\mu_v/[2(\sigma_v+\mu_v)]\)</td><td>正向</td></tr>
+    <tr><td>\(\mu_v\)</td><td>\(-(\sigma_v+2\mu_v)/[2(\sigma_v+\mu_v)]\)</td><td>负向</td></tr>
+  </table>
+  <div class="formula">\[\Upsilon_{\sigma_h}^{R_0}=0,\qquad \Upsilon_{\Lambda_v}^{R_0}=0,\qquad \Upsilon_q^{R_0}=0\]</div>
+  <p>解释：提高 \(\beta_h\) 或 \(\beta_v\) 会提高传播风险；提高 \(\gamma_h\) 或 \(\mu_v\) 会降低传播风险。当前模型中 \(\sigma_h\)、\(\Lambda_v\) 和 \(q\) 不出现在 \(R_0\) 中，因此对应指数为 0。</p>
+
+  <h2>12. 气候扩展方向</h2>
+  <p>基础模型保持简洁；气候扩展模型可考虑显式加入有效蚊人比 \(m(t)\)。</p>
+  <div class="formula">\[\lambda_h(t)=\beta_hm(t)\frac{I_v(t)}{N_v(t)}\]</div>
+  <div class="formula">\[m(t)=m_0\exp\left[\alpha_PP_{\mathrm{std}}(t-\tau_P)+\alpha_TT_{\mathrm{std}}(t-\tau_T)\right]\]</div>
+
+  <h2>13. 当前待确认事项</h2>
+  <ol>
+    <li>是否在气候扩展模型中显式加入有效蚊人比 \(m(t)\)。</li>
+    <li>周时间变量采用症状开始周还是报告通知周。</li>
+    <li>气候变量优先采用温度、降雨、湿度中的哪些。</li>
+    <li>气候变量滞后范围设为几周。</li>
+    <li>全国气候数据如何聚合。</li>
+    <li>报告率 \(q\) 的后续情景范围如何结合血清学或其他外部证据设定。</li>
+    <li>\(\beta_h\) 和 \(\beta_v\) 是否分别拟合，还是合并为综合传播强度。</li>
+    <li>是否将五大区域分析作为必须完成的稳健性分析。</li>
+    <li>何时引入统计基线模型作为预测比较。</li>
+    <li>是否纳入 2026 年不完整年度数据。</li>
+  </ol>
+
+  <h2>14. 数据Y数据口径阶段性决策</h2>
+  <p>当前数据Y主数据源确定为 OpenDataSUS/SINAN 的巴西疾病X官方开放数据：</p>
+  <pre>https://dadosabertos.saude.gov.br/dataset/arboviroses-febre-de-chikungunya</pre>
+  <p>阶段性主分析口径建议为：全国周尺度 probable chikungunya cases。</p>
+  <ol>
+    <li>OpenDataSUS 页面直接说明 probable cases 应按所有通知数据Y中排除 discarded 数据Y理解。</li>
+    <li>该口径更接近公共卫生监测和真实传播趋势。</li>
+    <li>confirmed cases 受检测能力、确认策略、地区差异和年度政策变化影响更强。</li>
+    <li>confirmed cases 暂不作为第一主拟合口径，后续在字段质量允许时作为敏感性分析或补充结果。</li>
+  </ol>
+  <p>2026 年样例已确认存在日尺度字段 <code>DT_NOTIFIC</code>、<code>DT_SIN_PRI</code> 和周尺度字段 <code>SEM_NOT</code>、<code>SEM_PRI</code>；也已确认存在居住州 <code>SG_UF</code>、居住市镇 <code>ID_MN_RESI</code>、数据Y分类字段 <code>CLASSI_FIN</code> 和确认标准字段 <code>CRITERIO</code>。</p>
+  <p>样例文件包含 116,095 行数据Y记录和 122 个字段，居住州覆盖 27 个联邦单位，居住市镇覆盖 2631 个市镇。详细依据见 <code>02_数据/数据Y数据字段核查表_v01.md</code>。</p>
+  <p>2015-2025 年年度 CSV 已下载并解压；2015-2026 年均包含主模型所需核心字段。2014 年按同一 S3 年度 CSV 路径访问返回 AccessDenied，暂不纳入第一版主分析。</p>
+  <p>编码已阶段性确认：<code>CLASSI_FIN=5</code> 表示 discarded，<code>CLASSI_FIN=13</code> 表示 Chikungunya；<code>CRITERIO=1</code> 表示 laboratory，<code>CRITERIO=2</code> 表示 clinical-epidemiological，<code>CRITERIO=3</code> 表示 under investigation。</p>
+  <p>当前建议以 2015-2025 年作为主拟合与验证候选期，2026 年暂作为外推预测或实时更新验证候选；时间轴优先使用 <code>DT_SIN_PRI</code> 重新计算标准周数据Y序列。</p>
+  <p>第一版全国周数据Y序列已生成：<code>02_数据/01_清洗数据/brazil_weekly_chikungunya_cases.csv</code>。该序列范围为 2015-W01 至 2026-W31，共 605 周，总 probable cases 为 1,676,999；主数据Y列 <code>cases</code> 等同于 <code>probable_cases</code>。</p>
+  <p>构建记录见 <code>02_数据/全国周数据Y时间序列构建记录_v01.md</code>；质量控制表见 <code>02_数据/04_数据质量控制/brazil_weekly_chikungunya_cases_quality_summary.csv</code>。</p>
+  <p>全国周数据Y趋势图已生成：主图为 <code>05_结果与图表/03_导出图片/brazil_weekly_probable_cases_trend_2015_2026.png</code>，数据Y口径对比图为 <code>05_结果与图表/03_导出图片/brazil_weekly_case_definition_comparison_2015_2026.png</code>。当前最高单周峰值出现在 2024-W09，probable cases 为 17,479。</p>
+  <p>初步描述文档见 <code>05_结果与图表/00_主要结果/全国周数据Y趋势初步描述_v01.md</code>。数据Y曲线显示 2016、2017、2022 和 2024 年存在较明显流行高峰，且 2015-2016 年 probable cases 与最终分类数据Y差异较大。</p>
+
+  <h2>15. 基础模型拟合窗口决策</h2>
+  <p>基础模型主拟合窗口确定为 2023-W35 至 2024-W45，对应日期范围为 2023-08-27 至 2024-11-09，共 63 周。该窗口覆盖 2024 年主要流行波的上升、峰值、下降和尾部阶段。</p>
+  <p>拟合数据文件为 <code>02_数据/01_清洗数据/baseline_fitting_cases_2023W35_2024W45.csv</code>；拟合窗口图为 <code>05_结果与图表/03_导出图片/baseline_fitting_window_2023W35_2024W45.png</code>。</p>
+  <p>当前窗口累计 probable cases 为 278,088；峰值周为 2024-W09，峰值周 probable cases 为 17,479。拟合数据中 <code>t_week</code> 范围为 0 至 62，<code>t_day</code> 范围为 0 至 434。</p>
+  <p>详细决策见 <code>03_模型与方法/01_参数估计/基础模型拟合窗口决策_v01.md</code>。</p>
+  <h2>16. 基础模型参数估计准备与固定参数来源</h2>
+  <p>基础模型首轮固定 <span class="math">\(\sigma_h=1/3\ \mathrm{day}^{-1}\)</span>、<span class="math">\(\gamma_h=1/6\ \mathrm{day}^{-1}\)</span>、<span class="math">\(\sigma_v=1/11\ \mathrm{day}^{-1}\)</span> 和 <span class="math">\(\mu_v=1/14\ \mathrm{day}^{-1}\)</span>，分别对应宿主潜伏期 3 天、宿主感染期 6 天、蚊媒外潜伏期 11 天和成蚊寿命 14 天。主要依据为 C04 的 CHIKV-Aedes aegypti 参数设置，后续在文献范围内进行敏感性分析。</p>
+  <p>观测层首轮固定 <span class="math">\(q=1\)</span>，使模型拟合感染数据Y数在监测数据Y等效尺度上与 weekly probable cases 对应。该设定表示监测数据Y等效尺度，不表示所有真实感染均被报告，也不表示真实报告率为 100%。后续结合血清学或其他外部证据设置报告率情景。</p>
+  <p><span class="math">\(\Lambda_v\)</span> 不作为首轮独立固定参数或待估参数。蚊媒总量按平衡状态处理，并将蚊媒仓室归一化为比例。</p>
+  <p>首轮候选待估参数为 <span class="math">\(\theta=(\beta_h,\beta_v,N_{\mathrm{eff}},E_h(0),I_h(0),i_v(0))\)</span>。其中 <span class="math">\(N_{\mathrm{eff}}\)</span> 表示有效传播和监测尺度，不等同于巴西官方人口。首轮暂不固定该参数，并保留官方全国人口固定模型作为对照；拟合后通过剖面分析检查数据Y序列能够约束的有效人口范围。</p>
+  <p>详细记录见 <code>03_模型与方法/01_参数估计/固定参数与文献来源_v01.md</code> 和 <code>03_模型与方法/01_参数估计/基础模型参数估计准备_v01.md</code>。</p>
+  <h2>17. 约束传播参数模型首轮拟合</h2>
+  <p>首轮约束传播参数模型已完成代码实现和运行。该阶段令 <span class="math">\(\beta_h=\beta_v=\beta\)</span>，待估参数为 <span class="math">\(\theta_c=(\beta,N_{\mathrm{eff}},E_h(0),I_h(0),i_v(0))\)</span>。</p>
+  <p>拟合对象为 2023-W35 至 2024-W45 的巴西全国周 probable cases，共 63 周。固定参数继续采用已确认的自然史参数，报告率首轮固定为 <span class="math">\(q=1\)</span>。</p>
+  <table>
+    <tr><th>指标</th><th>数值</th></tr>
+    <tr><td><span class="math">\(\beta\)</span></td><td>0.2256614402 day<sup>-1</sup></td></tr>
+    <tr><td><span class="math">\(N_{\mathrm{eff}}\)</span></td><td>316,353.9680</td></tr>
+    <tr><td><span class="math">\(E_h(0)\)</span></td><td>290.3009</td></tr>
+    <tr><td><span class="math">\(I_h(0)\)</span></td><td>1.0000</td></tr>
+    <tr><td><span class="math">\(i_v(0)\)</span></td><td><span class="math">\(1.0000\times 10^{-8}\)</span></td></tr>
+    <tr><td><span class="math">\(R_0\)</span></td><td>1.547715073</td></tr>
+    <tr><td>SSE</td><td>58,743,170.7184</td></tr>
+    <tr><td>RMSE</td><td>965.6248</td></tr>
+    <tr><td>MAE</td><td>709.0736</td></tr>
+  </table>
+  <p>100 个多起点中，98 个起点完成有效计算，71 个起点落在最优 SSE 的 1% 范围内。最优解在多起点中较稳定。</p>
+  <p>本轮结果显示，约束模型能够抓住主要流行波的上升、峰值位置和下降趋势，但对峰后平台及尾部数据Y存在低估。<span class="math">\(I_h(0)\)</span> 与 <span class="math">\(i_v(0)\)</span> 贴近下界，且条件数偏大，提示初始感染状态的独立可识别性不足。因此本轮结果只作为约束基线和计算流程确认，不作为最终参数结论。</p>
+  <p>详细记录见 <code>04_代码与计算/03_运行记录/约束传播参数模型首轮拟合_运行记录_v01.md</code>。主要脚本见 <code>04_代码与计算/00_脚本/07_fit_constrained_baseline_model.py</code>。</p>
+  <h2>18. 双传播参数模型首轮拟合</h2>
+  <p>在约束传播参数模型之后，进一步放开两个传播方向参数：<span class="math">\(\beta_h\ne\beta_v\)</span>。待估参数为 <span class="math">\(\theta=(\beta_h,\beta_v,N_{\mathrm{eff}},E_h(0),I_h(0),i_v(0))\)</span>。</p>
+  <p>拟合对象仍为 2023-W35 至 2024-W45 的巴西全国周 probable cases，共 63 周。固定参数继续采用已确认的自然史参数，报告率首轮固定为 <span class="math">\(q=1\)</span>。</p>
+  <table>
+    <tr><th>指标</th><th>数值</th></tr>
+    <tr><td><span class="math">\(\beta_h\)</span></td><td>0.0441487783 day<sup>-1</sup></td></tr>
+    <tr><td><span class="math">\(\beta_v\)</span></td><td>1.6014907851 day<sup>-1</sup></td></tr>
+    <tr><td><span class="math">\(\beta_h\beta_v\)</span></td><td>0.0707038616 day<sup>-2</sup></td></tr>
+    <tr><td><span class="math">\(\beta_h/\beta_v\)</span></td><td>0.0275673008</td></tr>
+    <tr><td><span class="math">\(N_{\mathrm{eff}}\)</span></td><td>324,979.9145</td></tr>
+    <tr><td><span class="math">\(E_h(0)\)</span></td><td>29.8372</td></tr>
+    <tr><td><span class="math">\(I_h(0)\)</span></td><td>1.0006</td></tr>
+    <tr><td><span class="math">\(i_v(0)\)</span></td><td><span class="math">\(1.2334\times 10^{-8}\)</span></td></tr>
+    <tr><td><span class="math">\(R_0\)</span></td><td>1.823707665</td></tr>
+    <tr><td>SSE</td><td>31,723,428.6895</td></tr>
+    <tr><td>RMSE</td><td>709.6101</td></tr>
+    <tr><td>MAE</td><td>511.9033</td></tr>
+  </table>
+  <p>与约束传播参数模型相比，双传播参数模型使 SSE 降低 45.9964%，RMSE 降低 26.5129%，MAE 降低 27.8067%。按高斯残差下的粗略信息准则计算，双传播参数模型的 AIC 和 BIC 也低于约束模型。</p>
+  <p>100 个多起点中，97 个起点完成有效计算，77 个起点落在最优 SSE 的 1% 范围内。最优解在多起点中较稳定。</p>
+  <p>需要注意的是，<span class="math">\(\log(\beta_h)\)</span> 与 <span class="math">\(\log(\beta_v)\)</span> 的近似相关性为 -0.9766，说明两个传播方向参数存在强烈负相关。当前阶段可认为放开传播方向显著改善拟合，但不宜直接把 <span class="math">\(\beta_h\)</span> 与 <span class="math">\(\beta_v\)</span> 的单独点估计解释为确定的生物学传播差异。相对更稳妥的解释对象是拟合改善、传播参数乘积和 <span class="math">\(R_0\)</span>。</p>
+  <p>详细记录见 <code>04_代码与计算/03_运行记录/双传播参数模型首轮拟合_运行记录_v01.md</code>。主要脚本见 <code>04_代码与计算/00_脚本/08_fit_dual_transmission_baseline_model.py</code>。</p>
+  <h2>19. 固定宿主初始条件对照模型</h2>
+  <p>为检验基础模型是否过度依赖自由估计的宿主初始状态，运行固定宿主初始条件的双传播参数对照模型。该模型固定 <span class="math">\(E_h(0)=250\)</span>、<span class="math">\(I_h(0)=500\)</span>。</p>
+  <p>上述固定值由拟合窗口第一周 probable cases 的数量级粗略反推得到。第一周数据Y为 580 例，平均每日数据Y流量约为 <span class="math">\(580/7=82.86\)</span>。在 <span class="math">\(\sigma_h=1/3\)</span>、<span class="math">\(\gamma_h=1/6\)</span> 的设定下，<span class="math">\(E_h(0)\approx (580/7)/(1/3)\approx 249\)</span>，<span class="math">\(I_h(0)\approx (580/7)\times 6\approx 497\)</span>。</p>
+  <p>由于首轮固定 <span class="math">\(q=1\)</span>，上述人数解释为监测数据Y等效尺度下的宿主数量，不直接解释为巴西真实感染人数。</p>
+  <p>固定宿主初始条件后，仅估计 <span class="math">\(\theta=(\beta_h,\beta_v,N_{\mathrm{eff}},i_v(0))\)</span>。</p>
+  <table>
+    <tr><th>指标</th><th>数值</th></tr>
+    <tr><td><span class="math">\(\beta_h\)</span></td><td>5.0000000000 day<sup>-1</sup></td></tr>
+    <tr><td><span class="math">\(\beta_v\)</span></td><td>0.0088820852 day<sup>-1</sup></td></tr>
+    <tr><td><span class="math">\(\beta_h\beta_v\)</span></td><td>0.0444104262 day<sup>-2</sup></td></tr>
+    <tr><td><span class="math">\(N_{\mathrm{eff}}\)</span></td><td>348,327.6698</td></tr>
+    <tr><td><span class="math">\(E_h(0)\)</span></td><td>250，固定值</td></tr>
+    <tr><td><span class="math">\(I_h(0)\)</span></td><td>500，固定值</td></tr>
+    <tr><td><span class="math">\(i_v(0)\)</span></td><td><span class="math">\(1.0000\times 10^{-8}\)</span></td></tr>
+    <tr><td><span class="math">\(R_0\)</span></td><td>1.445360318</td></tr>
+    <tr><td>SSE</td><td>85,272,234.3364</td></tr>
+    <tr><td>RMSE</td><td>1,163.4120</td></tr>
+    <tr><td>MAE</td><td>813.1649</td></tr>
+  </table>
+  <p>与自由宿主初始条件双传播参数模型相比，固定初值模型的 SSE 约为 2.688 倍，AIC 与 BIC 也明显更高。最优解中 <span class="math">\(\beta_h\)</span> 达到上界，<span class="math">\(i_v(0)\)</span> 达到下界，且 <span class="math">\(\log(\beta_h)\)</span> 与 <span class="math">\(\log(\beta_v)\)</span> 的近似相关性接近 -1。</p>
+  <p>阶段性判断：固定 <span class="math">\(E_h(0)=250\)</span>、<span class="math">\(I_h(0)=500\)</span> 虽有直观数据来源，但与当前 SEIR-SEI 动力学和周数据Y曲线不匹配，不适合作为当前主模型固定设定。该对照支持继续保留宿主初始条件的灵活处理，或改做初始条件网格敏感性分析。</p>
+  <p>详细记录见 <code>04_代码与计算/03_运行记录/固定宿主初始条件双传播参数模型_运行记录_v01.md</code>。主要脚本见 <code>04_代码与计算/00_脚本/09_fit_dual_fixed_host_initial_model.py</code>。</p>
+  <h2>20. 第一天确认数据Y固定宿主初始条件方案</h2>
+  <p>为重新审视宿主初始条件设定，进一步运行基于拟合起点第一天 confirmed cases 的固定初值方案。当前周数据Y序列使用症状开始日期 <code>DT_SIN_PRI</code> 构建，因此第一天统计也按 <code>DT_SIN_PRI=2023-08-27</code> 执行。</p>
+  <table>
+    <tr><th>口径</th><th>数值</th></tr>
+    <tr><td>总通知记录</td><td>217</td></tr>
+    <tr><td>probable cases</td><td>82</td></tr>
+    <tr><td>chikungunya classified cases</td><td>64</td></tr>
+    <tr><td>confirmed chikungunya cases</td><td>63</td></tr>
+    <tr><td>discarded cases</td><td>135</td></tr>
+  </table>
+  <p>confirmed chikungunya cases 定义为 <code>CLASSI_FIN = 13</code> 且 <code>CRITERIO in {1, 2}</code>。</p>
+  <p>本方案固定 <span class="math">\(I_h(0)=63\)</span>、<span class="math">\(E_h(0)=3I_h(0)=189\)</span>。该设定借鉴目标论文中 <span class="math">\(E(0)=3I(0)\)</span> 的初值关系，但数据Y数本身来自本课题拟合起点当日数据。</p>
+  <p>需要注意，起点当日数据Y数是新增记录，<span class="math">\(I_h(0)\)</span> 是模型感染期存量，二者概念不完全相同。因此该设定只作为数据驱动的初始条件情景，不解释为真实感染宿主存量的直接观测。</p>
+  <p>固定宿主初始条件后，仅估计 <span class="math">\(\theta=(\beta_h,\beta_v,N_{\mathrm{eff}},i_v(0))\)</span>。</p>
+  <table>
+    <tr><th>指标</th><th>数值</th></tr>
+    <tr><td><span class="math">\(\beta_h\)</span></td><td>0.0960236924 day<sup>-1</sup></td></tr>
+    <tr><td><span class="math">\(\beta_v\)</span></td><td>0.5485787093 day<sup>-1</sup></td></tr>
+    <tr><td><span class="math">\(\beta_h\beta_v\)</span></td><td>0.0526765532 day<sup>-2</sup></td></tr>
+    <tr><td><span class="math">\(\beta_h/\beta_v\)</span></td><td>0.1750408660</td></tr>
+    <tr><td><span class="math">\(N_{\mathrm{eff}}\)</span></td><td>338,285.7490</td></tr>
+    <tr><td><span class="math">\(E_h(0)\)</span></td><td>189，固定值</td></tr>
+    <tr><td><span class="math">\(I_h(0)\)</span></td><td>63，固定值</td></tr>
+    <tr><td><span class="math">\(i_v(0)\)</span></td><td><span class="math">\(1.0000\times 10^{-8}\)</span></td></tr>
+    <tr><td><span class="math">\(R_0\)</span></td><td>1.574136291</td></tr>
+    <tr><td>SSE</td><td>50,167,483.6791</td></tr>
+    <tr><td>RMSE</td><td>892.3616</td></tr>
+    <tr><td>MAE</td><td>580.1073</td></tr>
+  </table>
+  <p>该方案明显优于 <span class="math">\(E_h(0)=250,I_h(0)=500\)</span>，也优于约束传播参数模型；但仍不及自由宿主初始条件双传播参数模型。</p>
+  <p>阶段性判断：<span class="math">\(E_h(0)=189,I_h(0)=63\)</span> 可作为固定宿主初始条件敏感性分析的代表方案。由于 <span class="math">\(i_v(0)\)</span> 仍达到下界，且 <span class="math">\(\log(\beta_h)\)</span> 与 <span class="math">\(\log(\beta_v)\)</span> 的近似相关性为 -0.9981，当前不宜直接把该方案确定为最终主模型。</p>
+  <p>详细记录见 <code>04_代码与计算/03_运行记录/第一天确认数据Y固定宿主初始条件模型_运行记录_v01.md</code>。主要结果见 <code>05_结果与图表/00_主要结果/dual_fixed_host_initial_eh189_ih63_confirmed_day1_parameter_estimates_v01.csv</code>。</p>
+  <h2>21. 参考文章式感染数据Y最小二乘拟合目标调整</h2>
+  <p>状态说明（2026-10-04）：以下内容保留当时的方法调整过程；其中以周末感染存量与周报告数比较的实现现列为 B 组历史对照。正式输出见页面顶部。</p>
+  <p>在完成前期基础模型拟合后，下一轮基础模型主拟合目标调整为与目标论文一致的写法：以周尺度感染数据Y序列为拟合对象，采用非线性最小二乘法，最小化模型拟合感染数据Y数与实际报告感染数据Y数之间的误差平方和。</p>
+  <p>拟合窗口仍为 2023-W35 至 2024-W45，共 63 周。设第 <span class="math">\(i\)</span> 周实际报告 probable 感染数据Y数为：</p>
+  <div class="formula">\[
+  I_h(i),\qquad i=1,\ldots,\tau,\quad \tau=63.
+  \]</div>
+  <p>模型拟合得到的第 <span class="math">\(i\)</span> 周感染数据Y数记为：</p>
+  <div class="formula">\[
+  \widehat I_h(i,\theta).
+  \]</div>
+  <p>下一轮主损失函数为：</p>
+  <div class="formula">\[
+  L(\theta)=\sum_{i=1}^{\tau}\left[\widehat I_h(i,\theta)-I_h(i)\right]^2.
+  \]</div>
+  <p>参数估计问题写为：</p>
+  <div class="formula">\[
+  \widehat\theta=\underset{\theta}{\operatorname{argmin}}\sum_{i=1}^{\tau}\left[\widehat I_h(i,\theta)-I_h(i)\right]^2.
+  \]</div>
+  <p>这里的求和尺度为周，每个残差项对应一个流行病学周的数据Y差。当前不再引入额外累计数据Y变量，也不把主损失函数写成累计数据Y残差。</p>
+  <p>已完成的前期拟合结果保留为历史对照和敏感性分析。下一步代码应按照上述目标函数重新组织模型输出和最小二乘优化过程。</p>
+  <p>详细文档见 <code>03_模型与方法/01_参数估计/参考文章式感染数据Y最小二乘拟合_v01.md</code>。</p>
+  <h2>22. 参考文章式感染数据Y最小二乘拟合结果</h2>
+  <p>本节为 B 组历史实验记录，所用周末感染存量输出不是当前正式每周新增流量。数值和组内比较保留，不用于确定现行模型。</p>
+  <p>按照已确认的方法论，重新运行两组基础模型拟合：</p>
+  <div class="formula">\[
+  L(\theta)=\sum_{i=1}^{\tau}\left[\widehat I_h(i,\theta)-I_h(i)\right]^2,\qquad \tau=63.
+  \]</div>
+  <p>拟合窗口仍为 2023-W35 至 2024-W45，实际数据Y采用每周全国 probable cases。</p>
+  <table>
+    <tr><th>模型</th><th>待估参数数</th><th>\(L(\theta)\)</th><th>RMSE</th><th>MAE</th><th>\(R_0\)</th></tr>
+    <tr><td>自由初值双传播参数模型</td><td>6</td><td>31,979,367.6740</td><td>712.4668</td><td>514.3274</td><td>1.839443664</td></tr>
+    <tr><td>固定 \(E_h(0)=189,I_h(0)=63\) 模型</td><td>4</td><td>46,761,751.8410</td><td>861.5393</td><td>554.5078</td><td>1.601913291</td></tr>
+  </table>
+  <p>自由初值双传播参数模型的主要估计值为：\(\beta_h=0.0440211704\)、\(\beta_v=1.6339700241\)、\(N_{\mathrm{eff}}=377454.9196\)、\(E_h(0)=34.5566\)、\(I_h(0)=1.0008\)、\(i_v(0)=1.3230\times10^{-7}\)。</p>
+  <p>固定初值模型的主要估计值为：\(\beta_h=0.0844689248\)、\(\beta_v=0.6458233313\)、\(N_{\mathrm{eff}}=391884.2081\)、\(E_h(0)=189\)、\(I_h(0)=63\)、\(i_v(0)=1.0000\times10^{-8}\)。</p>
+  <p>当时的组内判断：自由初值模型使 B 组损失函数相对固定初值模型降低约 31.61%。固定 \(E_h(0)=189,I_h(0)=63\) 模型作为 B 组初始条件对照。自由初值模型中 \(I_h(0)\) 接近下界，固定初值模型中 \(i_v(0)\) 命中下界；两组的 \(\log(\beta_h)\) 与 \(\log(\beta_v)\) 均存在较强负相关。这些判断仅针对历史 B 组，不外推为正式 A 组的模型选择或参数解释。</p>
+  <p>详细记录见 <code>04_代码与计算/03_运行记录/参考文章式感染数据Y最小二乘拟合_运行记录_v01.md</code>。主要脚本见 <code>04_代码与计算/00_脚本/10_fit_reference_infection_cases_model.py</code>。</p>
+  <h2>23. 固定全国人口 \(N_{\mathrm{eff}}\) 对照判断</h2>
+  <p>曾尝试将 \(N_{\mathrm{eff}}\) 固定为巴西全国人口量级，用于检验常参数基础模型能否在真实全国人口尺度下拟合 2023-W35 至 2024-W45 的全国周 probable cases。</p>
+  <p>阶段性判断：该设定不适合作为当前基础模型主线。固定全国人口后，常参数 SEIR-SEI 模型难以形成与实际数据一致的快速上升、高峰和回落，拟合误差明显大于将 \(N_{\mathrm{eff}}\) 作为有效传播尺度估计的模型。</p>
+  <ol>
+    <li>全国官方人口是人口统计尺度。</li>
+    <li>\(N_{\mathrm{eff}}\) 是当前数据Y观测和传播过程下的有效人群尺度。</li>
+    <li>在常参数全国基础模型中，\(N_{\mathrm{eff}}\) 暂作为待估参数处理。</li>
+    <li>若后续引入气候时变传播率、区域分层或报告率情景分析，可重新讨论全国人口尺度是否进入模型。</li>
+  </ol>
+  <p>相关固定全国人口对照的临时脚本、图表和中间结果不再保留，避免与当前主线结果混淆。</p>
+</body>
+</html>

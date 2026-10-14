@@ -1,0 +1,287 @@
+{
+  "decision_id": "dev_rolling_30_1_2_4_20261007",
+  "date": "2026-10-07",
+  "initial_train_weeks": 30,
+  "horizons": [
+    1,
+    2,
+    4
+  ],
+  "models": [
+    "A2",
+    "A4",
+    "Naive"
+  ],
+  "A4_fixed_initials": [
+    189.0,
+    63.0
+  ],
+  "seed": 20261007,
+  "starts_per_fit": 12,
+  "max_nfev": 250,
+  "refine_nfev": 1000,
+  "workers": 6,
+  "input_sha256": "88f6f804bb2b29997a90e1163dc5f40f776709762a3ca7330223fb3a121547d3",
+  "model_source_sha256": {
+    "A2": "ae44884f75e8352659febe868c89f0153282020077db038940149f91580e7c6f",
+    "A4": "663bab89ec3d6e8a7d925e6ab0d27b994ec026cf224ddd47eb90304e57166b62"
+  },
+  "runner_sha256": "2f750dc6aa752c4a88fe62ddd5882a8236845fd6cd14443abc371c94c4fdcf15",
+  "selection": "lowest finite training SSE across starts and one best-start refinement",
+  "initialization": "3 generic training-only seeds + log-space Latin hypercube; no saved fit anchors",
+  "data_availability": "revised snapshots; retrospective development validation, not real-time",
+  "status": "completed",
+  "elapsed_seconds": 466.26334700000007,
+  "python": "3.14.7",
+  "numpy": "2.4.6",
+  "scipy": "1.18.0",
+  "pandas": "3.0.5",
+  "fitted_origins": 66,
+  "forecast_rows": 285,
+  "nonconverged_selected_fits": 0,
+  "selected_fits_with_bound_hits": 66,
+  "fit_diagnostics_by_model": [
+    {
+      "model": "A2",
+      "origins": 33,
+      "converged": 33,
+      "bound_hits": 33
+    },
+    {
+      "model": "A4",
+      "origins": 33,
+      "converged": 33,
+      "bound_hits": 33
+    }
+  ],
+  "observed_peak_week_number": 27,
+  "observed_peak_week": "2024-W09",
+  "observed_peak_count": 17479.0,
+  "max_forecast_training_prefix_difference": 0.0002968997107473115,
+  "metrics": [
+    {
+      "scope": "all_available",
+      "model": "A2",
+      "horizon": 1,
+      "n_forecasts": 33,
+      "mae": 489.24690042350096,
+      "rmse": 847.174283602266,
+      "mean_error": 11.064697654272749,
+      "sse": 23684240.80430142,
+      "mae_improvement_vs_naive_pct": 6.939029834713639,
+      "rmse_improvement_vs_naive_pct": 12.29937338134376
+    },
+    {
+      "scope": "all_available",
+      "model": "A2",
+      "horizon": 2,
+      "n_forecasts": 32,
+      "mae": 473.18237316192744,
+      "rmse": 742.4564318402968,
+      "mean_error": -98.73672696672388,
+      "sse": 17639729.701792806,
+      "mae_improvement_vs_naive_pct": 39.23821853458396,
+      "rmse_improvement_vs_naive_pct": 37.940807291072964
+    },
+    {
+      "scope": "all_available",
+      "model": "A2",
+      "horizon": 4,
+      "n_forecasts": 30,
+      "mae": 493.7263091503016,
+      "rmse": 813.6095365750099,
+      "mean_error": -199.09745623054272,
+      "sse": 19858814.340174068,
+      "mae_improvement_vs_naive_pct": 66.09022601989687,
+      "rmse_improvement_vs_naive_pct": 60.92229438686081
+    },
+    {
+      "scope": "all_available",
+      "model": "A4",
+      "horizon": 1,
+      "n_forecasts": 33,
+      "mae": 619.3346155676919,
+      "rmse": 1079.0444553191462,
+      "mean_error": -267.83276435082723,
+      "sse": 38423118.90631477,
+      "mae_improvement_vs_naive_pct": -17.805304707670942,
+      "rmse_improvement_vs_naive_pct": -11.704140119182703
+    },
+    {
+      "scope": "all_available",
+      "model": "A4",
+      "horizon": 2,
+      "n_forecasts": 32,
+      "mae": 579.9436243951008,
+      "rmse": 932.7276370353343,
+      "mean_error": -414.90695849704844,
+      "sse": 27839387.036464587,
+      "mae_improvement_vs_naive_pct": 25.52890858489878,
+      "rmse_improvement_vs_naive_pct": 22.036739545453976
+    },
+    {
+      "scope": "all_available",
+      "model": "A4",
+      "horizon": 4,
+      "n_forecasts": 30,
+      "mae": 620.810466021426,
+      "rmse": 976.9404253451114,
+      "mean_error": -583.292855730814,
+      "sse": 28632377.84020462,
+      "mae_improvement_vs_naive_pct": 57.36191854248447,
+      "rmse_improvement_vs_naive_pct": 53.07750385532557
+    },
+    {
+      "scope": "all_available",
+      "model": "Naive",
+      "horizon": 1,
+      "n_forecasts": 33,
+      "mae": 525.7272727272727,
+      "rmse": 965.9842993893154,
+      "mean_error": 422.2121212121212,
+      "sse": 30793147.0,
+      "mae_improvement_vs_naive_pct": 0.0,
+      "rmse_improvement_vs_naive_pct": 0.0
+    },
+    {
+      "scope": "all_available",
+      "model": "Naive",
+      "horizon": 2,
+      "n_forecasts": 32,
+      "mae": 778.75,
+      "rmse": 1196.368175980956,
+      "mean_error": 740.1875,
+      "sse": 45801498.0,
+      "mae_improvement_vs_naive_pct": 0.0,
+      "rmse_improvement_vs_naive_pct": 0.0
+    },
+    {
+      "scope": "all_available",
+      "model": "Naive",
+      "horizon": 4,
+      "n_forecasts": 30,
+      "mae": 1456.0,
+      "rmse": 2082.02995495582,
+      "mean_error": 1450.0666666666666,
+      "sse": 130045462.0,
+      "mae_improvement_vs_naive_pct": 0.0,
+      "rmse_improvement_vs_naive_pct": 0.0
+    },
+    {
+      "scope": "common_origins",
+      "model": "A2",
+      "horizon": 1,
+      "n_forecasts": 30,
+      "mae": 507.2786324149618,
+      "rmse": 882.8704979499608,
+      "mean_error": 43.06412547058935,
+      "sse": 23383809.48451235,
+      "mae_improvement_vs_naive_pct": 11.505733718387779,
+      "rmse_improvement_vs_naive_pct": 12.846251492518345
+    },
+    {
+      "scope": "common_origins",
+      "model": "A2",
+      "horizon": 2,
+      "n_forecasts": 30,
+      "mae": 481.285169991238,
+      "rmse": 761.3312858417346,
+      "mean_error": -81.87648071635415,
+      "sse": 17388759.80404287,
+      "mae_improvement_vs_naive_pct": 41.77532422075515,
+      "rmse_improvement_vs_naive_pct": 38.37549281759978
+    },
+    {
+      "scope": "common_origins",
+      "model": "A2",
+      "horizon": 4,
+      "n_forecasts": 30,
+      "mae": 493.7263091503016,
+      "rmse": 813.6095365750099,
+      "mean_error": -199.09745623054272,
+      "sse": 19858814.340174068,
+      "mae_improvement_vs_naive_pct": 66.09022601989687,
+      "rmse_improvement_vs_naive_pct": 60.92229438686081
+    },
+    {
+      "scope": "common_origins",
+      "model": "A4",
+      "horizon": 1,
+      "n_forecasts": 30,
+      "mae": 638.3247814682792,
+      "rmse": 1123.378807221454,
+      "mean_error": -251.67274512972773,
+      "sse": 37859398.33542891,
+      "mae_improvement_vs_naive_pct": -11.355140106113716,
+      "rmse_improvement_vs_naive_pct": -10.89584969772368
+    },
+    {
+      "scope": "common_origins",
+      "model": "A4",
+      "horizon": 2,
+      "n_forecasts": 30,
+      "mae": 587.5637168816789,
+      "rmse": 955.7365678539697,
+      "mean_error": -411.5246065904231,
+      "sse": 27402971.613998573,
+      "mae_improvement_vs_naive_pct": 28.918011507176512,
+      "rmse_improvement_vs_naive_pct": 22.639728478933208
+    },
+    {
+      "scope": "common_origins",
+      "model": "A4",
+      "horizon": 4,
+      "n_forecasts": 30,
+      "mae": 620.810466021426,
+      "rmse": 976.9404253451114,
+      "mean_error": -583.292855730814,
+      "sse": 28632377.84020462,
+      "mae_improvement_vs_naive_pct": 57.36191854248447,
+      "rmse_improvement_vs_naive_pct": 53.07750385532557
+    },
+    {
+      "scope": "common_origins",
+      "model": "Naive",
+      "horizon": 1,
+      "n_forecasts": 30,
+      "mae": 573.2333333333333,
+      "rmse": 1013.0034715307413,
+      "mean_error": 466.76666666666665,
+      "sse": 30785281.0,
+      "mae_improvement_vs_naive_pct": 0.0,
+      "rmse_improvement_vs_naive_pct": 0.0
+    },
+    {
+      "scope": "common_origins",
+      "model": "Naive",
+      "horizon": 2,
+      "n_forecasts": 30,
+      "mae": 826.6,
+      "rmse": 1235.435901480391,
+      "mean_error": 793.6,
+      "sse": 45789056.0,
+      "mae_improvement_vs_naive_pct": 0.0,
+      "rmse_improvement_vs_naive_pct": 0.0
+    },
+    {
+      "scope": "common_origins",
+      "model": "Naive",
+      "horizon": 4,
+      "n_forecasts": 30,
+      "mae": 1456.0,
+      "rmse": 2082.02995495582,
+      "mean_error": 1450.0666666666666,
+      "sse": 130045462.0,
+      "mae_improvement_vs_naive_pct": 0.0,
+      "rmse_improvement_vs_naive_pct": 0.0
+    }
+  ],
+  "warnings": [
+    "All 63 weeks previously influenced exploratory decisions; not an untouched final test.",
+    "Historical parameter bounds and model structures retained; those choices predate this validation.",
+    "Main observed peak is before the first forecast origin; no evidence of main-peak early warning.",
+    "No forecast intervals; overlapping errors are not independent.",
+    "Training-only residual scale does not change the unweighted SSE minimizer.",
+    "Finite local multi-start optimization cannot certify global optimality or parameter identifiability."
+  ]
+}

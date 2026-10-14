@@ -1,0 +1,6627 @@
+[
+  {
+    "model": "ARTrend",
+    "origin_n": 20,
+    "horizon": 1,
+    "prediction": 7029.780310876433,
+    "raw_prediction": 7029.780310876433,
+    "training_pairs": 16,
+    "latest_training_target_week_number": 20,
+    "feature_mean": [
+      1454.0625,
+      155.83125
+    ],
+    "feature_scale": [
+      1094.7859076521536,
+      171.5774159044176
+    ],
+    "target_mean": 1811.6875,
+    "standardized_coefficients": [
+      1565.6799221457807,
+      -253.05960234409756
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 20,
+    "horizon": 1,
+    "prediction": 6612.635691335387,
+    "raw_prediction": 6612.635691335387,
+    "training_pairs": 16,
+    "latest_training_target_week_number": 20,
+    "feature_mean": [
+      1454.0625,
+      155.83125,
+      25.435691283185935,
+      69.37637358898216,
+      27.711951163776533
+    ],
+    "feature_scale": [
+      1094.7859076521536,
+      171.5774159044176,
+      0.7406643728122484,
+      3.8897826280412526,
+      11.860879964499794
+    ],
+    "target_mean": 1811.6875,
+    "standardized_coefficients": [
+      1271.3465348184368,
+      -203.11248372126872,
+      273.68549595806775,
+      672.6976193013503,
+      -469.35750758212265
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 20,
+    "horizon": 2,
+    "prediction": 8545.163620380003,
+    "raw_prediction": 8545.163620380003,
+    "training_pairs": 15,
+    "latest_training_target_week_number": 20,
+    "feature_mean": [
+      1231.8,
+      122.6
+    ],
+    "feature_scale": [
+      698.6057734278086,
+      117.1850729970901
+    ],
+    "target_mean": 1895.2666666666667,
+    "standardized_coefficients": [
+      1636.1121190468093,
+      -505.54557729477045
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 20,
+    "horizon": 2,
+    "prediction": 6608.639801291959,
+    "raw_prediction": 6608.639801291959,
+    "training_pairs": 15,
+    "latest_training_target_week_number": 20,
+    "feature_mean": [
+      1231.8,
+      122.6,
+      25.4708571444575,
+      68.86657343690189,
+      26.561106638071944
+    ],
+    "feature_scale": [
+      698.6057734278086,
+      117.1850729970901,
+      0.7519107366658511,
+      3.4613239805978386,
+      11.352007831667933
+    ],
+    "target_mean": 1895.2666666666667,
+    "standardized_coefficients": [
+      1176.0507340186557,
+      -472.3962979847655,
+      510.1394024438257,
+      806.4220795677369,
+      -435.80541453140063
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 20,
+    "horizon": 4,
+    "prediction": 14944.716779555376,
+    "raw_prediction": 14944.716779555376,
+    "training_pairs": 13,
+    "latest_training_target_week_number": 20,
+    "feature_mean": [
+      1056.7692307692307,
+      102.6
+    ],
+    "feature_scale": [
+      555.9295962406852,
+      99.74484370710019
+    ],
+    "target_mean": 2100.3076923076924,
+    "standardized_coefficients": [
+      1468.4653754272008,
+      -88.02325503532538
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 20,
+    "horizon": 4,
+    "prediction": 13808.99634262428,
+    "raw_prediction": 13808.99634262428,
+    "training_pairs": 13,
+    "latest_training_target_week_number": 20,
+    "feature_mean": [
+      1056.7692307692307,
+      102.6,
+      25.405494296995315,
+      68.4573506894971,
+      26.220508939686308
+    ],
+    "feature_scale": [
+      555.9295962406852,
+      99.74484370710019,
+      0.7843729976042395,
+      3.5280636268582004,
+      11.450802609371172
+    ],
+    "target_mean": 2100.3076923076924,
+    "standardized_coefficients": [
+      1420.0959324904234,
+      -171.2470046411222,
+      198.6767515772451,
+      214.493663780234,
+      -99.54179578971986
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 21,
+    "horizon": 1,
+    "prediction": 11637.866126049314,
+    "raw_prediction": 11637.866126049314,
+    "training_pairs": 17,
+    "latest_training_target_week_number": 21,
+    "feature_mean": [
+      1741.2941176470588,
+      226.2294117647059
+    ],
+    "feature_scale": [
+      1564.6357127123263,
+      327.11088921164094
+    ],
+    "target_mean": 2211.1176470588234,
+    "standardized_coefficients": [
+      1649.0360415225691,
+      374.58056828274357
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 21,
+    "horizon": 1,
+    "prediction": 11541.329900706885,
+    "raw_prediction": 11541.329900706885,
+    "training_pairs": 17,
+    "latest_training_target_week_number": 21,
+    "feature_mean": [
+      1741.2941176470588,
+      226.2294117647059,
+      25.457616867022764,
+      69.71612837107945,
+      28.588022529109104
+    ],
+    "feature_scale": [
+      1564.6357127123263,
+      327.11088921164094,
+      0.7238824369973642,
+      4.0108998781053575,
+      12.028514794199522
+    ],
+    "target_mean": 2211.1176470588234,
+    "standardized_coefficients": [
+      1286.930510313134,
+      498.8022770669746,
+      250.97332145729538,
+      712.7594702674807,
+      -509.342248021119
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 21,
+    "horizon": 2,
+    "prediction": 14256.168037292573,
+    "raw_prediction": 14256.168037292573,
+    "training_pairs": 16,
+    "latest_training_target_week_number": 21,
+    "feature_mean": [
+      1454.0625,
+      155.83125
+    ],
+    "feature_scale": [
+      1094.7859076521536,
+      171.5774159044176
+    ],
+    "target_mean": 2314.4375,
+    "standardized_coefficients": [
+      2019.8411432648722,
+      -107.53082611212578
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 21,
+    "horizon": 2,
+    "prediction": 13068.098559583592,
+    "raw_prediction": 13068.098559583592,
+    "training_pairs": 16,
+    "latest_training_target_week_number": 21,
+    "feature_mean": [
+      1454.0625,
+      155.83125,
+      25.435691283185935,
+      69.37637358898216,
+      27.711951163776533
+    ],
+    "feature_scale": [
+      1094.7859076521536,
+      171.5774159044176,
+      0.7406643728122484,
+      3.8897826280412526,
+      11.860879964499794
+    ],
+    "target_mean": 2314.4375,
+    "standardized_coefficients": [
+      1645.863117674273,
+      -100.09403788193772,
+      339.20941742828074,
+      857.9165273697523,
+      -428.8304335282112
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 21,
+    "horizon": 4,
+    "prediction": 25879.8595566371,
+    "raw_prediction": 25879.8595566371,
+    "training_pairs": 14,
+    "latest_training_target_week_number": 21,
+    "feature_mean": [
+      1178.9285714285713,
+      123.11428571428571
+    ],
+    "feature_scale": [
+      693.5271613061653,
+      121.28171960441557
+    ],
+    "target_mean": 2564.714285714286,
+    "standardized_coefficients": [
+      1835.0040893936864,
+      220.52893809396195
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 21,
+    "horizon": 4,
+    "prediction": 25589.76983456035,
+    "raw_prediction": 25589.76983456035,
+    "training_pairs": 14,
+    "latest_training_target_week_number": 21,
+    "feature_mean": [
+      1178.9285714285713,
+      123.11428571428571,
+      25.427547847509146,
+      68.73985818956544,
+      27.147234261929384
+    ],
+    "feature_scale": [
+      693.5271613061653,
+      121.28171960441557,
+      0.7600117643002553,
+      3.549039479305254,
+      11.529083264725127
+    ],
+    "target_mean": 2564.714285714286,
+    "standardized_coefficients": [
+      1838.6020984279676,
+      191.34930273743043,
+      21.561926397166555,
+      1.5023087342623354,
+      147.42838964732246
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 22,
+    "horizon": 1,
+    "prediction": 11988.57057932515,
+    "raw_prediction": 11988.57057932515,
+    "training_pairs": 18,
+    "latest_training_target_week_number": 22,
+    "feature_mean": [
+      2122.4444444444443,
+      332.76666666666665
+    ],
+    "feature_scale": [
+      2186.724699997749,
+      542.2270537125363
+    ],
+    "target_mean": 2657.5,
+    "standardized_coefficients": [
+      2092.4325814216513,
+      551.6723319426584
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 22,
+    "horizon": 1,
+    "prediction": 10495.116579482576,
+    "raw_prediction": 10495.116579482576,
+    "training_pairs": 18,
+    "latest_training_target_week_number": 22,
+    "feature_mean": [
+      2122.4444444444443,
+      332.76666666666665,
+      25.502492211515346,
+      69.98403030288887,
+      29.078691638693254
+    ],
+    "feature_scale": [
+      2186.724699997749,
+      542.2270537125363,
+      0.7274124630933435,
+      4.0513815567979305,
+      11.863387300156678
+    ],
+    "target_mean": 2657.5,
+    "standardized_coefficients": [
+      1609.2803626761392,
+      662.9068432092181,
+      315.4885977648529,
+      861.1245642180523,
+      -517.8354678021377
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 22,
+    "horizon": 2,
+    "prediction": 16730.343135796546,
+    "raw_prediction": 16730.343135796546,
+    "training_pairs": 17,
+    "latest_training_target_week_number": 22,
+    "feature_mean": [
+      1741.2941176470588,
+      226.2294117647059
+    ],
+    "feature_scale": [
+      1564.6357127123263,
+      327.11088921164094
+    ],
+    "target_mean": 2781.0,
+    "standardized_coefficients": [
+      2376.951803968778,
+      205.57930241287488
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 22,
+    "horizon": 2,
+    "prediction": 14667.145300199809,
+    "raw_prediction": 14667.145300199809,
+    "training_pairs": 17,
+    "latest_training_target_week_number": 22,
+    "feature_mean": [
+      1741.2941176470588,
+      226.2294117647059,
+      25.457616867022764,
+      69.71612837107945,
+      28.588022529109104
+    ],
+    "feature_scale": [
+      1564.6357127123263,
+      327.11088921164094,
+      0.7238824369973642,
+      4.0108998781053575,
+      12.028514794199522
+    ],
+    "target_mean": 2781.0,
+    "standardized_coefficients": [
+      1817.160681835768,
+      331.4930589022812,
+      366.2815366656456,
+      1013.7889859758797,
+      -499.26659441875665
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 22,
+    "horizon": 4,
+    "prediction": 29915.404824361653,
+    "raw_prediction": 29915.404824361653,
+    "training_pairs": 15,
+    "latest_training_target_week_number": 22,
+    "feature_mean": [
+      1231.8,
+      122.6
+    ],
+    "feature_scale": [
+      698.6057734278086,
+      117.1850729970901
+    ],
+    "target_mean": 3076.8,
+    "standardized_coefficients": [
+      3360.3761217596802,
+      -1111.8052256615013
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 22,
+    "horizon": 4,
+    "prediction": 23492.664541826158,
+    "raw_prediction": 23492.664541826158,
+    "training_pairs": 15,
+    "latest_training_target_week_number": 22,
+    "feature_mean": [
+      1231.8,
+      122.6,
+      25.4708571444575,
+      68.86657343690189,
+      26.561106638071944
+    ],
+    "feature_scale": [
+      698.6057734278086,
+      117.1850729970901,
+      0.7519107366658511,
+      3.4613239805978386,
+      11.352007831667933
+    ],
+    "target_mean": 3076.8,
+    "standardized_coefficients": [
+      2799.148575128949,
+      -1058.8001929104532,
+      614.6551228499256,
+      962.5210495058433,
+      -570.2055415298228
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 23,
+    "horizon": 1,
+    "prediction": 14990.33328055971,
+    "raw_prediction": 14990.33328055971,
+    "training_pairs": 19,
+    "latest_training_target_week_number": 23,
+    "feature_mean": [
+      2550.0,
+      413.3526315789474
+    ],
+    "feature_scale": [
+      2796.5265297470264,
+      628.8320262438268
+    ],
+    "target_mean": 3196.8947368421054,
+    "standardized_coefficients": [
+      2559.9966817533395,
+      844.9015974309301
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 23,
+    "horizon": 1,
+    "prediction": 14725.068302263187,
+    "raw_prediction": 14725.068302263187,
+    "training_pairs": 19,
+    "latest_training_target_week_number": 23,
+    "feature_mean": [
+      2550.0,
+      413.3526315789474,
+      25.42925593553595,
+      70.42199563335379,
+      30.49893350980859
+    ],
+    "feature_scale": [
+      2796.5265297470264,
+      628.8320262438268,
+      0.7731907530403294,
+      4.359181037482822,
+      13.024598170966637
+    ],
+    "target_mean": 3196.8947368421054,
+    "standardized_coefficients": [
+      2338.133367786304,
+      839.7502747767688,
+      110.04261603515423,
+      675.9822012069577,
+      -386.97500256138557
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 23,
+    "horizon": 2,
+    "prediction": 19111.84099270431,
+    "raw_prediction": 19111.84099270431,
+    "training_pairs": 18,
+    "latest_training_target_week_number": 23,
+    "feature_mean": [
+      2122.4444444444443,
+      332.76666666666665
+    ],
+    "feature_scale": [
+      2186.724699997749,
+      542.2270537125363
+    ],
+    "target_mean": 3343.5,
+    "standardized_coefficients": [
+      2875.150848732735,
+      478.31682128746684
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 23,
+    "horizon": 2,
+    "prediction": 16911.4448399333,
+    "raw_prediction": 16911.4448399333,
+    "training_pairs": 18,
+    "latest_training_target_week_number": 23,
+    "feature_mean": [
+      2122.4444444444443,
+      332.76666666666665,
+      25.502492211515346,
+      69.98403030288887,
+      29.078691638693254
+    ],
+    "feature_scale": [
+      2186.724699997749,
+      542.2270537125363,
+      0.7274124630933435,
+      4.0513815567979305,
+      11.863387300156678
+    ],
+    "target_mean": 3343.5,
+    "standardized_coefficients": [
+      2124.598825276908,
+      631.1668611789115,
+      442.4774617436022,
+      1207.9865774675784,
+      -531.8263914271387
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 23,
+    "horizon": 4,
+    "prediction": 36228.414756067425,
+    "raw_prediction": 36228.414756067425,
+    "training_pairs": 16,
+    "latest_training_target_week_number": 23,
+    "feature_mean": [
+      1454.0625,
+      155.83125
+    ],
+    "feature_scale": [
+      1094.7859076521536,
+      171.5774159044176
+    ],
+    "target_mean": 3691.125,
+    "standardized_coefficients": [
+      3636.159472628444,
+      -476.6519184518402
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 23,
+    "horizon": 4,
+    "prediction": 31575.06732425317,
+    "raw_prediction": 31575.06732425317,
+    "training_pairs": 16,
+    "latest_training_target_week_number": 23,
+    "feature_mean": [
+      1454.0625,
+      155.83125,
+      25.435691283185935,
+      69.37637358898216,
+      27.711951163776533
+    ],
+    "feature_scale": [
+      1094.7859076521536,
+      171.5774159044176,
+      0.7406643728122484,
+      3.8897826280412526,
+      11.860879964499794
+    ],
+    "target_mean": 3691.125,
+    "standardized_coefficients": [
+      3054.1057166140045,
+      -457.3837007689608,
+      671.2520811223853,
+      1364.3333449497752,
+      -799.6201167736958
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 24,
+    "horizon": 1,
+    "prediction": 11873.809764163803,
+    "raw_prediction": 11873.809764163803,
+    "training_pairs": 20,
+    "latest_training_target_week_number": 24,
+    "feature_mean": [
+      3067.8,
+      499.44000000000005
+    ],
+    "feature_scale": [
+      3538.8914309427464,
+      718.6570088714087
+    ],
+    "target_mean": 3662.5,
+    "standardized_coefficients": [
+      2328.054573338577,
+      1531.5695874315197
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 24,
+    "horizon": 1,
+    "prediction": 11943.372125496382,
+    "raw_prediction": 11943.372125496382,
+    "training_pairs": 20,
+    "latest_training_target_week_number": 24,
+    "feature_mean": [
+      3067.8,
+      499.44000000000005,
+      25.407859946486987,
+      70.63864474133361,
+      30.567226016577546
+    ],
+    "feature_scale": [
+      3538.8914309427464,
+      718.6570088714087,
+      0.7593620494586248,
+      4.352486213126113,
+      12.698297645847063
+    ],
+    "target_mean": 3662.5,
+    "standardized_coefficients": [
+      2103.0004670323883,
+      1388.9013805435707,
+      168.12627188495827,
+      801.7052433228641,
+      -289.1860856788205
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 24,
+    "horizon": 2,
+    "prediction": 15041.25862107591,
+    "raw_prediction": 15041.25862107591,
+    "training_pairs": 19,
+    "latest_training_target_week_number": 24,
+    "feature_mean": [
+      2550.0,
+      413.3526315789474
+    ],
+    "feature_scale": [
+      2796.5265297470264,
+      628.8320262438268
+    ],
+    "target_mean": 3825.8947368421054,
+    "standardized_coefficients": [
+      2587.946944368333,
+      1226.7752604713214
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 24,
+    "horizon": 2,
+    "prediction": 14949.91118598383,
+    "raw_prediction": 14949.91118598383,
+    "training_pairs": 19,
+    "latest_training_target_week_number": 24,
+    "feature_mean": [
+      2550.0,
+      413.3526315789474,
+      25.42925593553595,
+      70.42199563335379,
+      30.49893350980859
+    ],
+    "feature_scale": [
+      2796.5265297470264,
+      628.8320262438268,
+      0.7731907530403294,
+      4.359181037482822,
+      13.024598170966637
+    ],
+    "target_mean": 3825.8947368421054,
+    "standardized_coefficients": [
+      2164.1566219805704,
+      1067.0465271809305,
+      549.405447802595,
+      1421.3735986991385,
+      -611.6460933407536
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 24,
+    "horizon": 4,
+    "prediction": 31047.288906043086,
+    "raw_prediction": 31047.288906043086,
+    "training_pairs": 17,
+    "latest_training_target_week_number": 24,
+    "feature_mean": [
+      1741.2941176470588,
+      226.2294117647059
+    ],
+    "feature_scale": [
+      1564.6357127123263,
+      327.11088921164094
+    ],
+    "target_mean": 4209.823529411765,
+    "standardized_coefficients": [
+      4395.507616656514,
+      -920.9989158399908
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 24,
+    "horizon": 4,
+    "prediction": 27488.6923421055,
+    "raw_prediction": 27488.6923421055,
+    "training_pairs": 17,
+    "latest_training_target_week_number": 24,
+    "feature_mean": [
+      1741.2941176470588,
+      226.2294117647059,
+      25.457616867022764,
+      69.71612837107945,
+      28.588022529109104
+    ],
+    "feature_scale": [
+      1564.6357127123263,
+      327.11088921164094,
+      0.7238824369973642,
+      4.0108998781053575,
+      12.028514794199522
+    ],
+    "target_mean": 4209.823529411765,
+    "standardized_coefficients": [
+      3384.9212775380424,
+      -692.9302004060668,
+      811.1417359841463,
+      1854.1678508351981,
+      -1000.094291623131
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 25,
+    "horizon": 1,
+    "prediction": 13510.657724170575,
+    "raw_prediction": 13510.657724170575,
+    "training_pairs": 21,
+    "latest_training_target_week_number": 25,
+    "feature_mean": [
+      3517.3809523809523,
+      544.1380952380953
+    ],
+    "feature_scale": [
+      3996.2287278572376,
+      729.2685248973081
+    ],
+    "target_mean": 4161.952380952381,
+    "standardized_coefficients": [
+      3146.699036155032,
+      1210.7006341102858
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 25,
+    "horizon": 1,
+    "prediction": 13458.851340398975,
+    "raw_prediction": 13458.851340398975,
+    "training_pairs": 21,
+    "latest_training_target_week_number": 25,
+    "feature_mean": [
+      3517.3809523809523,
+      544.1380952380953,
+      25.42424873380236,
+      70.83997328167355,
+      30.564387161608032
+    ],
+    "feature_scale": [
+      3996.2287278572376,
+      729.2685248973081,
+      0.7446770866183041,
+      4.341969384169282,
+      12.392276102229136
+    ],
+    "target_mean": 4161.952380952381,
+    "standardized_coefficients": [
+      2856.0905747721126,
+      1073.9853258720593,
+      229.88876689130498,
+      903.4258397182535,
+      -381.67200829730666
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 25,
+    "horizon": 2,
+    "prediction": 13450.998041423192,
+    "raw_prediction": 13450.998041423192,
+    "training_pairs": 20,
+    "latest_training_target_week_number": 25,
+    "feature_mean": [
+      3067.8,
+      499.44000000000005
+    ],
+    "feature_scale": [
+      3538.8914309427464,
+      718.6570088714087
+    ],
+    "target_mean": 4342.15,
+    "standardized_coefficients": [
+      2360.227706186932,
+      1951.3389546822682
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 25,
+    "horizon": 2,
+    "prediction": 13781.285875834019,
+    "raw_prediction": 13781.285875834019,
+    "training_pairs": 20,
+    "latest_training_target_week_number": 25,
+    "feature_mean": [
+      3067.8,
+      499.44000000000005,
+      25.407859946486987,
+      70.63864474133361,
+      30.567226016577546
+    ],
+    "feature_scale": [
+      3538.8914309427464,
+      718.6570088714087,
+      0.7593620494586248,
+      4.352486213126113,
+      12.698297645847063
+    ],
+    "target_mean": 4342.15,
+    "standardized_coefficients": [
+      2063.4380281578433,
+      1561.1065840216459,
+      585.9583502685722,
+      1530.6042534047615,
+      -538.1582051262523
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 25,
+    "horizon": 4,
+    "prediction": 30254.878889244377,
+    "raw_prediction": 30254.878889244377,
+    "training_pairs": 18,
+    "latest_training_target_week_number": 25,
+    "feature_mean": [
+      2122.4444444444443,
+      332.76666666666665
+    ],
+    "feature_scale": [
+      2186.724699997749,
+      542.2270537125363
+    ],
+    "target_mean": 4762.111111111111,
+    "standardized_coefficients": [
+      4909.406997065307,
+      -1026.384744690994
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 25,
+    "horizon": 4,
+    "prediction": 25139.007899454875,
+    "raw_prediction": 25139.007899454875,
+    "training_pairs": 18,
+    "latest_training_target_week_number": 25,
+    "feature_mean": [
+      2122.4444444444443,
+      332.76666666666665,
+      25.502492211515346,
+      69.98403030288887,
+      29.078691638693254
+    ],
+    "feature_scale": [
+      2186.724699997749,
+      542.2270537125363,
+      0.7274124630933435,
+      4.0513815567979305,
+      11.863387300156678
+    ],
+    "target_mean": 4762.111111111111,
+    "standardized_coefficients": [
+      3487.631795025529,
+      -758.3280850155767,
+      965.1714988836386,
+      2314.7708821254196,
+      -1088.1388737045554
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 26,
+    "horizon": 1,
+    "prediction": 16409.176170077953,
+    "raw_prediction": 16409.176170077953,
+    "training_pairs": 22,
+    "latest_training_target_week_number": 26,
+    "feature_mean": [
+      4000.7272727272725,
+      570.85
+    ],
+    "feature_scale": [
+      4488.879483404397,
+      722.9401193296467
+    ],
+    "target_mean": 4706.181818181818,
+    "standardized_coefficients": [
+      4097.023485338161,
+      807.7442194863313
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 26,
+    "horizon": 1,
+    "prediction": 16731.797889438883,
+    "raw_prediction": 16731.797889438883,
+    "training_pairs": 22,
+    "latest_training_target_week_number": 26,
+    "feature_mean": [
+      4000.7272727272725,
+      570.85,
+      25.414763469173725,
+      71.1512809627444,
+      31.345023146281935
+    ],
+    "feature_scale": [
+      4488.879483404397,
+      722.9401193296467,
+      0.7288530679725382,
+      4.475591494651973,
+      12.624791628548294
+    ],
+    "target_mean": 4706.181818181818,
+    "standardized_coefficients": [
+      3787.247973878273,
+      623.185967041571,
+      256.98962461446575,
+      896.4893770026406,
+      -257.79018361341764
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 26,
+    "horizon": 2,
+    "prediction": 16770.694983928686,
+    "raw_prediction": 16770.694983928686,
+    "training_pairs": 21,
+    "latest_training_target_week_number": 26,
+    "feature_mean": [
+      3517.3809523809523,
+      544.1380952380953
+    ],
+    "feature_scale": [
+      3996.2287278572376,
+      729.2685248973081
+    ],
+    "target_mean": 4903.714285714285,
+    "standardized_coefficients": [
+      3374.9850763553177,
+      1499.8349413075578
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 26,
+    "horizon": 2,
+    "prediction": 16941.31493938723,
+    "raw_prediction": 16941.31493938723,
+    "training_pairs": 21,
+    "latest_training_target_week_number": 26,
+    "feature_mean": [
+      3517.3809523809523,
+      544.1380952380953,
+      25.42424873380236,
+      70.83997328167355,
+      30.564387161608032
+    ],
+    "feature_scale": [
+      3996.2287278572376,
+      729.2685248973081,
+      0.7446770866183041,
+      4.341969384169282,
+      12.392276102229136
+    ],
+    "target_mean": 4903.714285714285,
+    "standardized_coefficients": [
+      2894.3127712718524,
+      1187.8522992402677,
+      649.1054682863978,
+      1640.6544199134369,
+      -635.2214844469338
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 26,
+    "horizon": 4,
+    "prediction": 27013.457070919714,
+    "raw_prediction": 27013.457070919714,
+    "training_pairs": 19,
+    "latest_training_target_week_number": 26,
+    "feature_mean": [
+      2550.0,
+      413.3526315789474
+    ],
+    "feature_scale": [
+      2796.5265297470264,
+      628.8320262438268
+    ],
+    "target_mean": 5360.684210526316,
+    "standardized_coefficients": [
+      4440.414200191417,
+      71.72817667961331
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 26,
+    "horizon": 4,
+    "prediction": 26151.874105441904,
+    "raw_prediction": 26151.874105441904,
+    "training_pairs": 19,
+    "latest_training_target_week_number": 26,
+    "feature_mean": [
+      2550.0,
+      413.3526315789474,
+      25.42925593553595,
+      70.42199563335379,
+      30.49893350980859
+    ],
+    "feature_scale": [
+      2796.5265297470264,
+      628.8320262438268,
+      0.7731907530403294,
+      4.359181037482822,
+      13.024598170966637
+    ],
+    "target_mean": 5360.684210526316,
+    "standardized_coefficients": [
+      3738.3940374354424,
+      -217.93906346391333,
+      984.5333566902843,
+      2491.8430059229,
+      -1128.727774528738
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 27,
+    "horizon": 1,
+    "prediction": 18494.897634959012,
+    "raw_prediction": 18494.897634959012,
+    "training_pairs": 23,
+    "latest_training_target_week_number": 27,
+    "feature_mean": [
+      4528.304347826087,
+      595.2869565217392
+    ],
+    "feature_scale": [
+      5039.581024983367,
+      716.2795958249021
+    ],
+    "target_mean": 5261.521739130435,
+    "standardized_coefficients": [
+      4704.158462633186,
+      749.3630515058315
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 27,
+    "horizon": 1,
+    "prediction": 18416.680310454183,
+    "raw_prediction": 18416.680310454183,
+    "training_pairs": 23,
+    "latest_training_target_week_number": 27,
+    "feature_mean": [
+      4528.304347826087,
+      595.2869565217392,
+      25.381971945370015,
+      71.64234219984478,
+      32.820447038572894
+    ],
+    "feature_scale": [
+      5039.581024983367,
+      716.2795958249021,
+      0.7292367422631288,
+      4.946222269996421,
+      14.154392597594
+    ],
+    "target_mean": 5261.521739130435,
+    "standardized_coefficients": [
+      4251.198006636395,
+      602.7452519171873,
+      258.30201372891855,
+      995.5362895927418,
+      -211.51985099720534
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 27,
+    "horizon": 2,
+    "prediction": 20108.01682430367,
+    "raw_prediction": 20108.01682430367,
+    "training_pairs": 22,
+    "latest_training_target_week_number": 27,
+    "feature_mean": [
+      4000.7272727272725,
+      570.85
+    ],
+    "feature_scale": [
+      4488.879483404397,
+      722.9401193296467
+    ],
+    "target_mean": 5475.318181818182,
+    "standardized_coefficients": [
+      4281.8401756141275,
+      1147.9145388402317
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 27,
+    "horizon": 2,
+    "prediction": 20586.059734957555,
+    "raw_prediction": 20586.059734957555,
+    "training_pairs": 22,
+    "latest_training_target_week_number": 27,
+    "feature_mean": [
+      4000.7272727272725,
+      570.85,
+      25.414763469173725,
+      71.1512809627444,
+      31.345023146281935
+    ],
+    "feature_scale": [
+      4488.879483404397,
+      722.9401193296467,
+      0.7288530679725382,
+      4.475591494651973,
+      12.624791628548294
+    ],
+    "target_mean": 5475.318181818182,
+    "standardized_coefficients": [
+      3756.5928081894963,
+      795.0871052015497,
+      663.8467057578841,
+      1653.421457771264,
+      -524.2128242265925
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 27,
+    "horizon": 4,
+    "prediction": 23735.730774846605,
+    "raw_prediction": 23735.730774846605,
+    "training_pairs": 20,
+    "latest_training_target_week_number": 27,
+    "feature_mean": [
+      3067.8,
+      499.44000000000005
+    ],
+    "feature_scale": [
+      3538.8914309427464,
+      718.6570088714087
+    ],
+    "target_mean": 5966.6,
+    "standardized_coefficients": [
+      3869.8845684478792,
+      1213.936259008701
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 27,
+    "horizon": 4,
+    "prediction": 25055.264187485227,
+    "raw_prediction": 25055.264187485227,
+    "training_pairs": 20,
+    "latest_training_target_week_number": 27,
+    "feature_mean": [
+      3067.8,
+      499.44000000000005,
+      25.407859946486987,
+      70.63864474133361,
+      30.567226016577546
+    ],
+    "feature_scale": [
+      3538.8914309427464,
+      718.6570088714087,
+      0.7593620494586248,
+      4.352486213126113,
+      12.698297645847063
+    ],
+    "target_mean": 5966.6,
+    "standardized_coefficients": [
+      3366.015455664782,
+      548.4683788879505,
+      1031.380812245092,
+      2674.7878468646654,
+      -1007.2671909866036
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 28,
+    "horizon": 1,
+    "prediction": 14458.332219543885,
+    "raw_prediction": 14458.332219543885,
+    "training_pairs": 24,
+    "latest_training_target_week_number": 28,
+    "feature_mean": [
+      5067.916666666667,
+      640.875
+    ],
+    "feature_scale": [
+      5571.025608125392,
+      734.4925528610438
+    ],
+    "target_mean": 5691.125,
+    "standardized_coefficients": [
+      4707.995687960994,
+      1004.4838329826226
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 28,
+    "horizon": 1,
+    "prediction": 14858.26095419566,
+    "raw_prediction": 14858.26095419566,
+    "training_pairs": 24,
+    "latest_training_target_week_number": 28,
+    "feature_mean": [
+      5067.916666666667,
+      640.875,
+      25.40408376693534,
+      71.88150594862843,
+      32.9138631611693
+    ],
+    "feature_scale": [
+      5571.025608125392,
+      734.4925528610438,
+      0.7217159537216239,
+      4.976074641124428,
+      13.863612674430907
+    ],
+    "target_mean": 5691.125,
+    "standardized_coefficients": [
+      4165.202777431159,
+      844.8421137211001,
+      188.77645984263833,
+      957.0553485225167,
+      -38.23857617823572
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 28,
+    "horizon": 2,
+    "prediction": 15016.873985946495,
+    "raw_prediction": 15016.873985946495,
+    "training_pairs": 23,
+    "latest_training_target_week_number": 28,
+    "feature_mean": [
+      4528.304347826087,
+      595.2869565217392
+    ],
+    "feature_scale": [
+      5039.581024983367,
+      716.2795958249021
+    ],
+    "target_mean": 5914.304347826087,
+    "standardized_coefficients": [
+      4188.325043220354,
+      1567.520539423211
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 28,
+    "horizon": 2,
+    "prediction": 16003.673446345692,
+    "raw_prediction": 16003.673446345692,
+    "training_pairs": 23,
+    "latest_training_target_week_number": 28,
+    "feature_mean": [
+      4528.304347826087,
+      595.2869565217392,
+      25.381971945370015,
+      71.64234219984478,
+      32.820447038572894
+    ],
+    "feature_scale": [
+      5039.581024983367,
+      716.2795958249021,
+      0.7292367422631288,
+      4.946222269996421,
+      14.154392597594
+    ],
+    "target_mean": 5914.304347826087,
+    "standardized_coefficients": [
+      3612.6987287022334,
+      1262.3946721484765,
+      651.8435140086484,
+      1808.0498235294058,
+      -709.25393238906
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 28,
+    "horizon": 4,
+    "prediction": 16980.522656399044,
+    "raw_prediction": 16980.522656399044,
+    "training_pairs": 21,
+    "latest_training_target_week_number": 28,
+    "feature_mean": [
+      3517.3809523809523,
+      544.1380952380953
+    ],
+    "feature_scale": [
+      3996.2287278572376,
+      729.2685248973081
+    ],
+    "target_mean": 6424.0,
+    "standardized_coefficients": [
+      3485.2745431697012,
+      1902.056991512049
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 28,
+    "horizon": 4,
+    "prediction": 18685.7986256811,
+    "raw_prediction": 18685.7986256811,
+    "training_pairs": 21,
+    "latest_training_target_week_number": 28,
+    "feature_mean": [
+      3517.3809523809523,
+      544.1380952380953,
+      25.42424873380236,
+      70.83997328167355,
+      30.564387161608032
+    ],
+    "feature_scale": [
+      3996.2287278572376,
+      729.2685248973081,
+      0.7446770866183041,
+      4.341969384169282,
+      12.392276102229136
+    ],
+    "target_mean": 6424.0,
+    "standardized_coefficients": [
+      2689.5447702187776,
+      1372.7094446443075,
+      920.0820754508944,
+      2651.9157757262547,
+      -934.0322219382258
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 29,
+    "horizon": 1,
+    "prediction": 15711.845080220792,
+    "raw_prediction": 15711.845080220792,
+    "training_pairs": 25,
+    "latest_training_target_week_number": 29,
+    "feature_mean": [
+      5488.08,
+      637.668
+    ],
+    "feature_scale": [
+      5833.675232098544,
+      719.824266176127
+    ],
+    "target_mean": 6134.68,
+    "standardized_coefficients": [
+      5273.385375895233,
+      714.5691067794418
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 29,
+    "horizon": 1,
+    "prediction": 15799.200774842979,
+    "raw_prediction": 15799.200774842979,
+    "training_pairs": 25,
+    "latest_training_target_week_number": 29,
+    "feature_mean": [
+      5488.08,
+      637.668,
+      25.399254937248813,
+      72.1867764589773,
+      33.35358000233104
+    ],
+    "feature_scale": [
+      5833.675232098544,
+      719.824266176127,
+      0.707529916999597,
+      5.099747847532065,
+      13.753260985701024
+    ],
+    "target_mean": 6134.68,
+    "standardized_coefficients": [
+      4571.25653191232,
+      594.7242454501388,
+      215.23838335631044,
+      1144.244950682346,
+      -114.25116030665468
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 29,
+    "horizon": 2,
+    "prediction": 13713.12330708317,
+    "raw_prediction": 13713.12330708317,
+    "training_pairs": 24,
+    "latest_training_target_week_number": 29,
+    "feature_mean": [
+      5067.916666666667,
+      640.875
+    ],
+    "feature_scale": [
+      5571.025608125392,
+      734.4925528610438
+    ],
+    "target_mean": 6367.041666666667,
+    "standardized_coefficients": [
+      4236.659615487693,
+      1796.5742924905321
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 29,
+    "horizon": 2,
+    "prediction": 14981.212152472712,
+    "raw_prediction": 14981.212152472712,
+    "training_pairs": 24,
+    "latest_training_target_week_number": 29,
+    "feature_mean": [
+      5067.916666666667,
+      640.875,
+      25.40408376693534,
+      71.88150594862843,
+      32.9138631611693
+    ],
+    "feature_scale": [
+      5571.025608125392,
+      734.4925528610438,
+      0.7217159537216239,
+      4.976074641124428,
+      13.863612674430907
+    ],
+    "target_mean": 6367.041666666667,
+    "standardized_coefficients": [
+      3489.0115553817805,
+      1503.533620135024,
+      578.2779196413773,
+      1766.6148106571247,
+      -527.1691086957362
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 29,
+    "horizon": 4,
+    "prediction": 15670.920031389982,
+    "raw_prediction": 15670.920031389982,
+    "training_pairs": 22,
+    "latest_training_target_week_number": 29,
+    "feature_mean": [
+      4000.7272727272725,
+      570.85
+    ],
+    "feature_scale": [
+      4488.879483404397,
+      722.9401193296467
+    ],
+    "target_mean": 6894.727272727273,
+    "standardized_coefficients": [
+      3659.725674637435,
+      2090.466957574988
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 29,
+    "horizon": 4,
+    "prediction": 18277.8761210454,
+    "raw_prediction": 18277.8761210454,
+    "training_pairs": 22,
+    "latest_training_target_week_number": 29,
+    "feature_mean": [
+      4000.7272727272725,
+      570.85,
+      25.414763469173725,
+      71.1512809627444,
+      31.345023146281935
+    ],
+    "feature_scale": [
+      4488.879483404397,
+      722.9401193296467,
+      0.7288530679725382,
+      4.475591494651973,
+      12.624791628548294
+    ],
+    "target_mean": 6894.727272727273,
+    "standardized_coefficients": [
+      2771.0877705198145,
+      1556.8589133502292,
+      894.5079447353224,
+      2749.4103830547238,
+      -971.9216320110312
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 30,
+    "horizon": 1,
+    "prediction": 12236.87110388359,
+    "raw_prediction": 12236.87110388359,
+    "training_pairs": 26,
+    "latest_training_target_week_number": 30,
+    "feature_mean": [
+      5922.384615384615,
+      613.25
+    ],
+    "feature_scale": [
+      6118.689817505071,
+      716.3268894157192
+    ],
+    "target_mean": 6457.2307692307695,
+    "standardized_coefficients": [
+      5323.166290478359,
+      883.058759920814
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 30,
+    "horizon": 1,
+    "prediction": 12915.273802874279,
+    "raw_prediction": 12915.273802874279,
+    "training_pairs": 26,
+    "latest_training_target_week_number": 30,
+    "feature_mean": [
+      5922.384615384615,
+      613.25,
+      25.42916632123871,
+      72.36875948658626,
+      33.15676268528419
+    ],
+    "feature_scale": [
+      6118.689817505071,
+      716.3268894157192,
+      0.7097267531121417,
+      5.082822834840268,
+      13.522038677809157
+    ],
+    "target_mean": 6457.2307692307695,
+    "standardized_coefficients": [
+      4581.635599338415,
+      760.4772599350481,
+      185.77582333745858,
+      1112.5898415277914,
+      -59.46177840030391
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 30,
+    "horizon": 2,
+    "prediction": 10183.57417381526,
+    "raw_prediction": 10183.57417381526,
+    "training_pairs": 25,
+    "latest_training_target_week_number": 30,
+    "feature_mean": [
+      5488.08,
+      637.668
+    ],
+    "feature_scale": [
+      5833.675232098544,
+      719.824266176127
+    ],
+    "target_mean": 6693.2,
+    "standardized_coefficients": [
+      4455.6342019011145,
+      1747.3288083458187
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 30,
+    "horizon": 2,
+    "prediction": 11061.86378365346,
+    "raw_prediction": 11061.86378365346,
+    "training_pairs": 25,
+    "latest_training_target_week_number": 30,
+    "feature_mean": [
+      5488.08,
+      637.668,
+      25.399254937248813,
+      72.1867764589773,
+      33.35358000233104
+    ],
+    "feature_scale": [
+      5833.675232098544,
+      719.824266176127,
+      0.707529916999597,
+      5.099747847532065,
+      13.753260985701024
+    ],
+    "target_mean": 6693.2,
+    "standardized_coefficients": [
+      3548.2508332461657,
+      1561.7514478521005,
+      563.4171272043898,
+      1791.4821952550883,
+      -505.1358953233797
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 30,
+    "horizon": 4,
+    "prediction": 8415.97678274983,
+    "raw_prediction": 8415.97678274983,
+    "training_pairs": 23,
+    "latest_training_target_week_number": 30,
+    "feature_mean": [
+      4528.304347826087,
+      595.2869565217392
+    ],
+    "feature_scale": [
+      5039.581024983367,
+      716.2795958249021
+    ],
+    "target_mean": 7226.304347826087,
+    "standardized_coefficients": [
+      3188.628456468723,
+      2699.6177097191944
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 30,
+    "horizon": 4,
+    "prediction": 10415.827423274852,
+    "raw_prediction": 10415.827423274852,
+    "training_pairs": 23,
+    "latest_training_target_week_number": 30,
+    "feature_mean": [
+      4528.304347826087,
+      595.2869565217392,
+      25.381971945370015,
+      71.64234219984478,
+      32.820447038572894
+    ],
+    "feature_scale": [
+      5039.581024983367,
+      716.2795958249021,
+      0.7292367422631288,
+      4.946222269996421,
+      14.154392597594
+    ],
+    "target_mean": 7226.304347826087,
+    "standardized_coefficients": [
+      2255.9817518477503,
+      2243.8037817796776,
+      870.824550654033,
+      2944.234254515904,
+      -1274.640178347032
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 31,
+    "horizon": 1,
+    "prediction": 6332.895863675449,
+    "raw_prediction": 6332.895863675449,
+    "training_pairs": 27,
+    "latest_training_target_week_number": 31,
+    "feature_mean": [
+      6240.851851851852,
+      562.1444444444444
+    ],
+    "feature_scale": [
+      6220.025310795851,
+      749.6838233960557
+    ],
+    "target_mean": 6598.888888888889,
+    "standardized_coefficients": [
+      5199.687179126184,
+      1150.3021285450225
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 31,
+    "horizon": 1,
+    "prediction": 7612.403455444919,
+    "raw_prediction": 7612.403455444919,
+    "training_pairs": 27,
+    "latest_training_target_week_number": 31,
+    "feature_mean": [
+      6240.851851851852,
+      562.1444444444444,
+      25.432770767943538,
+      72.6304623147361,
+      33.896336303309646
+    ],
+    "feature_scale": [
+      6220.025310795851,
+      749.6838233960557,
+      0.6967021276319608,
+      5.163228688249463,
+      13.794733447435895
+    ],
+    "target_mean": 6598.888888888889,
+    "standardized_coefficients": [
+      4419.215511938774,
+      1107.7636365338233,
+      139.61821249418128,
+      1175.2928586524588,
+      -221.47046486667975
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 31,
+    "horizon": 2,
+    "prediction": 2322.123693054341,
+    "raw_prediction": 2322.123693054341,
+    "training_pairs": 26,
+    "latest_training_target_week_number": 31,
+    "feature_mean": [
+      5922.384615384615,
+      613.25
+    ],
+    "feature_scale": [
+      6118.689817505071,
+      716.3268894157192
+    ],
+    "target_mean": 6831.2307692307695,
+    "standardized_coefficients": [
+      4130.215993572651,
+      2200.1978187833074
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 31,
+    "horizon": 2,
+    "prediction": 3792.550645711552,
+    "raw_prediction": 3792.550645711552,
+    "training_pairs": 26,
+    "latest_training_target_week_number": 31,
+    "feature_mean": [
+      5922.384615384615,
+      613.25,
+      25.42916632123871,
+      72.36875948658626,
+      33.15676268528419
+    ],
+    "feature_scale": [
+      6118.689817505071,
+      716.3268894157192,
+      0.7097267531121417,
+      5.082822834840268,
+      13.522038677809157
+    ],
+    "target_mean": 6831.2307692307695,
+    "standardized_coefficients": [
+      3149.10684294178,
+      2088.325251424467,
+      437.42897409362246,
+      1545.5926290078442,
+      -263.78801802285506
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 31,
+    "horizon": 4,
+    "prediction": 0.0,
+    "raw_prediction": -1479.169618689284,
+    "training_pairs": 24,
+    "latest_training_target_week_number": 31,
+    "feature_mean": [
+      5067.916666666667,
+      640.875
+    ],
+    "feature_scale": [
+      5571.025608125392,
+      734.4925528610438
+    ],
+    "target_mean": 7353.625,
+    "standardized_coefficients": [
+      2256.5884724533703,
+      3276.1254218167724
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 31,
+    "horizon": 4,
+    "prediction": 2267.382180778146,
+    "raw_prediction": 2267.382180778146,
+    "training_pairs": 24,
+    "latest_training_target_week_number": 31,
+    "feature_mean": [
+      5067.916666666667,
+      640.875,
+      25.40408376693534,
+      71.88150594862843,
+      32.9138631611693
+    ],
+    "feature_scale": [
+      5571.025608125392,
+      734.4925528610438,
+      0.7217159537216239,
+      4.976074641124428,
+      13.863612674430907
+    ],
+    "target_mean": 7353.625,
+    "standardized_coefficients": [
+      1031.7621879954952,
+      2870.2990598737547,
+      598.7127188642124,
+      2590.693101902977,
+      -600.4602351980745
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 32,
+    "horizon": 1,
+    "prediction": 8754.571950241609,
+    "raw_prediction": 8754.571950241609,
+    "training_pairs": 28,
+    "latest_training_target_week_number": 32,
+    "feature_mean": [
+      6385.178571428572,
+      477.32142857142856
+    ],
+    "feature_scale": [
+      6153.81105525889,
+      858.0308691404751
+    ],
+    "target_mean": 6761.928571428572,
+    "standardized_coefficients": [
+      5461.128391337106,
+      745.9651872654032
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 32,
+    "horizon": 1,
+    "prediction": 9256.624602398782,
+    "raw_prediction": 9256.624602398782,
+    "training_pairs": 28,
+    "latest_training_target_week_number": 32,
+    "feature_mean": [
+      6385.178571428572,
+      477.32142857142856,
+      25.381014361392946,
+      72.96351922769574,
+      34.29793783722504
+    ],
+    "feature_scale": [
+      6153.81105525889,
+      858.0308691404751,
+      0.7351081223547301,
+      5.357410972027599,
+      13.705951080645633
+    ],
+    "target_mean": 6761.928571428572,
+    "standardized_coefficients": [
+      4405.845735395213,
+      905.2963726981895,
+      19.742399772431288,
+      1575.575366502167,
+      -412.36181197654815
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 32,
+    "horizon": 2,
+    "prediction": 3501.0318957254417,
+    "raw_prediction": 3501.0318957254417,
+    "training_pairs": 27,
+    "latest_training_target_week_number": 32,
+    "feature_mean": [
+      6240.851851851852,
+      562.1444444444444
+    ],
+    "feature_scale": [
+      6220.025310795851,
+      749.6838233960557
+    ],
+    "target_mean": 6991.7037037037035,
+    "standardized_coefficients": [
+      4487.387285528026,
+      1976.7536331978263
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 32,
+    "horizon": 2,
+    "prediction": 4357.038551495674,
+    "raw_prediction": 4357.038551495674,
+    "training_pairs": 27,
+    "latest_training_target_week_number": 32,
+    "feature_mean": [
+      6240.851851851852,
+      562.1444444444444,
+      25.432770767943538,
+      72.6304623147361,
+      33.896336303309646
+    ],
+    "feature_scale": [
+      6220.025310795851,
+      749.6838233960557,
+      0.6967021276319608,
+      5.163228688249463,
+      13.794733447435895
+    ],
+    "target_mean": 6991.7037037037035,
+    "standardized_coefficients": [
+      3378.986643367566,
+      1928.6582488125716,
+      468.14043850260794,
+      1542.3397921525298,
+      -136.0160558707517
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 32,
+    "horizon": 4,
+    "prediction": 0.0,
+    "raw_prediction": -2631.6965482809255,
+    "training_pairs": 25,
+    "latest_training_target_week_number": 32,
+    "feature_mean": [
+      5488.08,
+      637.668
+    ],
+    "feature_scale": [
+      5833.675232098544,
+      719.824266176127
+    ],
+    "target_mean": 7506.04,
+    "standardized_coefficients": [
+      2320.172371410338,
+      3248.778596599738
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 32,
+    "horizon": 4,
+    "prediction": 0.0,
+    "raw_prediction": -10.894036236385546,
+    "training_pairs": 25,
+    "latest_training_target_week_number": 32,
+    "feature_mean": [
+      5488.08,
+      637.668,
+      25.399254937248813,
+      72.1867764589773,
+      33.35358000233104
+    ],
+    "feature_scale": [
+      5833.675232098544,
+      719.824266176127,
+      0.707529916999597,
+      5.099747847532065,
+      13.753260985701024
+    ],
+    "target_mean": 7506.04,
+    "standardized_coefficients": [
+      904.6398917888237,
+      2996.6070407837433,
+      568.4535732319484,
+      2547.9546572777654,
+      -537.4830609789909
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 33,
+    "horizon": 1,
+    "prediction": 8275.304392131271,
+    "raw_prediction": 8275.304392131271,
+    "training_pairs": 29,
+    "latest_training_target_week_number": 33,
+    "feature_mean": [
+      6549.9655172413795,
+      388.14827586206894
+    ],
+    "feature_scale": [
+      6109.327467263415,
+      966.168728971216
+    ],
+    "target_mean": 6861.413793103448,
+    "standardized_coefficients": [
+      5470.17360615113,
+      745.20001244324
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 33,
+    "horizon": 1,
+    "prediction": 9310.792490349499,
+    "raw_prediction": 9310.792490349499,
+    "training_pairs": 29,
+    "latest_training_target_week_number": 33,
+    "feature_mean": [
+      6549.9655172413795,
+      388.14827586206894,
+      25.36568045754729,
+      73.16898501245747,
+      34.22763008316137
+    ],
+    "feature_scale": [
+      6109.327467263415,
+      966.168728971216,
+      0.7268656156320659,
+      5.375331297826331,
+      13.472706155076429
+    ],
+    "target_mean": 6861.413793103448,
+    "standardized_coefficients": [
+      4395.505646878248,
+      975.148319571872,
+      19.311960883446716,
+      1592.0972103209215,
+      -419.7079820999609
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 33,
+    "horizon": 2,
+    "prediction": 6308.058268870052,
+    "raw_prediction": 6308.058268870052,
+    "training_pairs": 28,
+    "latest_training_target_week_number": 33,
+    "feature_mean": [
+      6385.178571428572,
+      477.32142857142856
+    ],
+    "feature_scale": [
+      6153.81105525889,
+      858.0308691404751
+    ],
+    "target_mean": 7086.535714285715,
+    "standardized_coefficients": [
+      4833.676528745275,
+      1548.2487418325804
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 33,
+    "horizon": 2,
+    "prediction": 7641.418510495874,
+    "raw_prediction": 7641.418510495874,
+    "training_pairs": 28,
+    "latest_training_target_week_number": 33,
+    "feature_mean": [
+      6385.178571428572,
+      477.32142857142856,
+      25.381014361392946,
+      72.96351922769574,
+      34.29793783722504
+    ],
+    "feature_scale": [
+      6153.81105525889,
+      858.0308691404751,
+      0.7351081223547301,
+      5.357410972027599,
+      13.705951080645633
+    ],
+    "target_mean": 7086.535714285715,
+    "standardized_coefficients": [
+      3384.999300738877,
+      1707.1520490073542,
+      319.7804860507949,
+      2093.5780951648203,
+      -399.77238484729367
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 33,
+    "horizon": 4,
+    "prediction": 288.0534349976415,
+    "raw_prediction": 288.0534349976415,
+    "training_pairs": 26,
+    "latest_training_target_week_number": 33,
+    "feature_mean": [
+      5922.384615384615,
+      613.25
+    ],
+    "feature_scale": [
+      6118.689817505071,
+      716.3268894157192
+    ],
+    "target_mean": 7588.384615384615,
+    "standardized_coefficients": [
+      2494.1809367428414,
+      3178.76764926635
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 33,
+    "horizon": 4,
+    "prediction": 2930.0321239349723,
+    "raw_prediction": 2930.0321239349723,
+    "training_pairs": 26,
+    "latest_training_target_week_number": 33,
+    "feature_mean": [
+      5922.384615384615,
+      613.25,
+      25.42916632123871,
+      72.36875948658626,
+      33.15676268528419
+    ],
+    "feature_scale": [
+      6118.689817505071,
+      716.3268894157192,
+      0.7097267531121417,
+      5.082822834840268,
+      13.522038677809157
+    ],
+    "target_mean": 7588.384615384615,
+    "standardized_coefficients": [
+      914.7063029118657,
+      3006.001885415429,
+      567.1348275990655,
+      2546.199961649077,
+      -528.2298804778421
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 34,
+    "horizon": 1,
+    "prediction": 8545.218110563988,
+    "raw_prediction": 8545.218110563988,
+    "training_pairs": 30,
+    "latest_training_target_week_number": 34,
+    "feature_mean": [
+      6653.2,
+      329.40999999999997
+    ],
+    "feature_scale": [
+      6032.314323154368,
+      1001.209924158432
+    ],
+    "target_mean": 6936.233333333334,
+    "standardized_coefficients": [
+      5429.924875334848,
+      719.0250490266313
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 34,
+    "horizon": 1,
+    "prediction": 9534.908293411767,
+    "raw_prediction": 9534.908293411767,
+    "training_pairs": 30,
+    "latest_training_target_week_number": 34,
+    "feature_mean": [
+      6653.2,
+      329.40999999999997,
+      25.336770295040928,
+      73.41923904698147,
+      34.44263837312199
+    ],
+    "feature_scale": [
+      6032.314323154368,
+      1001.209924158432,
+      0.7314100285089212,
+      5.454102344237379,
+      13.29676574011396
+    ],
+    "target_mean": 6936.233333333334,
+    "standardized_coefficients": [
+      4364.777487719437,
+      1011.7979888288313,
+      17.50037282471734,
+      1571.6782431031559,
+      -396.88606735352283
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 34,
+    "horizon": 2,
+    "prediction": 7895.36712847992,
+    "raw_prediction": 7895.36712847992,
+    "training_pairs": 29,
+    "latest_training_target_week_number": 34,
+    "feature_mean": [
+      6549.9655172413795,
+      388.14827586206894
+    ],
+    "feature_scale": [
+      6109.327467263415,
+      966.168728971216
+    ],
+    "target_mean": 7156.172413793103,
+    "standardized_coefficients": [
+      4949.518163633419,
+      1441.2692320234255
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 34,
+    "horizon": 2,
+    "prediction": 8888.912048444312,
+    "raw_prediction": 8888.912048444312,
+    "training_pairs": 29,
+    "latest_training_target_week_number": 34,
+    "feature_mean": [
+      6549.9655172413795,
+      388.14827586206894,
+      25.36568045754729,
+      73.16898501245747,
+      34.22763008316137
+    ],
+    "feature_scale": [
+      6109.327467263415,
+      966.168728971216,
+      0.7268656156320659,
+      5.375331297826331,
+      13.472706155076429
+    ],
+    "target_mean": 7156.172413793103,
+    "standardized_coefficients": [
+      3426.1985638167253,
+      1701.556623048608,
+      319.99491484043074,
+      2240.7268947940393,
+      -508.158671001949
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 34,
+    "horizon": 4,
+    "prediction": 4977.051290157681,
+    "raw_prediction": 4977.051290157681,
+    "training_pairs": 27,
+    "latest_training_target_week_number": 34,
+    "feature_mean": [
+      6240.851851851852,
+      562.1444444444444
+    ],
+    "feature_scale": [
+      6220.025310795851,
+      749.6838233960557
+    ],
+    "target_mean": 7644.592592592592,
+    "standardized_coefficients": [
+      2972.6365618002924,
+      2837.262441485477
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 34,
+    "horizon": 4,
+    "prediction": 6217.099160987886,
+    "raw_prediction": 6217.099160987886,
+    "training_pairs": 27,
+    "latest_training_target_week_number": 34,
+    "feature_mean": [
+      6240.851851851852,
+      562.1444444444444,
+      25.432770767943538,
+      72.6304623147361,
+      33.896336303309646
+    ],
+    "feature_scale": [
+      6220.025310795851,
+      749.6838233960557,
+      0.6967021276319608,
+      5.163228688249463,
+      13.794733447435895
+    ],
+    "target_mean": 7644.592592592592,
+    "standardized_coefficients": [
+      1214.4637347142898,
+      2756.3392972242814,
+      611.9666207346907,
+      2526.7260659330514,
+      -332.1355916046829
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 35,
+    "horizon": 1,
+    "prediction": 6641.420456273096,
+    "raw_prediction": 6641.420456273096,
+    "training_pairs": 31,
+    "latest_training_target_week_number": 35,
+    "feature_mean": [
+      6732.322580645161,
+      302.50967741935483
+    ],
+    "feature_scale": [
+      5950.024772987718,
+      995.888528661341
+    ],
+    "target_mean": 6956.741935483871,
+    "standardized_coefficients": [
+      5343.12130636735,
+      742.5379128289039
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 35,
+    "horizon": 1,
+    "prediction": 7104.343019869888,
+    "raw_prediction": 7104.343019869888,
+    "training_pairs": 31,
+    "latest_training_target_week_number": 35,
+    "feature_mean": [
+      6732.322580645161,
+      302.50967741935483,
+      25.28431147264295,
+      73.63254750305057,
+      34.65873478443907
+    ],
+    "feature_scale": [
+      5950.024772987718,
+      995.888528661341,
+      0.7747655624220173,
+      5.491143702635827,
+      13.133984724787243
+    ],
+    "target_mean": 6956.741935483871,
+    "standardized_coefficients": [
+      4342.321077029187,
+      1002.7882256280094,
+      129.43118377642867,
+      1457.9172783507881,
+      -298.57423342732756
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 35,
+    "horizon": 2,
+    "prediction": 5791.662374564001,
+    "raw_prediction": 5791.662374564001,
+    "training_pairs": 30,
+    "latest_training_target_week_number": 35,
+    "feature_mean": [
+      6653.2,
+      329.40999999999997
+    ],
+    "feature_scale": [
+      6032.314323154368,
+      1001.209924158432
+    ],
+    "target_mean": 7170.033333333334,
+    "standardized_coefficients": [
+      4907.318610877151,
+      1456.6949421605248
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 35,
+    "horizon": 2,
+    "prediction": 6405.347082150879,
+    "raw_prediction": 6405.347082150879,
+    "training_pairs": 30,
+    "latest_training_target_week_number": 35,
+    "feature_mean": [
+      6653.2,
+      329.40999999999997,
+      25.336770295040928,
+      73.41923904698147,
+      34.44263837312199
+    ],
+    "feature_scale": [
+      6032.314323154368,
+      1001.209924158432,
+      0.7314100285089212,
+      5.454102344237379,
+      13.29676574011396
+    ],
+    "target_mean": 7170.033333333334,
+    "standardized_coefficients": [
+      3420.842434376425,
+      1783.4802123790018,
+      324.9487720252219,
+      2180.910756593111,
+      -461.09426046376086
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 35,
+    "horizon": 4,
+    "prediction": 3776.16806811842,
+    "raw_prediction": 3776.16806811842,
+    "training_pairs": 28,
+    "latest_training_target_week_number": 35,
+    "feature_mean": [
+      6385.178571428572,
+      477.32142857142856
+    ],
+    "feature_scale": [
+      6153.81105525889,
+      858.0308691404751
+    ],
+    "target_mean": 7642.0,
+    "standardized_coefficients": [
+      3399.7336227814535,
+      2411.1482906120386
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 35,
+    "horizon": 4,
+    "prediction": 4956.875956436361,
+    "raw_prediction": 4956.875956436361,
+    "training_pairs": 28,
+    "latest_training_target_week_number": 35,
+    "feature_mean": [
+      6385.178571428572,
+      477.32142857142856,
+      25.381014361392946,
+      72.96351922769574,
+      34.29793783722504
+    ],
+    "feature_scale": [
+      6153.81105525889,
+      858.0308691404751,
+      0.7351081223547301,
+      5.357410972027599,
+      13.705951080645633
+    ],
+    "target_mean": 7642.0,
+    "standardized_coefficients": [
+      1252.4471029762242,
+      2646.4927649834844,
+      471.4654725919296,
+      3097.319187108443,
+      -583.9422257145734
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 36,
+    "horizon": 1,
+    "prediction": 7663.066498307746,
+    "raw_prediction": 7663.066498307746,
+    "training_pairs": 32,
+    "latest_training_target_week_number": 36,
+    "feature_mean": [
+      6758.5625,
+      257.69062499999995
+    ],
+    "feature_scale": [
+      5858.139806806744,
+      1011.470005227347
+    ],
+    "target_mean": 6993.96875,
+    "standardized_coefficients": [
+      5284.213060968016,
+      686.4809638626585
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 36,
+    "horizon": 1,
+    "prediction": 7500.114300761065,
+    "raw_prediction": 7500.114300761065,
+    "training_pairs": 32,
+    "latest_training_target_week_number": 36,
+    "feature_mean": [
+      6758.5625,
+      257.69062499999995,
+      25.249003187088146,
+      73.73457003052897,
+      34.24508584129126
+    ],
+    "feature_scale": [
+      5858.139806806744,
+      1011.470005227347,
+      0.7874963017126931,
+      5.434432357078242,
+      13.130694957166734
+    ],
+    "target_mean": 6993.96875,
+    "standardized_coefficients": [
+      4273.931716080742,
+      1008.4674872371321,
+      90.98879246021914,
+      1519.348994409492,
+      -398.6217078334311
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 36,
+    "horizon": 2,
+    "prediction": 7042.931125459803,
+    "raw_prediction": 7042.931125459803,
+    "training_pairs": 31,
+    "latest_training_target_week_number": 36,
+    "feature_mean": [
+      6732.322580645161,
+      302.50967741935483
+    ],
+    "feature_scale": [
+      5950.024772987718,
+      995.888528661341
+    ],
+    "target_mean": 7201.580645161291,
+    "standardized_coefficients": [
+      4848.180809290437,
+      1442.9753967458778
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 36,
+    "horizon": 2,
+    "prediction": 6725.324315153743,
+    "raw_prediction": 6725.324315153743,
+    "training_pairs": 31,
+    "latest_training_target_week_number": 36,
+    "feature_mean": [
+      6732.322580645161,
+      302.50967741935483,
+      25.28431147264295,
+      73.63254750305057,
+      34.65873478443907
+    ],
+    "feature_scale": [
+      5950.024772987718,
+      995.888528661341,
+      0.7747655624220173,
+      5.491143702635827,
+      13.133984724787243
+    ],
+    "target_mean": 7201.580645161291,
+    "standardized_coefficients": [
+      3395.1821312337856,
+      1771.8041160517118,
+      374.7623217888004,
+      2144.6239850366605,
+      -423.3663398609574
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 36,
+    "horizon": 4,
+    "prediction": 6364.3312481490175,
+    "raw_prediction": 6364.3312481490175,
+    "training_pairs": 29,
+    "latest_training_target_week_number": 36,
+    "feature_mean": [
+      6549.9655172413795,
+      388.14827586206894
+    ],
+    "feature_scale": [
+      6109.327467263415,
+      966.168728971216
+    ],
+    "target_mean": 7659.448275862069,
+    "standardized_coefficients": [
+      3635.8840490983803,
+      2189.335569316436
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 36,
+    "horizon": 4,
+    "prediction": 6196.63180904142,
+    "raw_prediction": 6196.63180904142,
+    "training_pairs": 29,
+    "latest_training_target_week_number": 36,
+    "feature_mean": [
+      6549.9655172413795,
+      388.14827586206894,
+      25.36568045754729,
+      73.16898501245747,
+      34.22763008316137
+    ],
+    "feature_scale": [
+      6109.327467263415,
+      966.168728971216,
+      0.7268656156320659,
+      5.375331297826331,
+      13.472706155076429
+    ],
+    "target_mean": 7659.448275862069,
+    "standardized_coefficients": [
+      1351.6941423403214,
+      2584.387185826785,
+      474.22090075762316,
+      3375.656626751665,
+      -788.6764015471389
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 37,
+    "horizon": 1,
+    "prediction": 7825.8750041892945,
+    "raw_prediction": 7825.8750041892945,
+    "training_pairs": 33,
+    "latest_training_target_week_number": 37,
+    "feature_mean": [
+      6800.666666666667,
+      231.60606060606054
+    ],
+    "feature_scale": [
+      5773.612123228833,
+      1006.8973863457666
+    ],
+    "target_mean": 7025.939393939394,
+    "standardized_coefficients": [
+      5216.9979838466315,
+      672.5896990584384
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 37,
+    "horizon": 1,
+    "prediction": 7742.848880644914,
+    "raw_prediction": 7742.848880644914,
+    "training_pairs": 33,
+    "latest_training_target_week_number": 37,
+    "feature_mean": [
+      6800.666666666667,
+      231.60606060606054,
+      25.23439566274694,
+      73.76454625967352,
+      34.11550033550113
+    ],
+    "feature_scale": [
+      5773.612123228833,
+      1006.8973863457666,
+      0.7798628986172396,
+      5.354144969999334,
+      12.950977007438398
+    ],
+    "target_mean": 7025.939393939394,
+    "standardized_coefficients": [
+      4235.287722218591,
+      991.4999445748632,
+      77.55513778717412,
+      1483.9393248121228,
+      -402.6223793100446
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 37,
+    "horizon": 2,
+    "prediction": 7588.609174711417,
+    "raw_prediction": 7588.609174711417,
+    "training_pairs": 32,
+    "latest_training_target_week_number": 37,
+    "feature_mean": [
+      6758.5625,
+      257.69062499999995
+    ],
+    "feature_scale": [
+      5858.139806806744,
+      1011.470005227347
+    ],
+    "target_mean": 7228.0625,
+    "standardized_coefficients": [
+      4805.463269358318,
+      1365.0908879705098
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 37,
+    "horizon": 2,
+    "prediction": 7216.565419914087,
+    "raw_prediction": 7216.565419914087,
+    "training_pairs": 32,
+    "latest_training_target_week_number": 37,
+    "feature_mean": [
+      6758.5625,
+      257.69062499999995,
+      25.249003187088146,
+      73.73457003052897,
+      34.24508584129126
+    ],
+    "feature_scale": [
+      5858.139806806744,
+      1011.470005227347,
+      0.7874963017126931,
+      5.434432357078242,
+      13.130694957166734
+    ],
+    "target_mean": 7228.0625,
+    "standardized_coefficients": [
+      3328.216040621938,
+      1785.2534743536253,
+      315.05968260075434,
+      2264.654254093568,
+      -595.4953078572785
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 37,
+    "horizon": 4,
+    "prediction": 7280.551078220412,
+    "raw_prediction": 7280.551078220412,
+    "training_pairs": 30,
+    "latest_training_target_week_number": 37,
+    "feature_mean": [
+      6653.2,
+      329.40999999999997
+    ],
+    "feature_scale": [
+      6032.314323154368,
+      1001.209924158432
+    ],
+    "target_mean": 7672.433333333333,
+    "standardized_coefficients": [
+      3666.581769198753,
+      2108.61217610914
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 37,
+    "horizon": 4,
+    "prediction": 6651.919030569706,
+    "raw_prediction": 6651.919030569706,
+    "training_pairs": 30,
+    "latest_training_target_week_number": 37,
+    "feature_mean": [
+      6653.2,
+      329.40999999999997,
+      25.336770295040928,
+      73.41923904698147,
+      34.44263837312199
+    ],
+    "feature_scale": [
+      6032.314323154368,
+      1001.209924158432,
+      0.7314100285089212,
+      5.454102344237379,
+      13.29676574011396
+    ],
+    "target_mean": 7672.433333333333,
+    "standardized_coefficients": [
+      1339.2307711485073,
+      2639.964718547201,
+      467.9829422222098,
+      3451.610451328851,
+      -790.6738229553457
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 38,
+    "horizon": 1,
+    "prediction": 6914.556529952176,
+    "raw_prediction": 6914.556529952176,
+    "training_pairs": 34,
+    "latest_training_target_week_number": 38,
+    "feature_mean": [
+      6837.382352941177,
+      217.1617647058823
+    ],
+    "feature_scale": [
+      5691.981465260147,
+      995.4438696660447
+    ],
+    "target_mean": 7025.529411764706,
+    "standardized_coefficients": [
+      5140.49456144702,
+      676.9776916913435
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 38,
+    "horizon": 1,
+    "prediction": 6987.2229081316445,
+    "raw_prediction": 6987.2229081316445,
+    "training_pairs": 34,
+    "latest_training_target_week_number": 38,
+    "feature_mean": [
+      6837.382352941177,
+      217.1617647058823,
+      25.20508686628142,
+      73.7511713030424,
+      33.63308269769521
+    ],
+    "feature_scale": [
+      5691.981465260147,
+      995.4438696660447,
+      0.7865402063037201,
+      5.2753794673993175,
+      13.056592907360534
+    ],
+    "target_mean": 7025.529411764706,
+    "standardized_coefficients": [
+      4159.164088476999,
+      971.8917634802947,
+      116.64350212095965,
+      1458.4030149186965,
+      -357.45129515898094
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 38,
+    "horizon": 2,
+    "prediction": 6840.3354271074995,
+    "raw_prediction": 6840.3354271074995,
+    "training_pairs": 33,
+    "latest_training_target_week_number": 38,
+    "feature_mean": [
+      6800.666666666667,
+      231.60606060606054
+    ],
+    "feature_scale": [
+      5773.612123228833,
+      1006.8973863457666
+    ],
+    "target_mean": 7221.515151515152,
+    "standardized_coefficients": [
+      4738.078727858671,
+      1363.6781269875821
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 38,
+    "horizon": 2,
+    "prediction": 6652.113639523027,
+    "raw_prediction": 6652.113639523027,
+    "training_pairs": 33,
+    "latest_training_target_week_number": 38,
+    "feature_mean": [
+      6800.666666666667,
+      231.60606060606054,
+      25.23439566274694,
+      73.76454625967352,
+      34.11550033550113
+    ],
+    "feature_scale": [
+      5773.612123228833,
+      1006.8973863457666,
+      0.7798628986172396,
+      5.354144969999334,
+      12.950977007438398
+    ],
+    "target_mean": 7221.515151515152,
+    "standardized_coefficients": [
+      3284.406205342731,
+      1776.302414751681,
+      310.48557351222865,
+      2234.5415482431104,
+      -593.7691472382808
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 38,
+    "horizon": 4,
+    "prediction": 6803.628337348704,
+    "raw_prediction": 6803.628337348704,
+    "training_pairs": 31,
+    "latest_training_target_week_number": 38,
+    "feature_mean": [
+      6732.322580645161,
+      302.50967741935483
+    ],
+    "feature_scale": [
+      5950.024772987718,
+      995.888528661341
+    ],
+    "target_mean": 7651.129032258064,
+    "standardized_coefficients": [
+      3612.5794083626306,
+      2108.877658829898
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 38,
+    "horizon": 4,
+    "prediction": 5953.3784380385505,
+    "raw_prediction": 5953.3784380385505,
+    "training_pairs": 31,
+    "latest_training_target_week_number": 38,
+    "feature_mean": [
+      6732.322580645161,
+      302.50967741935483,
+      25.28431147264295,
+      73.63254750305057,
+      34.65873478443907
+    ],
+    "feature_scale": [
+      5950.024772987718,
+      995.888528661341,
+      0.7747655624220173,
+      5.491143702635827,
+      13.133984724787243
+    ],
+    "target_mean": 7651.129032258064,
+    "standardized_coefficients": [
+      1350.2222848265885,
+      2624.77365330809,
+      592.6824160823282,
+      3366.116757198657,
+      -698.6890913985449
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 39,
+    "horizon": 1,
+    "prediction": 5042.585857746083,
+    "raw_prediction": 5042.585857746083,
+    "training_pairs": 35,
+    "latest_training_target_week_number": 39,
+    "feature_mean": [
+      6842.371428571429,
+      205.87428571428566
+    ],
+    "feature_scale": [
+      5610.153606686027,
+      983.3253126415656
+    ],
+    "target_mean": 6982.971428571429,
+    "standardized_coefficients": [
+      5066.984840044855,
+      684.0762171323315
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 39,
+    "horizon": 1,
+    "prediction": 5210.960926354114,
+    "raw_prediction": 5210.960926354114,
+    "training_pairs": 35,
+    "latest_training_target_week_number": 39,
+    "feature_mean": [
+      6842.371428571429,
+      205.87428571428566,
+      25.14389974928783,
+      73.76333755030775,
+      33.19508837859844
+    ],
+    "feature_scale": [
+      5610.153606686027,
+      983.3253126415656,
+      0.853382248615524,
+      5.19995469970181,
+      13.119696710222605
+    ],
+    "target_mean": 6982.971428571429,
+    "standardized_coefficients": [
+      4077.2735306232335,
+      925.6723051228419,
+      248.7597386683984,
+      1442.7019605210303,
+      -279.32042675008523
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 39,
+    "horizon": 2,
+    "prediction": 4576.694030588297,
+    "raw_prediction": 4576.694030588297,
+    "training_pairs": 34,
+    "latest_training_target_week_number": 39,
+    "feature_mean": [
+      6837.382352941177,
+      217.1617647058823
+    ],
+    "feature_scale": [
+      5691.981465260147,
+      995.4438696660447
+    ],
+    "target_mean": 7171.941176470588,
+    "standardized_coefficients": [
+      4657.224597641836,
+      1379.3803205097288
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 39,
+    "horizon": 2,
+    "prediction": 4673.3626910195235,
+    "raw_prediction": 4673.3626910195235,
+    "training_pairs": 34,
+    "latest_training_target_week_number": 39,
+    "feature_mean": [
+      6837.382352941177,
+      217.1617647058823,
+      25.20508686628142,
+      73.7511713030424,
+      33.63308269769521
+    ],
+    "feature_scale": [
+      5691.981465260147,
+      995.4438696660447,
+      0.7865402063037201,
+      5.2753794673993175,
+      13.056592907360534
+    ],
+    "target_mean": 7171.941176470588,
+    "standardized_coefficients": [
+      3185.661687826334,
+      1739.4839574350779,
+      405.1219286382677,
+      2206.9163727761947,
+      -489.20670491123207
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 39,
+    "horizon": 4,
+    "prediction": 4439.761954317559,
+    "raw_prediction": 4439.761954317559,
+    "training_pairs": 32,
+    "latest_training_target_week_number": 39,
+    "feature_mean": [
+      6758.5625,
+      257.69062499999995
+    ],
+    "feature_scale": [
+      5858.139806806744,
+      1011.470005227347
+    ],
+    "target_mean": 7585.03125,
+    "standardized_coefficients": [
+      3565.6802541698867,
+      2121.128151615656
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 39,
+    "horizon": 4,
+    "prediction": 4368.4192945458335,
+    "raw_prediction": 4368.4192945458335,
+    "training_pairs": 32,
+    "latest_training_target_week_number": 39,
+    "feature_mean": [
+      6758.5625,
+      257.69062499999995,
+      25.249003187088146,
+      73.73457003052897,
+      34.24508584129126
+    ],
+    "feature_scale": [
+      5858.139806806744,
+      1011.470005227347,
+      0.7874963017126931,
+      5.434432357078242,
+      13.130694957166734
+    ],
+    "target_mean": 7585.03125,
+    "standardized_coefficients": [
+      1332.7339385674532,
+      2666.3298865642323,
+      617.4184972435269,
+      3306.564481961349,
+      -665.6261400113035
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 40,
+    "horizon": 1,
+    "prediction": 3382.4390120361836,
+    "raw_prediction": 3382.4390120361836,
+    "training_pairs": 36,
+    "latest_training_target_week_number": 40,
+    "feature_mean": [
+      6806.083333333333,
+      175.5083333333333
+    ],
+    "feature_scale": [
+      5535.850388227028,
+      986.0744028652763
+    ],
+    "target_mean": 6903.25,
+    "standardized_coefficients": [
+      5004.778042958461,
+      712.1176266366235
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 40,
+    "horizon": 1,
+    "prediction": 2875.073266417023,
+    "raw_prediction": 2875.073266417023,
+    "training_pairs": 36,
+    "latest_training_target_week_number": 40,
+    "feature_mean": [
+      6806.083333333333,
+      175.5083333333333,
+      25.063555115864666,
+      73.8378838871931,
+      32.79706976826459
+    ],
+    "feature_scale": [
+      5535.850388227028,
+      986.0744028652763,
+      0.9664191052238538,
+      5.146156947328901,
+      13.148756983651786
+    ],
+    "target_mean": 6903.25,
+    "standardized_coefficients": [
+      4043.373154890291,
+      911.913460418363,
+      361.7089461470597,
+      1389.4388322343518,
+      -223.2089154529888
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 40,
+    "horizon": 2,
+    "prediction": 2679.7540597518628,
+    "raw_prediction": 2679.7540597518628,
+    "training_pairs": 35,
+    "latest_training_target_week_number": 40,
+    "feature_mean": [
+      6842.371428571429,
+      205.87428571428566
+    ],
+    "feature_scale": [
+      5610.153606686027,
+      983.3253126415656
+    ],
+    "target_mean": 7084.542857142857,
+    "standardized_coefficients": [
+      4586.674736188009,
+      1392.909848898055
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 40,
+    "horizon": 2,
+    "prediction": 1191.8580482982434,
+    "raw_prediction": 1191.8580482982434,
+    "training_pairs": 35,
+    "latest_training_target_week_number": 40,
+    "feature_mean": [
+      6842.371428571429,
+      205.87428571428566,
+      25.14389974928783,
+      73.76333755030775,
+      33.19508837859844
+    ],
+    "feature_scale": [
+      5610.153606686027,
+      983.3253126415656,
+      0.853382248615524,
+      5.19995469970181,
+      13.119696710222605
+    ],
+    "target_mean": 7084.542857142857,
+    "standardized_coefficients": [
+      3099.864164290764,
+      1670.715637147533,
+      618.027137648308,
+      2191.1832011192164,
+      -377.8831791589649
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 40,
+    "horizon": 4,
+    "prediction": 2481.744803421633,
+    "raw_prediction": 2481.744803421633,
+    "training_pairs": 33,
+    "latest_training_target_week_number": 40,
+    "feature_mean": [
+      6800.666666666667,
+      231.60606060606054
+    ],
+    "feature_scale": [
+      5773.612123228833,
+      1006.8973863457666
+    ],
+    "target_mean": 7479.818181818182,
+    "standardized_coefficients": [
+      3488.5814382246003,
+      2177.7998094736663
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 40,
+    "horizon": 4,
+    "prediction": 1360.0314740188323,
+    "raw_prediction": 1360.0314740188323,
+    "training_pairs": 33,
+    "latest_training_target_week_number": 40,
+    "feature_mean": [
+      6800.666666666667,
+      231.60606060606054,
+      25.23439566274694,
+      73.76454625967352,
+      34.11550033550113
+    ],
+    "feature_scale": [
+      5773.612123228833,
+      1006.8973863457666,
+      0.7798628986172396,
+      5.354144969999334,
+      12.950977007438398
+    ],
+    "target_mean": 7479.818181818182,
+    "standardized_coefficients": [
+      1248.2466128099588,
+      2700.65341106681,
+      655.3690359942675,
+      3309.887176904233,
+      -638.0689714678372
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 41,
+    "horizon": 1,
+    "prediction": 3030.2100623578162,
+    "raw_prediction": 3030.2100623578162,
+    "training_pairs": 37,
+    "latest_training_target_week_number": 41,
+    "feature_mean": [
+      6733.2972972972975,
+      134.8621621621621
+    ],
+    "feature_scale": [
+      5477.964954866858,
+      1002.765774799299
+    ],
+    "target_mean": 6813.459459459459,
+    "standardized_coefficients": [
+      4954.315330965985,
+      715.5698981934638
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 41,
+    "horizon": 1,
+    "prediction": 2650.242491445493,
+    "raw_prediction": 2650.242491445493,
+    "training_pairs": 37,
+    "latest_training_target_week_number": 41,
+    "feature_mean": [
+      6733.2972972972975,
+      134.8621621621621,
+      24.919980134513256,
+      73.94931311512032,
+      32.47108131030728
+    ],
+    "feature_scale": [
+      5477.964954866858,
+      1002.765774799299,
+      1.2848421986357155,
+      5.1199774851005495,
+      13.116507832945459
+    ],
+    "target_mean": 6813.459459459459,
+    "standardized_coefficients": [
+      4019.7759942178513,
+      931.5883483778417,
+      384.8578014584982,
+      1345.8215963526516,
+      -219.95565746008756
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 41,
+    "horizon": 2,
+    "prediction": 2405.7068138345785,
+    "raw_prediction": 2405.7068138345785,
+    "training_pairs": 36,
+    "latest_training_target_week_number": 41,
+    "feature_mean": [
+      6806.083333333333,
+      175.5083333333333
+    ],
+    "feature_scale": [
+      5535.850388227028,
+      986.0744028652763
+    ],
+    "target_mean": 6987.222222222223,
+    "standardized_coefficients": [
+      4530.4402725675245,
+      1421.652159973954
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 41,
+    "horizon": 2,
+    "prediction": 970.6122305248937,
+    "raw_prediction": 970.6122305248937,
+    "training_pairs": 36,
+    "latest_training_target_week_number": 41,
+    "feature_mean": [
+      6806.083333333333,
+      175.5083333333333,
+      25.063555115864666,
+      73.8378838871931,
+      32.79706976826459
+    ],
+    "feature_scale": [
+      5535.850388227028,
+      986.0744028652763,
+      0.9664191052238538,
+      5.146156947328901,
+      13.148756983651786
+    ],
+    "target_mean": 6987.222222222223,
+    "standardized_coefficients": [
+      3069.9156679775374,
+      1670.1346122774294,
+      721.5969410541978,
+      2150.1017937838637,
+      -358.0942451051305
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 41,
+    "horizon": 4,
+    "prediction": 2332.826060652793,
+    "raw_prediction": 2332.826060652793,
+    "training_pairs": 34,
+    "latest_training_target_week_number": 41,
+    "feature_mean": [
+      6837.382352941177,
+      217.1617647058823
+    ],
+    "feature_scale": [
+      5691.981465260147,
+      995.4438696660447
+    ],
+    "target_mean": 7365.14705882353,
+    "standardized_coefficients": [
+      3410.88770898621,
+      2208.380978979233
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 41,
+    "horizon": 4,
+    "prediction": 307.7820172172951,
+    "raw_prediction": 307.7820172172951,
+    "training_pairs": 34,
+    "latest_training_target_week_number": 41,
+    "feature_mean": [
+      6837.382352941177,
+      217.1617647058823,
+      25.20508686628142,
+      73.7511713030424,
+      33.63308269769521
+    ],
+    "feature_scale": [
+      5691.981465260147,
+      995.4438696660447,
+      0.7865402063037201,
+      5.2753794673993175,
+      13.056592907360534
+    ],
+    "target_mean": 7365.14705882353,
+    "standardized_coefficients": [
+      1141.6283613803766,
+      2647.581246462646,
+      801.162209986348,
+      3280.9493867494966,
+      -482.83980107391614
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 42,
+    "horizon": 1,
+    "prediction": 2956.0941942930854,
+    "raw_prediction": 2956.0941942930854,
+    "training_pairs": 38,
+    "latest_training_target_week_number": 42,
+    "feature_mean": [
+      6650.3421052631575,
+      100.48157894736836
+    ],
+    "feature_scale": [
+      5428.906986417664,
+      1011.3419539495825
+    ],
+    "target_mean": 6717.5526315789475,
+    "standardized_coefficients": [
+      4911.229922115375,
+      716.6444193599829
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 42,
+    "horizon": 1,
+    "prediction": 1894.8270877839177,
+    "raw_prediction": 1894.8270877839177,
+    "training_pairs": 38,
+    "latest_training_target_week_number": 42,
+    "feature_mean": [
+      6650.3421052631575,
+      100.48157894736836,
+      24.832903824737397,
+      73.95029554264393,
+      31.929652923644017
+    ],
+    "feature_scale": [
+      5428.906986417664,
+      1011.3419539495825,
+      1.3740165047830422,
+      5.052163753737522,
+      13.355212092445429
+    ],
+    "target_mean": 6717.5526315789475,
+    "standardized_coefficients": [
+      3992.2245048297837,
+      939.0472071279294,
+      378.0147393871025,
+      1319.7363850764998,
+      -237.63449538373692
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 42,
+    "horizon": 2,
+    "prediction": 2692.481115066894,
+    "raw_prediction": 2692.481115066894,
+    "training_pairs": 37,
+    "latest_training_target_week_number": 42,
+    "feature_mean": [
+      6733.2972972972975,
+      134.8621621621621
+    ],
+    "feature_scale": [
+      5477.964954866858,
+      1002.765774799299
+    ],
+    "target_mean": 6884.027027027027,
+    "standardized_coefficients": [
+      4482.782049107418,
+      1423.240655498117
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 42,
+    "horizon": 2,
+    "prediction": 779.0372406686884,
+    "raw_prediction": 779.0372406686884,
+    "training_pairs": 37,
+    "latest_training_target_week_number": 42,
+    "feature_mean": [
+      6733.2972972972975,
+      134.8621621621621,
+      24.919980134513256,
+      73.94931311512032,
+      32.47108131030728
+    ],
+    "feature_scale": [
+      5477.964954866858,
+      1002.765774799299,
+      1.2848421986357155,
+      5.1199774851005495,
+      13.116507832945459
+    ],
+    "target_mean": 6884.027027027027,
+    "standardized_coefficients": [
+      3070.818177507086,
+      1716.014243245172,
+      684.51603510001,
+      2059.269152134305,
+      -360.04566274887014
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 42,
+    "horizon": 4,
+    "prediction": 2859.179727214858,
+    "raw_prediction": 2859.179727214858,
+    "training_pairs": 35,
+    "latest_training_target_week_number": 42,
+    "feature_mean": [
+      6842.371428571429,
+      205.87428571428566
+    ],
+    "feature_scale": [
+      5610.153606686027,
+      983.3253126415656
+    ],
+    "target_mean": 7245.257142857143,
+    "standardized_coefficients": [
+      3355.0102317650835,
+      2221.277078466672
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 42,
+    "horizon": 4,
+    "prediction": 0.0,
+    "raw_prediction": -1459.991826585252,
+    "training_pairs": 35,
+    "latest_training_target_week_number": 42,
+    "feature_mean": [
+      6842.371428571429,
+      205.87428571428566,
+      25.14389974928783,
+      73.76333755030775,
+      33.19508837859844
+    ],
+    "feature_scale": [
+      5610.153606686027,
+      983.3253126415656,
+      0.853382248615524,
+      5.19995469970181,
+      13.119696710222605
+    ],
+    "target_mean": 7245.257142857143,
+    "standardized_coefficients": [
+      1082.6571572749608,
+      2578.116304171258,
+      1023.1878263855821,
+      3258.4243873455,
+      -391.56412976805547
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 43,
+    "horizon": 1,
+    "prediction": 2565.2085859950957,
+    "raw_prediction": 2565.2085859950957,
+    "training_pairs": 39,
+    "latest_training_target_week_number": 43,
+    "feature_mean": [
+      6561.076923076923,
+      78.33333333333329
+    ],
+    "feature_scale": [
+      5387.0313426218845,
+      1007.5848782299221
+    ],
+    "target_mean": 6610.897435897436,
+    "standardized_coefficients": [
+      4880.032054068568,
+      721.01947140498
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 43,
+    "horizon": 1,
+    "prediction": 1474.5969456695284,
+    "raw_prediction": 1474.5969456695284,
+    "training_pairs": 39,
+    "latest_training_target_week_number": 43,
+    "feature_mean": [
+      6561.076923076923,
+      78.33333333333329,
+      24.764534410923883,
+      73.83861426200906,
+      31.33780556159701
+    ],
+    "feature_scale": [
+      5387.0313426218845,
+      1007.5848782299221,
+      1.420260339462971,
+      5.034267651035857,
+      13.678416529891646
+    ],
+    "target_mean": 6610.897435897436,
+    "standardized_coefficients": [
+      3998.044753772665,
+      930.7173393749706,
+      341.6501080649527,
+      1256.4396183355834,
+      -238.80433999261462
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 43,
+    "horizon": 2,
+    "prediction": 2559.6891580922984,
+    "raw_prediction": 2559.6891580922984,
+    "training_pairs": 38,
+    "latest_training_target_week_number": 43,
+    "feature_mean": [
+      6650.3421052631575,
+      100.48157894736836
+    ],
+    "feature_scale": [
+      5428.906986417664,
+      1011.3419539495825
+    ],
+    "target_mean": 6770.184210526316,
+    "standardized_coefficients": [
+      4444.016336888585,
+      1431.0362157250172
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 43,
+    "horizon": 2,
+    "prediction": 460.5801720073032,
+    "raw_prediction": 460.5801720073032,
+    "training_pairs": 38,
+    "latest_training_target_week_number": 43,
+    "feature_mean": [
+      6650.3421052631575,
+      100.48157894736836,
+      24.832903824737397,
+      73.95029554264393,
+      31.929652923644017
+    ],
+    "feature_scale": [
+      5428.906986417664,
+      1011.3419539495825,
+      1.3740165047830422,
+      5.052163753737522,
+      13.355212092445429
+    ],
+    "target_mean": 6770.184210526316,
+    "standardized_coefficients": [
+      3052.108525581714,
+      1731.115934946465,
+      677.9438219214012,
+      2023.6605310388584,
+      -390.74626663086235
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 43,
+    "horizon": 4,
+    "prediction": 2999.730847867533,
+    "raw_prediction": 2999.730847867533,
+    "training_pairs": 36,
+    "latest_training_target_week_number": 43,
+    "feature_mean": [
+      6806.083333333333,
+      175.5083333333333
+    ],
+    "feature_scale": [
+      5535.850388227028,
+      986.0744028652763
+    ],
+    "target_mean": 7115.055555555556,
+    "standardized_coefficients": [
+      3314.8578476231933,
+      2268.2604033852085
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 43,
+    "horizon": 4,
+    "prediction": 0.0,
+    "raw_prediction": -1892.759026289631,
+    "training_pairs": 36,
+    "latest_training_target_week_number": 43,
+    "feature_mean": [
+      6806.083333333333,
+      175.5083333333333,
+      25.063555115864666,
+      73.8378838871931,
+      32.79706976826459
+    ],
+    "feature_scale": [
+      5535.850388227028,
+      986.0744028652763,
+      0.9664191052238538,
+      5.146156947328901,
+      13.148756983651786
+    ],
+    "target_mean": 7115.055555555556,
+    "standardized_coefficients": [
+      1072.990148134091,
+      2584.450216058536,
+      1165.8775874782846,
+      3215.269273590146,
+      -381.43050452282887
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 44,
+    "horizon": 1,
+    "prediction": 2204.0632526770714,
+    "raw_prediction": 2204.0632526770714,
+    "training_pairs": 40,
+    "latest_training_target_week_number": 44,
+    "feature_mean": [
+      6461.0,
+      63.68249999999996
+    ],
+    "feature_scale": [
+      5355.857004252447,
+      999.1085198534493
+    ],
+    "target_mean": 6499.7,
+    "standardized_coefficients": [
+      4859.392860487365,
+      719.196237487816
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 44,
+    "horizon": 1,
+    "prediction": 1702.7229502057617,
+    "raw_prediction": 1702.7229502057617,
+    "training_pairs": 40,
+    "latest_training_target_week_number": 44,
+    "feature_mean": [
+      6461.0,
+      63.68249999999996,
+      24.69033765813949,
+      73.72162128653433,
+      30.968587103408908
+    ],
+    "feature_scale": [
+      5355.857004252447,
+      999.1085198534493,
+      1.476960430370888,
+      5.024346863903436,
+      13.701757928123232
+    ],
+    "target_mean": 6499.7,
+    "standardized_coefficients": [
+      4014.303115152763,
+      918.3185816760887,
+      294.3832078305628,
+      1174.9365748806324,
+      -208.40894191458142
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 44,
+    "horizon": 2,
+    "prediction": 2240.558907902622,
+    "raw_prediction": 2240.558907902622,
+    "training_pairs": 39,
+    "latest_training_target_week_number": 44,
+    "feature_mean": [
+      6561.076923076923,
+      78.33333333333329
+    ],
+    "feature_scale": [
+      5387.0313426218845,
+      1007.5848782299221
+    ],
+    "target_mean": 6652.051282051282,
+    "standardized_coefficients": [
+      4417.830386646643,
+      1435.4559938375792
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 44,
+    "horizon": 2,
+    "prediction": 1125.2084750329504,
+    "raw_prediction": 1125.2084750329504,
+    "training_pairs": 39,
+    "latest_training_target_week_number": 44,
+    "feature_mean": [
+      6561.076923076923,
+      78.33333333333329,
+      24.764534410923883,
+      73.83861426200906,
+      31.33780556159701
+    ],
+    "feature_scale": [
+      5387.0313426218845,
+      1007.5848782299221,
+      1.420260339462971,
+      5.034267651035857,
+      13.678416529891646
+    ],
+    "target_mean": 6652.051282051282,
+    "standardized_coefficients": [
+      3089.928925834478,
+      1717.308526131792,
+      612.8839176615838,
+      1915.4262730744363,
+      -393.9662944343276
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 44,
+    "horizon": 4,
+    "prediction": 2818.1545091933685,
+    "raw_prediction": 2818.1545091933685,
+    "training_pairs": 37,
+    "latest_training_target_week_number": 44,
+    "feature_mean": [
+      6733.2972972972975,
+      134.8621621621621
+    ],
+    "feature_scale": [
+      5477.964954866858,
+      1002.765774799299
+    ],
+    "target_mean": 6981.216216216216,
+    "standardized_coefficients": [
+      3281.805296498955,
+      2299.7445004520396
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 44,
+    "horizon": 4,
+    "prediction": 0.0,
+    "raw_prediction": -7.417845558864428,
+    "training_pairs": 37,
+    "latest_training_target_week_number": 44,
+    "feature_mean": [
+      6733.2972972972975,
+      134.8621621621621,
+      24.919980134513256,
+      73.94931311512032,
+      32.47108131030728
+    ],
+    "feature_scale": [
+      5477.964954866858,
+      1002.765774799299,
+      1.2848421986357155,
+      5.1199774851005495,
+      13.116507832945459
+    ],
+    "target_mean": 6981.216216216216,
+    "standardized_coefficients": [
+      1104.5048162570301,
+      2654.404875321849,
+      1162.7109305720712,
+      3088.7386904978143,
+      -384.1621223258898
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 45,
+    "horizon": 1,
+    "prediction": 2243.1376928081927,
+    "raw_prediction": 2243.1376928081927,
+    "training_pairs": 41,
+    "latest_training_target_week_number": 45,
+    "feature_mean": [
+      6356.170731707317,
+      50.2634146341463
+    ],
+    "feature_scale": [
+      5331.522497521923,
+      990.4917627502742
+    ],
+    "target_mean": 6392.609756097561,
+    "standardized_coefficients": [
+      4839.9373448897095,
+      713.9211099950986
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 45,
+    "horizon": 1,
+    "prediction": 1512.9394527565337,
+    "raw_prediction": 1512.9394527565337,
+    "training_pairs": 41,
+    "latest_training_target_week_number": 45,
+    "feature_mean": [
+      6356.170731707317,
+      50.2634146341463,
+      24.618068038137572,
+      73.63921094157911,
+      30.470117038886805
+    ],
+    "feature_scale": [
+      5331.522497521923,
+      990.4917627502742,
+      1.5287651416765495,
+      4.989991101414173,
+      13.895973760983816
+    ],
+    "target_mean": 6392.609756097561,
+    "standardized_coefficients": [
+      4002.0439520977843,
+      915.6821937327268,
+      281.52445518985,
+      1154.921430341558,
+      -215.16847647462237
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 45,
+    "horizon": 2,
+    "prediction": 2361.08790379161,
+    "raw_prediction": 2361.08790379161,
+    "training_pairs": 40,
+    "latest_training_target_week_number": 45,
+    "feature_mean": [
+      6461.0,
+      63.68249999999996
+    ],
+    "feature_scale": [
+      5355.857004252447,
+      999.1085198534493
+    ],
+    "target_mean": 6538.475,
+    "standardized_coefficients": [
+      4400.017581899777,
+      1428.2056902357872
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 45,
+    "horizon": 2,
+    "prediction": 965.885707305657,
+    "raw_prediction": 965.885707305657,
+    "training_pairs": 40,
+    "latest_training_target_week_number": 45,
+    "feature_mean": [
+      6461.0,
+      63.68249999999996,
+      24.69033765813949,
+      73.72162128653433,
+      30.968587103408908
+    ],
+    "feature_scale": [
+      5355.857004252447,
+      999.1085198534493,
+      1.476960430370888,
+      5.024346863903436,
+      13.701757928123232
+    ],
+    "target_mean": 6538.475,
+    "standardized_coefficients": [
+      3146.7497923535443,
+      1694.74185643607,
+      516.222739630112,
+      1757.3663600880684,
+      -334.22955359069624
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 45,
+    "horizon": 4,
+    "prediction": 3081.366254793481,
+    "raw_prediction": 3081.366254793481,
+    "training_pairs": 38,
+    "latest_training_target_week_number": 45,
+    "feature_mean": [
+      6650.3421052631575,
+      100.48157894736836
+    ],
+    "feature_scale": [
+      5428.906986417664,
+      1011.3419539495825
+    ],
+    "target_mean": 6853.0,
+    "standardized_coefficients": [
+      3254.096406348693,
+      2317.6678593968077
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 45,
+    "horizon": 4,
+    "prediction": 0.0,
+    "raw_prediction": -652.770782000579,
+    "training_pairs": 38,
+    "latest_training_target_week_number": 45,
+    "feature_mean": [
+      6650.3421052631575,
+      100.48157894736836,
+      24.832903824737397,
+      73.95029554264393,
+      31.929652923644017
+    ],
+    "feature_scale": [
+      5428.906986417664,
+      1011.3419539495825,
+      1.3740165047830422,
+      5.052163753737522,
+      13.355212092445429
+    ],
+    "target_mean": 6853.0,
+    "standardized_coefficients": [
+      1104.265641606652,
+      2679.7321621639694,
+      1145.938257949794,
+      3039.4896024439217,
+      -438.2999002140945
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 46,
+    "horizon": 1,
+    "prediction": 1800.7484136042012,
+    "raw_prediction": 1800.7484136042012,
+    "training_pairs": 42,
+    "latest_training_target_week_number": 46,
+    "feature_mean": [
+      6255.047619047619,
+      40.55476190476187
+    ],
+    "feature_scale": [
+      5307.316131675402,
+      980.6016542827604
+    ],
+    "target_mean": 6278.5,
+    "standardized_coefficients": [
+      4829.823346466738,
+      710.4383145441117
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 46,
+    "horizon": 1,
+    "prediction": 2169.595447781986,
+    "raw_prediction": 2169.595447781986,
+    "training_pairs": 42,
+    "latest_training_target_week_number": 46,
+    "feature_mean": [
+      6255.047619047619,
+      40.55476190476187,
+      24.519623227428443,
+      73.54719816222583,
+      29.945420946252945
+    ],
+    "feature_scale": [
+      5307.316131675402,
+      980.6016542827604,
+      1.6367112411907374,
+      4.965307059688427,
+      14.134640386163285
+    ],
+    "target_mean": 6278.5,
+    "standardized_coefficients": [
+      3988.8008410900557,
+      908.0572699156338,
+      292.2459157726845,
+      1141.6498444387762,
+      -216.60361643135198
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 46,
+    "horizon": 2,
+    "prediction": 2008.17028486882,
+    "raw_prediction": 2008.17028486882,
+    "training_pairs": 41,
+    "latest_training_target_week_number": 46,
+    "feature_mean": [
+      6356.170731707317,
+      50.2634146341463
+    ],
+    "feature_scale": [
+      5331.522497521923,
+      990.4917627502742
+    ],
+    "target_mean": 6418.024390243902,
+    "standardized_coefficients": [
+      4391.234335838653,
+      1421.9453822847865
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 46,
+    "horizon": 2,
+    "prediction": 2224.748222604432,
+    "raw_prediction": 2224.748222604432,
+    "training_pairs": 41,
+    "latest_training_target_week_number": 46,
+    "feature_mean": [
+      6356.170731707317,
+      50.2634146341463,
+      24.618068038137572,
+      73.63921094157911,
+      30.470117038886805
+    ],
+    "feature_scale": [
+      5331.522497521923,
+      990.4917627502742,
+      1.5287651416765495,
+      4.989991101414173,
+      13.895973760983816
+    ],
+    "target_mean": 6418.024390243902,
+    "standardized_coefficients": [
+      3135.6059503336683,
+      1684.3074103726947,
+      519.8608702337868,
+      1738.987203423135,
+      -341.4301618029428
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 46,
+    "horizon": 4,
+    "prediction": 2871.9169874259096,
+    "raw_prediction": 2871.9169874259096,
+    "training_pairs": 39,
+    "latest_training_target_week_number": 46,
+    "feature_mean": [
+      6561.076923076923,
+      78.33333333333329
+    ],
+    "feature_scale": [
+      5387.0313426218845,
+      1007.5848782299221
+    ],
+    "target_mean": 6718.307692307692,
+    "standardized_coefficients": [
+      3244.30283958596,
+      2331.045006991499
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 46,
+    "horizon": 4,
+    "prediction": 2228.3797738502035,
+    "raw_prediction": 2228.3797738502035,
+    "training_pairs": 39,
+    "latest_training_target_week_number": 46,
+    "feature_mean": [
+      6561.076923076923,
+      78.33333333333329,
+      24.764534410923883,
+      73.83861426200906,
+      31.33780556159701
+    ],
+    "feature_scale": [
+      5387.0313426218845,
+      1007.5848782299221,
+      1.420260339462971,
+      5.034267651035857,
+      13.678416529891646
+    ],
+    "target_mean": 6718.307692307692,
+    "standardized_coefficients": [
+      1183.541364459193,
+      2660.1205802859913,
+      1053.382591801155,
+      2881.720917243223,
+      -441.61008213779905
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 47,
+    "horizon": 1,
+    "prediction": 1536.1603088940774,
+    "raw_prediction": 1536.1603088940774,
+    "training_pairs": 43,
+    "latest_training_target_week_number": 47,
+    "feature_mean": [
+      6146.790697674419,
+      32.80232558139531
+    ],
+    "feature_scale": [
+      5291.952901749229,
+      970.4336655830305
+    ],
+    "target_mean": 6163.558139534884,
+    "standardized_coefficients": [
+      4825.1574858111635,
+      704.7438050721354
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 47,
+    "horizon": 1,
+    "prediction": 881.8550988929346,
+    "raw_prediction": 881.8550988929346,
+    "training_pairs": 43,
+    "latest_training_target_week_number": 47,
+    "feature_mean": [
+      6146.790697674419,
+      32.80232558139531,
+      24.415478798658047,
+      73.58831943935975,
+      29.8066779985576
+    ],
+    "feature_scale": [
+      5291.952901749229,
+      970.4336655830305,
+      1.7527293195483578,
+      4.914462257388844,
+      13.998225185786284
+    ],
+    "target_mean": 6163.558139534884,
+    "standardized_coefficients": [
+      4004.472070808266,
+      877.6420840051919,
+      363.22204984017185,
+      1113.5150825307296,
+      -220.83313743696036
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 47,
+    "horizon": 2,
+    "prediction": 1739.599551156417,
+    "raw_prediction": 1739.599551156417,
+    "training_pairs": 42,
+    "latest_training_target_week_number": 47,
+    "feature_mean": [
+      6255.047619047619,
+      40.55476190476187
+    ],
+    "feature_scale": [
+      5307.316131675402,
+      980.6016542827604
+    ],
+    "target_mean": 6297.023809523809,
+    "standardized_coefficients": [
+      4388.976493432976,
+      1413.7247387428204
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 47,
+    "horizon": 2,
+    "prediction": 734.8864964871573,
+    "raw_prediction": 734.8864964871573,
+    "training_pairs": 42,
+    "latest_training_target_week_number": 47,
+    "feature_mean": [
+      6255.047619047619,
+      40.55476190476187,
+      24.519623227428443,
+      73.54719816222583,
+      29.945420946252945
+    ],
+    "feature_scale": [
+      5307.316131675402,
+      980.6016542827604,
+      1.6367112411907374,
+      4.965307059688427,
+      14.134640386163285
+    ],
+    "target_mean": 6297.023809523809,
+    "standardized_coefficients": [
+      3131.6098391883274,
+      1673.5259413805693,
+      528.1148926788709,
+      1711.2913831748122,
+      -342.99762052285143
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 47,
+    "horizon": 4,
+    "prediction": 2627.0900452284895,
+    "raw_prediction": 2627.0900452284895,
+    "training_pairs": 40,
+    "latest_training_target_week_number": 47,
+    "feature_mean": [
+      6461.0,
+      63.68249999999996
+    ],
+    "feature_scale": [
+      5355.857004252447,
+      999.1085198534493
+    ],
+    "target_mean": 6583.75,
+    "standardized_coefficients": [
+      3251.251445835533,
+      2329.297757979649
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 47,
+    "horizon": 4,
+    "prediction": 103.44917453982362,
+    "raw_prediction": 103.44917453982362,
+    "training_pairs": 40,
+    "latest_training_target_week_number": 47,
+    "feature_mean": [
+      6461.0,
+      63.68249999999996,
+      24.69033765813949,
+      73.72162128653433,
+      30.968587103408908
+    ],
+    "feature_scale": [
+      5355.857004252447,
+      999.1085198534493,
+      1.476960430370888,
+      5.024346863903436,
+      13.701757928123232
+    ],
+    "target_mean": 6583.75,
+    "standardized_coefficients": [
+      1252.8153542242555,
+      2630.6452329364083,
+      968.2752544962901,
+      2716.693861374128,
+      -379.71886749573457
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 48,
+    "horizon": 1,
+    "prediction": 1330.9340198518175,
+    "raw_prediction": 1330.9340198518175,
+    "training_pairs": 44,
+    "latest_training_target_week_number": 48,
+    "feature_mean": [
+      6037.454545454545,
+      25.2613636363636
+    ],
+    "feature_scale": [
+      5280.372384658222,
+      960.6162220196114
+    ],
+    "target_mean": 6049.454545454545,
+    "standardized_coefficients": [
+      4822.520175455659,
+      698.9685974605529
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 48,
+    "horizon": 1,
+    "prediction": 0.0,
+    "raw_prediction": -468.69120839674906,
+    "training_pairs": 44,
+    "latest_training_target_week_number": 48,
+    "feature_mean": [
+      6037.454545454545,
+      25.2613636363636,
+      24.32226302695018,
+      73.49998532706282,
+      29.245760731658223
+    ],
+    "feature_scale": [
+      5280.372384658222,
+      960.6162220196114,
+      1.8373555085237174,
+      4.8927044597444915,
+      14.318725641837853
+    ],
+    "target_mean": 6049.454545454545,
+    "standardized_coefficients": [
+      4000.3677827686774,
+      873.5104552427389,
+      364.23369726349483,
+      1100.828286577321,
+      -227.74965133319873
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 48,
+    "horizon": 2,
+    "prediction": 1519.8492416148147,
+    "raw_prediction": 1519.8492416148147,
+    "training_pairs": 43,
+    "latest_training_target_week_number": 48,
+    "feature_mean": [
+      6146.790697674419,
+      32.80232558139531
+    ],
+    "feature_scale": [
+      5291.952901749229,
+      970.4336655830305
+    ],
+    "target_mean": 6177.162790697675,
+    "standardized_coefficients": [
+      4392.18357860428,
+      1402.245396749738
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 48,
+    "horizon": 2,
+    "prediction": 0.0,
+    "raw_prediction": -1412.4955645130667,
+    "training_pairs": 43,
+    "latest_training_target_week_number": 48,
+    "feature_mean": [
+      6146.790697674419,
+      32.80232558139531,
+      24.415478798658047,
+      73.58831943935975,
+      29.8066779985576
+    ],
+    "feature_scale": [
+      5291.952901749229,
+      970.4336655830305,
+      1.7527293195483578,
+      4.914462257388844,
+      13.998225185786284
+    ],
+    "target_mean": 6177.162790697675,
+    "standardized_coefficients": [
+      3158.9599729404977,
+      1627.997631340834,
+      634.4939315555681,
+      1672.1980902648381,
+      -348.7129812645284
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 48,
+    "horizon": 4,
+    "prediction": 2400.7837451845953,
+    "raw_prediction": 2400.7837451845953,
+    "training_pairs": 41,
+    "latest_training_target_week_number": 48,
+    "feature_mean": [
+      6356.170731707317,
+      50.2634146341463
+    ],
+    "feature_scale": [
+      5331.522497521923,
+      990.4917627502742
+    ],
+    "target_mean": 6451.048780487805,
+    "standardized_coefficients": [
+      3262.790545310729,
+      2324.1811404407163
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 48,
+    "horizon": 4,
+    "prediction": 0.0,
+    "raw_prediction": -2821.357017442815,
+    "training_pairs": 41,
+    "latest_training_target_week_number": 48,
+    "feature_mean": [
+      6356.170731707317,
+      50.2634146341463,
+      24.618068038137572,
+      73.63921094157911,
+      30.470117038886805
+    ],
+    "feature_scale": [
+      5331.522497521923,
+      990.4917627502742,
+      1.5287651416765495,
+      4.989991101414173,
+      13.895973760983816
+    ],
+    "target_mean": 6451.048780487805,
+    "standardized_coefficients": [
+      1247.9277054633362,
+      2613.413080756439,
+      988.5090595306373,
+      2694.8394894744515,
+      -388.221628503594
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 49,
+    "horizon": 1,
+    "prediction": 1452.2547361184052,
+    "raw_prediction": 1452.2547361184052,
+    "training_pairs": 45,
+    "latest_training_target_week_number": 49,
+    "feature_mean": [
+      5928.688888888889,
+      17.673333333333296
+    ],
+    "feature_scale": [
+      5270.981286765502,
+      951.2153627859464
+    ],
+    "target_mean": 5940.666666666667,
+    "standardized_coefficients": [
+      4817.626104732256,
+      692.8708357502114
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 49,
+    "horizon": 1,
+    "prediction": 658.5405773921011,
+    "raw_prediction": 658.5405773921011,
+    "training_pairs": 45,
+    "latest_training_target_week_number": 49,
+    "feature_mean": [
+      5928.688888888889,
+      17.673333333333296,
+      24.247156174417604,
+      73.27694191940482,
+      28.646938524920007
+    ],
+    "feature_scale": [
+      5270.981286765502,
+      951.2153627859464,
+      1.883895311172865,
+      5.059201212978523,
+      14.705361143424218
+    ],
+    "target_mean": 5940.666666666667,
+    "standardized_coefficients": [
+      4118.976590495078,
+      838.9199333209474,
+      251.28068518961908,
+      915.2406839469113,
+      -149.8764563518362
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 49,
+    "horizon": 2,
+    "prediction": 1741.7383304300547,
+    "raw_prediction": 1741.7383304300547,
+    "training_pairs": 44,
+    "latest_training_target_week_number": 49,
+    "feature_mean": [
+      6037.454545454545,
+      25.2613636363636
+    ],
+    "feature_scale": [
+      5280.372384658222,
+      960.6162220196114
+    ],
+    "target_mean": 6063.0,
+    "standardized_coefficients": [
+      4393.378775354201,
+      1390.2154335180458
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 49,
+    "horizon": 2,
+    "prediction": 39.033655627300504,
+    "raw_prediction": 39.033655627300504,
+    "training_pairs": 44,
+    "latest_training_target_week_number": 49,
+    "feature_mean": [
+      6037.454545454545,
+      25.2613636363636,
+      24.32226302695018,
+      73.49998532706282,
+      29.245760731658223
+    ],
+    "feature_scale": [
+      5280.372384658222,
+      960.6162220196114,
+      1.8373555085237174,
+      4.8927044597444915,
+      14.318725641837853
+    ],
+    "target_mean": 6063.0,
+    "standardized_coefficients": [
+      3160.672410607485,
+      1622.605587390424,
+      628.8364729090141,
+      1649.3945651551037,
+      -362.25782349327756
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 49,
+    "horizon": 4,
+    "prediction": 2717.986111947557,
+    "raw_prediction": 2717.986111947557,
+    "training_pairs": 42,
+    "latest_training_target_week_number": 49,
+    "feature_mean": [
+      6255.047619047619,
+      40.55476190476187
+    ],
+    "feature_scale": [
+      5307.316131675402,
+      980.6016542827604
+    ],
+    "target_mean": 6324.928571428572,
+    "standardized_coefficients": [
+      3277.8376740212625,
+      2311.548851786384
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 49,
+    "horizon": 4,
+    "prediction": 0.0,
+    "raw_prediction": -367.5796107480064,
+    "training_pairs": 42,
+    "latest_training_target_week_number": 49,
+    "feature_mean": [
+      6255.047619047619,
+      40.55476190476187,
+      24.519623227428443,
+      73.54719816222583,
+      29.945420946252945
+    ],
+    "feature_scale": [
+      5307.316131675402,
+      980.6016542827604,
+      1.6367112411907374,
+      4.965307059688427,
+      14.134640386163285
+    ],
+    "target_mean": 6324.928571428572,
+    "standardized_coefficients": [
+      1266.5033913352413,
+      2604.034296637582,
+      981.4091636374111,
+      2632.804829967295,
+      -385.7819643577715
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 50,
+    "horizon": 1,
+    "prediction": 1271.2771366520046,
+    "raw_prediction": 1271.2771366520046,
+    "training_pairs": 46,
+    "latest_training_target_week_number": 50,
+    "feature_mean": [
+      5824.891304347826,
+      13.960869565217354
+    ],
+    "feature_scale": [
+      5259.666092180067,
+      941.1488069002045
+    ],
+    "target_mean": 5832.130434782609,
+    "standardized_coefficients": [
+      4817.317914855018,
+      685.273932773826
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 50,
+    "horizon": 1,
+    "prediction": 276.48600473292754,
+    "raw_prediction": 276.48600473292754,
+    "training_pairs": 46,
+    "latest_training_target_week_number": 50,
+    "feature_mean": [
+      5824.891304347826,
+      13.960869565217354,
+      24.191890657790456,
+      73.1234163030381,
+      28.185535449926984
+    ],
+    "feature_scale": [
+      5259.666092180067,
+      941.1488069002045,
+      1.899829074261088,
+      5.108791227121383,
+      14.870332426032506
+    ],
+    "target_mean": 5832.130434782609,
+    "standardized_coefficients": [
+      4120.463056132489,
+      829.804067575295,
+      240.37599087360715,
+      904.01190340132,
+      -145.60376165189925
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 50,
+    "horizon": 2,
+    "prediction": 1602.5054116594083,
+    "raw_prediction": 1602.5054116594083,
+    "training_pairs": 45,
+    "latest_training_target_week_number": 50,
+    "feature_mean": [
+      5928.688888888889,
+      17.673333333333296
+    ],
+    "feature_scale": [
+      5270.981286765502,
+      951.2153627859464
+    ],
+    "target_mean": 5949.333333333333,
+    "standardized_coefficients": [
+      4396.199946406856,
+      1378.7729960851843
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 50,
+    "horizon": 2,
+    "prediction": 0.0,
+    "raw_prediction": -111.08910995918177,
+    "training_pairs": 45,
+    "latest_training_target_week_number": 50,
+    "feature_mean": [
+      5928.688888888889,
+      17.673333333333296,
+      24.247156174417604,
+      73.27694191940482,
+      28.646938524920007
+    ],
+    "feature_scale": [
+      5270.981286765502,
+      951.2153627859464,
+      1.883895311172865,
+      5.059201212978523,
+      14.705361143424218
+    ],
+    "target_mean": 5949.333333333333,
+    "standardized_coefficients": [
+      3329.4168763794205,
+      1570.7560861464897,
+      474.8457590498625,
+      1395.582009491514,
+      -254.86860304450497
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 50,
+    "horizon": 4,
+    "prediction": 2607.1306959419026,
+    "raw_prediction": 2607.1306959419026,
+    "training_pairs": 43,
+    "latest_training_target_week_number": 50,
+    "feature_mean": [
+      6146.790697674419,
+      32.80232558139531
+    ],
+    "feature_scale": [
+      5291.952901749229,
+      970.4336655830305
+    ],
+    "target_mean": 6199.883720930233,
+    "standardized_coefficients": [
+      3300.7510776670465,
+      2294.0798535153126
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 50,
+    "horizon": 4,
+    "prediction": 0.0,
+    "raw_prediction": -1395.897162019498,
+    "training_pairs": 43,
+    "latest_training_target_week_number": 50,
+    "feature_mean": [
+      6146.790697674419,
+      32.80232558139531,
+      24.415478798658047,
+      73.58831943935975,
+      29.8066779985576
+    ],
+    "feature_scale": [
+      5291.952901749229,
+      970.4336655830305,
+      1.7527293195483578,
+      4.914462257388844,
+      13.998225185786284
+    ],
+    "target_mean": 6199.883720930233,
+    "standardized_coefficients": [
+      1318.9330250514577,
+      2533.27075970573,
+      1158.3197201677438,
+      2572.3979326307226,
+      -395.7673149482651
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 51,
+    "horizon": 1,
+    "prediction": 1072.2002354461947,
+    "raw_prediction": 1072.2002354461947,
+    "training_pairs": 47,
+    "latest_training_target_week_number": 51,
+    "feature_mean": [
+      5721.127659574468,
+      11.210638297872306
+    ],
+    "feature_scale": [
+      5250.787266674708,
+      931.2695795991765
+    ],
+    "target_mean": 5724.36170212766,
+    "standardized_coefficients": [
+      4819.265893421726,
+      677.3105425136587
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 51,
+    "horizon": 1,
+    "prediction": 0.0,
+    "raw_prediction": -526.7367896625256,
+    "training_pairs": 47,
+    "latest_training_target_week_number": 51,
+    "feature_mean": [
+      5721.127659574468,
+      11.210638297872306,
+      24.13517269325739,
+      72.95383925317608,
+      27.91058671277479
+    ],
+    "feature_scale": [
+      5250.787266674708,
+      931.2695795991765,
+      1.9184719139750988,
+      5.183360619127314,
+      14.829005846236011
+    ],
+    "target_mean": 5724.36170212766,
+    "standardized_coefficients": [
+      4138.159453413514,
+      814.3713111968032,
+      212.66401481242013,
+      861.487034865089,
+      -112.10674117076692
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 51,
+    "horizon": 2,
+    "prediction": 1386.8790293193806,
+    "raw_prediction": 1386.8790293193806,
+    "training_pairs": 46,
+    "latest_training_target_week_number": 51,
+    "feature_mean": [
+      5824.891304347826,
+      13.960869565217354
+    ],
+    "feature_scale": [
+      5259.666092180067,
+      941.1488069002045
+    ],
+    "target_mean": 5836.673913043478,
+    "standardized_coefficients": [
+      4405.249678645092,
+      1363.8293987114423
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 51,
+    "horizon": 2,
+    "prediction": 0.0,
+    "raw_prediction": -1403.2568188753357,
+    "training_pairs": 46,
+    "latest_training_target_week_number": 51,
+    "feature_mean": [
+      5824.891304347826,
+      13.960869565217354,
+      24.191890657790456,
+      73.1234163030381,
+      28.185535449926984
+    ],
+    "feature_scale": [
+      5259.666092180067,
+      941.1488069002045,
+      1.899829074261088,
+      5.108791227121383,
+      14.870332426032506
+    ],
+    "target_mean": 5836.673913043478,
+    "standardized_coefficients": [
+      3334.1691183691873,
+      1554.1739011665074,
+      463.3944514638205,
+      1385.510090098284,
+      -250.48032341378104
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 51,
+    "horizon": 4,
+    "prediction": 2381.570612322168,
+    "raw_prediction": 2381.570612322168,
+    "training_pairs": 44,
+    "latest_training_target_week_number": 51,
+    "feature_mean": [
+      6037.454545454545,
+      25.2613636363636
+    ],
+    "feature_scale": [
+      5280.372384658222,
+      960.6162220196114
+    ],
+    "target_mean": 6076.409090909091,
+    "standardized_coefficients": [
+      3325.057333929543,
+      2276.6543253178165
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 51,
+    "horizon": 4,
+    "prediction": 0.0,
+    "raw_prediction": -3892.8950427516747,
+    "training_pairs": 44,
+    "latest_training_target_week_number": 51,
+    "feature_mean": [
+      6037.454545454545,
+      25.2613636363636,
+      24.32226302695018,
+      73.49998532706282,
+      29.245760731658223
+    ],
+    "feature_scale": [
+      5280.372384658222,
+      960.6162220196114,
+      1.8373555085237174,
+      4.8927044597444915,
+      14.318725641837853
+    ],
+    "target_mean": 6076.409090909091,
+    "standardized_coefficients": [
+      1325.4706442442057,
+      2521.0953431293337,
+      1171.6066361810065,
+      2543.5458628611113,
+      -410.70808983025654
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 52,
+    "horizon": 1,
+    "prediction": 1007.9372361378937,
+    "raw_prediction": 1007.9372361378937,
+    "training_pairs": 48,
+    "latest_training_target_week_number": 52,
+    "feature_mean": [
+      5617.916666666667,
+      8.197916666666634
+    ],
+    "feature_scale": [
+      5243.762377153979,
+      921.7492311925153
+    ],
+    "target_mean": 5620.166666666667,
+    "standardized_coefficients": [
+      4819.760595804993,
+      670.039324678248
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 52,
+    "horizon": 1,
+    "prediction": 0.0,
+    "raw_prediction": -357.6441752815508,
+    "training_pairs": 48,
+    "latest_training_target_week_number": 52,
+    "feature_mean": [
+      5617.916666666667,
+      8.197916666666634,
+      24.060077256990038,
+      72.70143785661271,
+      27.379063934173953
+    ],
+    "feature_scale": [
+      5243.762377153979,
+      921.7492311925153,
+      1.966953211622254,
+      5.413104216627204,
+      15.119406417052925
+    ],
+    "target_mean": 5620.166666666667,
+    "standardized_coefficients": [
+      4218.385507015182,
+      787.4871193245497,
+      140.99049375087156,
+      738.2896228779443,
+      -43.889551598987
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 52,
+    "horizon": 2,
+    "prediction": 1296.2888592446607,
+    "raw_prediction": 1296.2888592446607,
+    "training_pairs": 47,
+    "latest_training_target_week_number": 52,
+    "feature_mean": [
+      5721.127659574468,
+      11.210638297872306
+    ],
+    "feature_scale": [
+      5250.787266674708,
+      931.2695795991765
+    ],
+    "target_mean": 5727.872340425532,
+    "standardized_coefficients": [
+      4414.339940154876,
+      1348.398599230484
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 52,
+    "horizon": 2,
+    "prediction": 0.0,
+    "raw_prediction": -1291.6331335863233,
+    "training_pairs": 47,
+    "latest_training_target_week_number": 52,
+    "feature_mean": [
+      5721.127659574468,
+      11.210638297872306,
+      24.13517269325739,
+      72.95383925317608,
+      27.91058671277479
+    ],
+    "feature_scale": [
+      5250.787266674708,
+      931.2695795991765,
+      1.9184719139750988,
+      5.183360619127314,
+      14.829005846236011
+    ],
+    "target_mean": 5727.872340425532,
+    "standardized_coefficients": [
+      3367.090630972635,
+      1527.5145259429812,
+      419.9901016434336,
+      1317.5579961673213,
+      -197.24238407176367
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 52,
+    "horizon": 4,
+    "prediction": 2259.8049189755684,
+    "raw_prediction": 2259.8049189755684,
+    "training_pairs": 45,
+    "latest_training_target_week_number": 52,
+    "feature_mean": [
+      5928.688888888889,
+      17.673333333333296
+    ],
+    "feature_scale": [
+      5270.981286765502,
+      951.2153627859464
+    ],
+    "target_mean": 5957.444444444444,
+    "standardized_coefficients": [
+      3346.959073828435,
+      2259.658241103872
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 52,
+    "horizon": 4,
+    "prediction": 0.0,
+    "raw_prediction": -2420.782669331943,
+    "training_pairs": 45,
+    "latest_training_target_week_number": 52,
+    "feature_mean": [
+      5928.688888888889,
+      17.673333333333296,
+      24.247156174417604,
+      73.27694191940482,
+      28.646938524920007
+    ],
+    "feature_scale": [
+      5270.981286765502,
+      951.2153627859464,
+      1.883895311172865,
+      5.059201212978523,
+      14.705361143424218
+    ],
+    "target_mean": 5957.444444444444,
+    "standardized_coefficients": [
+      1583.8981064350714,
+      2442.833708344335,
+      946.4982978994478,
+      2166.0726532479566,
+      -246.40496498349984
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 53,
+    "horizon": 1,
+    "prediction": 907.2919698835676,
+    "raw_prediction": 907.2919698835676,
+    "training_pairs": 49,
+    "latest_training_target_week_number": 53,
+    "feature_mean": [
+      5518.0204081632655,
+      5.022448979591804
+    ],
+    "feature_scale": [
+      5235.922488512025,
+      912.560376367751
+    ],
+    "target_mean": 5517.714285714285,
+    "standardized_coefficients": [
+      4820.396131322241,
+      663.0338900324674
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 53,
+    "horizon": 1,
+    "prediction": 15.419866572100545,
+    "raw_prediction": 15.419866572100545,
+    "training_pairs": 49,
+    "latest_training_target_week_number": 53,
+    "feature_mean": [
+      5518.0204081632655,
+      5.022448979591804,
+      24.043790729335097,
+      72.41683283004599,
+      27.012662747908262
+    ],
+    "feature_scale": [
+      5235.922488512025,
+      912.560376367751,
+      1.9500460867095923,
+      5.708914472427438,
+      15.178116106044184
+    ],
+    "target_mean": 5517.714285714285,
+    "standardized_coefficients": [
+      4272.724537610051,
+      751.167479353664,
+      114.91620780308625,
+      646.1145863584657,
+      16.40283202660686
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 53,
+    "horizon": 2,
+    "prediction": 1219.1495274899635,
+    "raw_prediction": 1219.1495274899635,
+    "training_pairs": 48,
+    "latest_training_target_week_number": 53,
+    "feature_mean": [
+      5617.916666666667,
+      8.197916666666634
+    ],
+    "feature_scale": [
+      5243.762377153979,
+      921.7492311925153
+    ],
+    "target_mean": 5621.041666666667,
+    "standardized_coefficients": [
+      4423.079036802718,
+      1333.901024863807
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 53,
+    "horizon": 2,
+    "prediction": 0.0,
+    "raw_prediction": -559.3094548441759,
+    "training_pairs": 48,
+    "latest_training_target_week_number": 53,
+    "feature_mean": [
+      5617.916666666667,
+      8.197916666666634,
+      24.060077256990038,
+      72.70143785661271,
+      27.379063934173953
+    ],
+    "feature_scale": [
+      5243.762377153979,
+      921.7492311925153,
+      1.966953211622254,
+      5.413104216627204,
+      15.119406417052925
+    ],
+    "target_mean": 5621.041666666667,
+    "standardized_coefficients": [
+      3487.0490418387844,
+      1485.1129784210066,
+      318.37566333230615,
+      1141.2719452428569,
+      -98.44538809456778
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 53,
+    "horizon": 4,
+    "prediction": 2195.2242667368414,
+    "raw_prediction": 2195.2242667368414,
+    "training_pairs": 46,
+    "latest_training_target_week_number": 53,
+    "feature_mean": [
+      5824.891304347826,
+      13.960869565217354
+    ],
+    "feature_scale": [
+      5259.666092180067,
+      941.1488069002045
+    ],
+    "target_mean": 5840.978260869565,
+    "standardized_coefficients": [
+      3376.5620141595796,
+      2234.916994679496
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 53,
+    "horizon": 4,
+    "prediction": 0.0,
+    "raw_prediction": -2084.673511486303,
+    "training_pairs": 46,
+    "latest_training_target_week_number": 53,
+    "feature_mean": [
+      5824.891304347826,
+      13.960869565217354,
+      24.191890657790456,
+      73.1234163030381,
+      28.185535449926984
+    ],
+    "feature_scale": [
+      5259.666092180067,
+      941.1488069002045,
+      1.899829074261088,
+      5.108791227121383,
+      14.870332426032506
+    ],
+    "target_mean": 5840.978260869565,
+    "standardized_coefficients": [
+      1596.1797965643573,
+      2417.3953479163256,
+      933.2605451817273,
+      2155.213260084611,
+      -239.3482193083834
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 54,
+    "horizon": 1,
+    "prediction": 990.6029730820328,
+    "raw_prediction": 990.6029730820328,
+    "training_pairs": 50,
+    "latest_training_target_week_number": 54,
+    "feature_mean": [
+      5419.66,
+      2.7459999999999685
+    ],
+    "feature_scale": [
+      5228.82877367389,
+      903.5292139626698
+    ],
+    "target_mean": 5420.4,
+    "standardized_coefficients": [
+      4818.826173143928,
+      656.1098110971367
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 54,
+    "horizon": 1,
+    "prediction": 0.0,
+    "raw_prediction": -148.58097164970513,
+    "training_pairs": 50,
+    "latest_training_target_week_number": 54,
+    "feature_mean": [
+      5419.66,
+      2.7459999999999685,
+      23.978852323571303,
+      72.20796585520941,
+      26.605205600887672
+    ],
+    "feature_scale": [
+      5228.82877367389,
+      903.5292139626698,
+      1.9832445578141804,
+      5.837595019364862,
+      15.293879473967245
+    ],
+    "target_mean": 5420.4,
+    "standardized_coefficients": [
+      4290.370633660216,
+      740.4336196153533,
+      87.99962975883109,
+      608.8156852153083,
+      40.864063212443895
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 54,
+    "horizon": 2,
+    "prediction": 1329.413051085974,
+    "raw_prediction": 1329.413051085974,
+    "training_pairs": 49,
+    "latest_training_target_week_number": 54,
+    "feature_mean": [
+      5518.0204081632655,
+      5.022448979591804
+    ],
+    "feature_scale": [
+      5235.922488512025,
+      912.560376367751
+    ],
+    "target_mean": 5519.632653061224,
+    "standardized_coefficients": [
+      4428.072618158088,
+      1320.2958062191333
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 54,
+    "horizon": 2,
+    "prediction": 0.0,
+    "raw_prediction": -556.6871448728125,
+    "training_pairs": 49,
+    "latest_training_target_week_number": 54,
+    "feature_mean": [
+      5518.0204081632655,
+      5.022448979591804,
+      24.043790729335097,
+      72.41683283004599,
+      27.012662747908262
+    ],
+    "feature_scale": [
+      5235.922488512025,
+      912.560376367751,
+      1.9500460867095923,
+      5.708914472427438,
+      15.178116106044184
+    ],
+    "target_mean": 5519.632653061224,
+    "standardized_coefficients": [
+      3575.504957449107,
+      1426.3353582641198,
+      277.1272353218335,
+      998.232484765229,
+      -5.087794795822822
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 54,
+    "horizon": 4,
+    "prediction": 2305.8889445092523,
+    "raw_prediction": 2305.8889445092523,
+    "training_pairs": 47,
+    "latest_training_target_week_number": 54,
+    "feature_mean": [
+      5721.127659574468,
+      11.210638297872306
+    ],
+    "feature_scale": [
+      5250.787266674708,
+      931.2695795991765
+    ],
+    "target_mean": 5730.574468085107,
+    "standardized_coefficients": [
+      3404.8822929755056,
+      2208.963258471681
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 54,
+    "horizon": 4,
+    "prediction": 0.0,
+    "raw_prediction": -2158.1829989458283,
+    "training_pairs": 47,
+    "latest_training_target_week_number": 54,
+    "feature_mean": [
+      5721.127659574468,
+      11.210638297872306,
+      24.13517269325739,
+      72.95383925317608,
+      27.91058671277479
+    ],
+    "feature_scale": [
+      5250.787266674708,
+      931.2695795991765,
+      1.9184719139750988,
+      5.183360619127314,
+      14.829005846236011
+    ],
+    "target_mean": 5730.574468085107,
+    "standardized_coefficients": [
+      1646.617062029084,
+      2377.868766359814,
+      875.7723040029696,
+      2064.4320362974827,
+      -165.60340576009338
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 55,
+    "horizon": 1,
+    "prediction": 837.014092253542,
+    "raw_prediction": 837.014092253542,
+    "training_pairs": 51,
+    "latest_training_target_week_number": 55,
+    "feature_mean": [
+      5326.176470588235,
+      1.7745098039215377
+    ],
+    "feature_scale": [
+      5219.340731810914,
+      894.6536047473933
+    ],
+    "target_mean": 5324.176470588235,
+    "standardized_coefficients": [
+      4819.0106090693025,
+      648.1912356267726
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 55,
+    "horizon": 1,
+    "prediction": 0.0,
+    "raw_prediction": -412.4213003576515,
+    "training_pairs": 51,
+    "latest_training_target_week_number": 55,
+    "feature_mean": [
+      5326.176470588235,
+      1.7745098039215377,
+      23.96980133236866,
+      71.9198646319205,
+      26.138898083318544
+    ],
+    "feature_scale": [
+      5219.340731810914,
+      894.6536047473933,
+      1.9647473815138474,
+      6.128576080342924,
+      15.498017808494222
+    ],
+    "target_mean": 5324.176470588235,
+    "standardized_coefficients": [
+      4315.23927446913,
+      720.5686406557475,
+      82.71212070811437,
+      571.2082889325584,
+      59.748266448821646
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 55,
+    "horizon": 2,
+    "prediction": 1170.316149912791,
+    "raw_prediction": 1170.316149912791,
+    "training_pairs": 50,
+    "latest_training_target_week_number": 55,
+    "feature_mean": [
+      5419.66,
+      2.7459999999999685
+    ],
+    "feature_scale": [
+      5228.82877367389,
+      903.5292139626698
+    ],
+    "target_mean": 5419.5,
+    "standardized_coefficients": [
+      4434.907339602063,
+      1306.1918864487343
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 55,
+    "horizon": 2,
+    "prediction": 0.0,
+    "raw_prediction": -954.0113037749907,
+    "training_pairs": 50,
+    "latest_training_target_week_number": 55,
+    "feature_mean": [
+      5419.66,
+      2.7459999999999685,
+      23.978852323571303,
+      72.20796585520941,
+      26.605205600887672
+    ],
+    "feature_scale": [
+      5228.82877367389,
+      903.5292139626698,
+      1.9832445578141804,
+      5.837595019364862,
+      15.293879473967245
+    ],
+    "target_mean": 5419.5,
+    "standardized_coefficients": [
+      3600.506286403807,
+      1408.1930091076633,
+      244.808481428739,
+      954.3348947610738,
+      26.223682782578866
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 55,
+    "horizon": 4,
+    "prediction": 2123.997141444063,
+    "raw_prediction": 2123.997141444063,
+    "training_pairs": 48,
+    "latest_training_target_week_number": 55,
+    "feature_mean": [
+      5617.916666666667,
+      8.197916666666634
+    ],
+    "feature_scale": [
+      5243.762377153979,
+      921.7492311925153
+    ],
+    "target_mean": 5621.875,
+    "standardized_coefficients": [
+      3432.34440594756,
+      2184.5582784462913
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 55,
+    "horizon": 4,
+    "prediction": 0.0,
+    "raw_prediction": -2185.5779236511016,
+    "training_pairs": 48,
+    "latest_training_target_week_number": 55,
+    "feature_mean": [
+      5617.916666666667,
+      8.197916666666634,
+      24.060077256990038,
+      72.70143785661271,
+      27.379063934173953
+    ],
+    "feature_scale": [
+      5243.762377153979,
+      921.7492311925153,
+      1.966953211622254,
+      5.413104216627204,
+      15.119406417052925
+    ],
+    "target_mean": 5621.875,
+    "standardized_coefficients": [
+      1841.8865800358346,
+      2311.2559672661573,
+      719.1794136539689,
+      1783.2055998106568,
+      -5.892187685205307
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 56,
+    "horizon": 1,
+    "prediction": 891.197224718353,
+    "raw_prediction": 891.197224718353,
+    "training_pairs": 52,
+    "latest_training_target_week_number": 56,
+    "feature_mean": [
+      5233.615384615385,
+      0.6288461538461235
+    ],
+    "feature_scale": [
+      5211.006392368156,
+      886.0471810533086
+    ],
+    "target_mean": 5232.5192307692305,
+    "standardized_coefficients": [
+      4816.552498662128,
+      641.2405693198862
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 56,
+    "horizon": 1,
+    "prediction": 634.6233549744456,
+    "raw_prediction": 634.6233549744456,
+    "training_pairs": 52,
+    "latest_training_target_week_number": 56,
+    "feature_mean": [
+      5233.615384615385,
+      0.6288461538461235,
+      23.988143952152654,
+      71.57454986181673,
+      25.76113236192787
+    ],
+    "feature_scale": [
+      5211.006392368156,
+      886.0471810533086,
+      1.9501682168137835,
+      6.551221609038847,
+      15.583568245218775
+    ],
+    "target_mean": 5232.5192307692305,
+    "standardized_coefficients": [
+      4358.932097665831,
+      685.7937813849326,
+      82.8176483856864,
+      489.22229293737456,
+      105.59638065023296
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 56,
+    "horizon": 2,
+    "prediction": 1226.664063922627,
+    "raw_prediction": 1226.664063922627,
+    "training_pairs": 51,
+    "latest_training_target_week_number": 56,
+    "feature_mean": [
+      5326.176470588235,
+      1.7745098039215377
+    ],
+    "feature_scale": [
+      5219.340731810914,
+      894.6536047473933
+    ],
+    "target_mean": 5324.176470588235,
+    "standardized_coefficients": [
+      4440.549423571104,
+      1291.2301291045655
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 56,
+    "horizon": 2,
+    "prediction": 676.717459331172,
+    "raw_prediction": 676.717459331172,
+    "training_pairs": 51,
+    "latest_training_target_week_number": 56,
+    "feature_mean": [
+      5326.176470588235,
+      1.7745098039215377,
+      23.96980133236866,
+      71.9198646319205,
+      26.138898083318544
+    ],
+    "feature_scale": [
+      5219.340731810914,
+      894.6536047473933,
+      1.9647473815138474,
+      6.128576080342924,
+      15.498017808494222
+    ],
+    "target_mean": 5324.176470588235,
+    "standardized_coefficients": [
+      3642.7880078251214,
+      1375.554772727425,
+      235.83979788198263,
+      899.6002943372366,
+      54.267775623430936
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 56,
+    "horizon": 4,
+    "prediction": 2170.919076604156,
+    "raw_prediction": 2170.919076604156,
+    "training_pairs": 49,
+    "latest_training_target_week_number": 56,
+    "feature_mean": [
+      5518.0204081632655,
+      5.022448979591804
+    ],
+    "feature_scale": [
+      5235.922488512025,
+      912.560376367751
+    ],
+    "target_mean": 5518.530612244898,
+    "standardized_coefficients": [
+      3454.998064196963,
+      2161.702360819849
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 56,
+    "horizon": 4,
+    "prediction": 883.8573867027199,
+    "raw_prediction": 883.8573867027199,
+    "training_pairs": 49,
+    "latest_training_target_week_number": 56,
+    "feature_mean": [
+      5518.0204081632655,
+      5.022448979591804,
+      24.043790729335097,
+      72.41683283004599,
+      27.012662747908262
+    ],
+    "feature_scale": [
+      5235.922488512025,
+      912.560376367751,
+      1.9500460867095923,
+      5.708914472427438,
+      15.178116106044184
+    ],
+    "target_mean": 5518.530612244898,
+    "standardized_coefficients": [
+      1961.1798370464087,
+      2230.95616361346,
+      662.8096591656737,
+      1612.7740992770168,
+      116.74334808580616
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 57,
+    "horizon": 1,
+    "prediction": 849.8584211245579,
+    "raw_prediction": 849.8584211245579,
+    "training_pairs": 53,
+    "latest_training_target_week_number": 57,
+    "feature_mean": [
+      5145.396226415094,
+      0.11698113207544199
+    ],
+    "feature_scale": [
+      5200.666605820009,
+      877.6562018122848
+    ],
+    "target_mean": 5143.811320754717,
+    "standardized_coefficients": [
+      4813.5252956084405,
+      633.9851126156418
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 57,
+    "horizon": 1,
+    "prediction": 281.25488878285705,
+    "raw_prediction": 281.25488878285705,
+    "training_pairs": 53,
+    "latest_training_target_week_number": 57,
+    "feature_mean": [
+      5145.396226415094,
+      0.11698113207544199,
+      23.977193005598625,
+      71.43063515183478,
+      25.561842881019892
+    ],
+    "feature_scale": [
+      5200.666605820009,
+      877.6562018122848,
+      1.9332962577116382,
+      6.571584020659485,
+      15.502606765741962
+    ],
+    "target_mean": 5143.811320754717,
+    "standardized_coefficients": [
+      4351.077647657279,
+      679.6544077104795,
+      82.5945402824824,
+      493.3043551974233,
+      103.58196310898394
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 57,
+    "horizon": 2,
+    "prediction": 1174.300517591174,
+    "raw_prediction": 1174.300517591174,
+    "training_pairs": 52,
+    "latest_training_target_week_number": 57,
+    "feature_mean": [
+      5233.615384615385,
+      0.6288461538461235
+    ],
+    "feature_scale": [
+      5211.006392368156,
+      886.0471810533086
+    ],
+    "target_mean": 5232.0,
+    "standardized_coefficients": [
+      4444.568006764124,
+      1277.2863127931694
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 57,
+    "horizon": 2,
+    "prediction": 356.63363520404164,
+    "raw_prediction": 356.63363520404164,
+    "training_pairs": 52,
+    "latest_training_target_week_number": 57,
+    "feature_mean": [
+      5233.615384615385,
+      0.6288461538461235,
+      23.988143952152654,
+      71.57454986181673,
+      25.76113236192787
+    ],
+    "feature_scale": [
+      5211.006392368156,
+      886.0471810533086,
+      1.9501682168137835,
+      6.551221609038847,
+      15.583568245218775
+    ],
+    "target_mean": 5232.0,
+    "standardized_coefficients": [
+      3702.4731814220017,
+      1326.3882229189,
+      234.67778225254386,
+      804.1084723051706,
+      114.12107451224666
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 57,
+    "horizon": 4,
+    "prediction": 2085.561851186699,
+    "raw_prediction": 2085.561851186699,
+    "training_pairs": 50,
+    "latest_training_target_week_number": 57,
+    "feature_mean": [
+      5419.66,
+      2.7459999999999685
+    ],
+    "feature_scale": [
+      5228.82877367389,
+      903.5292139626698
+    ],
+    "target_mean": 5418.78,
+    "standardized_coefficients": [
+      3477.725992017794,
+      2137.8717988188246
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 57,
+    "horizon": 4,
+    "prediction": 242.03428995840386,
+    "raw_prediction": 242.03428995840386,
+    "training_pairs": 50,
+    "latest_training_target_week_number": 57,
+    "feature_mean": [
+      5419.66,
+      2.7459999999999685,
+      23.978852323571303,
+      72.20796585520941,
+      26.605205600887672
+    ],
+    "feature_scale": [
+      5228.82877367389,
+      903.5292139626698,
+      1.9832445578141804,
+      5.837595019364862,
+      15.293879473967245
+    ],
+    "target_mean": 5418.78,
+    "standardized_coefficients": [
+      2007.4035288167229,
+      2202.372470491063,
+      612.6537339647704,
+      1539.6661352735646,
+      169.4384097437973
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 58,
+    "horizon": 1,
+    "prediction": 878.040264924155,
+    "raw_prediction": 878.040264924155,
+    "training_pairs": 54,
+    "latest_training_target_week_number": 58,
+    "feature_mean": [
+      5059.944444444444,
+      -0.47407407407410324
+    ],
+    "feature_scale": [
+      5189.7081214459895,
+      869.5024277829473
+    ],
+    "target_mean": 5058.611111111111,
+    "standardized_coefficients": [
+      4808.848160426878,
+      627.1689145984645
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 58,
+    "horizon": 1,
+    "prediction": 450.25489578432826,
+    "raw_prediction": 450.25489578432826,
+    "training_pairs": 54,
+    "latest_training_target_week_number": 58,
+    "feature_mean": [
+      5059.944444444444,
+      -0.47407407407410324,
+      24.004539911677792,
+      71.20064466263352,
+      25.26233729988881
+    ],
+    "feature_scale": [
+      5189.7081214459895,
+      869.5024277829473,
+      1.9256311150580045,
+      6.7223098099251235,
+      15.512399436982871
+    ],
+    "target_mean": 5058.611111111111,
+    "standardized_coefficients": [
+      4347.5313079228745,
+      669.5634288426862,
+      86.6156886536315,
+      489.0781203830196,
+      106.052227262745
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 58,
+    "horizon": 2,
+    "prediction": 1216.6478697980083,
+    "raw_prediction": 1216.6478697980083,
+    "training_pairs": 53,
+    "latest_training_target_week_number": 58,
+    "feature_mean": [
+      5145.396226415094,
+      0.11698113207544199
+    ],
+    "feature_scale": [
+      5200.666605820009,
+      877.6562018122848
+    ],
+    "target_mean": 5143.528301886792,
+    "standardized_coefficients": [
+      4447.3952610369015,
+      1263.1387118733217
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 58,
+    "horizon": 2,
+    "prediction": 544.4766489451431,
+    "raw_prediction": 544.4766489451431,
+    "training_pairs": 53,
+    "latest_training_target_week_number": 58,
+    "feature_mean": [
+      5145.396226415094,
+      0.11698113207544199,
+      23.977193005598625,
+      71.43063515183478,
+      25.561842881019892
+    ],
+    "feature_scale": [
+      5200.666605820009,
+      877.6562018122848,
+      1.9332962577116382,
+      6.571584020659485,
+      15.502606765741962
+    ],
+    "target_mean": 5143.528301886792,
+    "standardized_coefficients": [
+      3695.706888113144,
+      1314.844680640833,
+      234.14066043295892,
+      813.791449774356,
+      109.74376599242512
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 58,
+    "horizon": 4,
+    "prediction": 2126.1944114481225,
+    "raw_prediction": 2126.1944114481225,
+    "training_pairs": 51,
+    "latest_training_target_week_number": 58,
+    "feature_mean": [
+      5326.176470588235,
+      1.7745098039215377
+    ],
+    "feature_scale": [
+      5219.340731810914,
+      894.6536047473933
+    ],
+    "target_mean": 5323.176470588235,
+    "standardized_coefficients": [
+      3500.164259061796,
+      2112.1881195146325
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 58,
+    "horizon": 4,
+    "prediction": 775.4754702594118,
+    "raw_prediction": 775.4754702594118,
+    "training_pairs": 51,
+    "latest_training_target_week_number": 58,
+    "feature_mean": [
+      5326.176470588235,
+      1.7745098039215377,
+      23.96980133236866,
+      71.9198646319205,
+      26.138898083318544
+    ],
+    "feature_scale": [
+      5219.340731810914,
+      894.6536047473933,
+      1.9647473815138474,
+      6.128576080342924,
+      15.498017808494222
+    ],
+    "target_mean": 5323.176470588235,
+    "standardized_coefficients": [
+      2070.440153254246,
+      2154.990769005411,
+      597.7654061039597,
+      1476.11302006405,
+      210.124711995282
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 59,
+    "horizon": 1,
+    "prediction": 808.2924615297788,
+    "raw_prediction": 808.2924615297788,
+    "training_pairs": 55,
+    "latest_training_target_week_number": 59,
+    "feature_mean": [
+      4977.818181818182,
+      -0.35090909090911954
+    ],
+    "feature_scale": [
+      5177.604971381017,
+      861.5620754025218
+    ],
+    "target_mean": 4975.709090909091,
+    "standardized_coefficients": [
+      4804.184090329079,
+      619.9970643912337
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 59,
+    "horizon": 1,
+    "prediction": 901.0332799691569,
+    "raw_prediction": 901.0332799691569,
+    "training_pairs": 55,
+    "latest_training_target_week_number": 59,
+    "feature_mean": [
+      4977.818181818182,
+      -0.35090909090911954,
+      24.020230774369757,
+      71.0073061276336,
+      25.010206362804873
+    ],
+    "feature_scale": [
+      5177.604971381017,
+      861.5620754025218,
+      1.9115258243802296,
+      6.810751165924099,
+      15.481994167898732
+    ],
+    "target_mean": 4975.709090909091,
+    "standardized_coefficients": [
+      4339.148441818621,
+      662.9242071162757,
+      86.02816156056642,
+      491.8812614331577,
+      106.86997770768608
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 59,
+    "horizon": 2,
+    "prediction": 1124.351093886587,
+    "raw_prediction": 1124.351093886587,
+    "training_pairs": 54,
+    "latest_training_target_week_number": 59,
+    "feature_mean": [
+      5059.944444444444,
+      -0.47407407407410324
+    ],
+    "feature_scale": [
+      5189.7081214459895,
+      869.5024277829473
+    ],
+    "target_mean": 5057.518518518518,
+    "standardized_coefficients": [
+      4449.181922566217,
+      1249.5193157509084
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 59,
+    "horizon": 2,
+    "prediction": 1275.6980766356146,
+    "raw_prediction": 1275.6980766356146,
+    "training_pairs": 54,
+    "latest_training_target_week_number": 59,
+    "feature_mean": [
+      5059.944444444444,
+      -0.47407407407410324,
+      24.004539911677792,
+      71.20064466263352,
+      25.26233729988881
+    ],
+    "feature_scale": [
+      5189.7081214459895,
+      869.5024277829473,
+      1.9256311150580045,
+      6.7223098099251235,
+      15.512399436982871
+    ],
+    "target_mean": 5057.518518518518,
+    "standardized_coefficients": [
+      3692.2212697818595,
+      1300.3381261584266,
+      235.28691830787326,
+      821.3373972502409,
+      112.31504237614571
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 59,
+    "horizon": 4,
+    "prediction": 1991.2654649384958,
+    "raw_prediction": 1991.2654649384958,
+    "training_pairs": 52,
+    "latest_training_target_week_number": 59,
+    "feature_mean": [
+      5233.615384615385,
+      0.6288461538461235
+    ],
+    "feature_scale": [
+      5211.006392368156,
+      886.0471810533086
+    ],
+    "target_mean": 5230.403846153846,
+    "standardized_coefficients": [
+      3520.6304672673696,
+      2087.9892216663793
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 59,
+    "horizon": 4,
+    "prediction": 2311.770262670657,
+    "raw_prediction": 2311.770262670657,
+    "training_pairs": 52,
+    "latest_training_target_week_number": 59,
+    "feature_mean": [
+      5233.615384615385,
+      0.6288461538461235,
+      23.988143952152654,
+      71.57454986181673,
+      25.76113236192787
+    ],
+    "feature_scale": [
+      5211.006392368156,
+      886.0471810533086,
+      1.9501682168137835,
+      6.551221609038847,
+      15.583568245218775
+    ],
+    "target_mean": 5230.403846153846,
+    "standardized_coefficients": [
+      2148.8624635232172,
+      2089.5832395062153,
+      593.3315097295988,
+      1381.1722872548212,
+      286.6521604328268
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 60,
+    "horizon": 1,
+    "prediction": 822.4429980096502,
+    "raw_prediction": 822.4429980096502,
+    "training_pairs": 56,
+    "latest_training_target_week_number": 60,
+    "feature_mean": [
+      4897.839285714285,
+      -0.6392857142857424
+    ],
+    "feature_scale": [
+      5165.336438969135,
+      853.8375836017751
+    ],
+    "target_mean": 4896.107142857143,
+    "standardized_coefficients": [
+      4797.758844142622,
+      613.5257573608942
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 60,
+    "horizon": 1,
+    "prediction": 1092.2964845869346,
+    "raw_prediction": 1092.2964845869346,
+    "training_pairs": 56,
+    "latest_training_target_week_number": 60,
+    "feature_mean": [
+      4897.839285714285,
+      -0.6392857142857424,
+      24.030166322694033,
+      70.92756232594566,
+      24.981096869761778
+    ],
+    "feature_scale": [
+      5165.336438969135,
+      853.8375836017751,
+      1.8958142159634062,
+      6.775526043182207,
+      15.344658077335712
+    ],
+    "target_mean": 4896.107142857143,
+    "standardized_coefficients": [
+      4336.250642669563,
+      658.3407363081751,
+      83.15482868958297,
+      493.31183423782693,
+      99.64956784228661
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 60,
+    "horizon": 2,
+    "prediction": 1130.3897513738666,
+    "raw_prediction": 1130.3897513738666,
+    "training_pairs": 55,
+    "latest_training_target_week_number": 60,
+    "feature_mean": [
+      4977.818181818182,
+      -0.35090909090911954
+    ],
+    "feature_scale": [
+      5177.604971381017,
+      861.5620754025218
+    ],
+    "target_mean": 4974.981818181818,
+    "standardized_coefficients": [
+      4450.125522228811,
+      1235.663861518256
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 60,
+    "horizon": 2,
+    "prediction": 1598.2859549386658,
+    "raw_prediction": 1598.2859549386658,
+    "training_pairs": 55,
+    "latest_training_target_week_number": 60,
+    "feature_mean": [
+      4977.818181818182,
+      -0.35090909090911954,
+      24.020230774369757,
+      71.0073061276336,
+      25.010206362804873
+    ],
+    "feature_scale": [
+      5177.604971381017,
+      861.5620754025218,
+      1.9115258243802296,
+      6.810751165924099,
+      15.481994167898732
+    ],
+    "target_mean": 4974.981818181818,
+    "standardized_coefficients": [
+      3684.6166896708937,
+      1288.8426234517156,
+      232.56758502167952,
+      831.7947161215786,
+      112.74647806981159
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 61,
+    "horizon": 1,
+    "prediction": 766.6407633663366,
+    "raw_prediction": 766.6407633663366,
+    "training_pairs": 57,
+    "latest_training_target_week_number": 61,
+    "feature_mean": [
+      4821.0,
+      -0.7736842105263434
+    ],
+    "feature_scale": [
+      5152.014897957102,
+      846.3152364709724
+    ],
+    "target_mean": 4818.578947368421,
+    "standardized_coefficients": [
+      4791.059450444531,
+      606.9913910522463
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 61,
+    "horizon": 1,
+    "prediction": 1360.438010871635,
+    "raw_prediction": 1360.438010871635,
+    "training_pairs": 57,
+    "latest_training_target_week_number": 61,
+    "feature_mean": [
+      4821.0,
+      -0.7736842105263434,
+      24.036219339648817,
+      70.89657972241754,
+      24.960498425744255
+    ],
+    "feature_scale": [
+      5152.014897957102,
+      846.3152364709724,
+      1.8796565478301475,
+      6.719829581169432,
+      15.210241308096032
+    ],
+    "target_mean": 4818.578947368421,
+    "standardized_coefficients": [
+      4344.170601309031,
+      650.4028449152136,
+      76.91993248080487,
+      478.4328552360453,
+      99.17172891273161
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 61,
+    "horizon": 2,
+    "prediction": 1061.5521327420915,
+    "raw_prediction": 1061.5521327420915,
+    "training_pairs": 56,
+    "latest_training_target_week_number": 61,
+    "feature_mean": [
+      4897.839285714285,
+      -0.6392857142857424
+    ],
+    "feature_scale": [
+      5165.336438969135,
+      853.8375836017751
+    ],
+    "target_mean": 4894.660714285715,
+    "standardized_coefficients": [
+      4449.747882098152,
+      1222.7125652945717
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 61,
+    "horizon": 2,
+    "prediction": 2071.04209362192,
+    "raw_prediction": 2071.04209362192,
+    "training_pairs": 56,
+    "latest_training_target_week_number": 61,
+    "feature_mean": [
+      4897.839285714285,
+      -0.6392857142857424,
+      24.030166322694033,
+      70.92756232594566,
+      24.981096869761778
+    ],
+    "feature_scale": [
+      5165.336438969135,
+      853.8375836017751,
+      1.8958142159634062,
+      6.775526043182207,
+      15.344658077335712
+    ],
+    "target_mean": 4894.660714285715,
+    "standardized_coefficients": [
+      3690.140805707451,
+      1280.3144738917813,
+      226.40577755436868,
+      836.6722795026188,
+      98.48460151595562
+    ]
+  },
+  {
+    "model": "ARTrend",
+    "origin_n": 62,
+    "horizon": 1,
+    "prediction": 824.0195812954948,
+    "raw_prediction": 824.0195812954948,
+    "training_pairs": 58,
+    "latest_training_target_week_number": 62,
+    "feature_mean": [
+      4746.103448275862,
+      -1.0689655172414063
+    ],
+    "feature_scale": [
+      5138.614235877269,
+      838.9906557382932
+    ],
+    "target_mean": 4744.620689655172,
+    "standardized_coefficients": [
+      4782.531536475143,
+      601.0527212593363
+    ]
+  },
+  {
+    "model": "ARTrendClimate",
+    "origin_n": 62,
+    "horizon": 1,
+    "prediction": 1124.9287501433646,
+    "raw_prediction": 1124.9287501433646,
+    "training_pairs": 58,
+    "latest_training_target_week_number": 62,
+    "feature_mean": [
+      4746.103448275862,
+      -1.0689655172414063,
+      24.05145512132569,
+      70.92220366101425,
+      25.161205483871843
+    ],
+    "feature_scale": [
+      5138.614235877269,
+      838.9906557382932,
+      1.8669291431053407,
+      6.664456572086893,
+      15.154496762665788
+    ],
+    "target_mean": 4744.620689655172,
+    "standardized_coefficients": [
+      4367.789159750371,
+      645.2159173064578,
+      70.30619041401684,
+      460.96116488101785,
+      80.029517619346
+    ]
+  }
+]

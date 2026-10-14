@@ -1,0 +1,105 @@
+{
+  "decision_date": "2026-10-05",
+  "status": "main_candidate_not_model_ready",
+  "spatial_aggregation": "within_UF_station_mean_then_fixed_2024_population_weighting",
+  "rain_station_week_rule": "168 valid hours and 168 record rows",
+  "temp_humidity_station_week_rule": "at least 135 valid hours",
+  "population_total_2024": 212583750,
+  "missing_UF_rule": "renormalize weights over UFs with eligible stations",
+  "coverage_meaning": "whole-UF population share, not actual spatial population coverage",
+  "units": {
+    "temp_mean_c": "degC",
+    "rainfall_168h_mm": "mm/week",
+    "humidity_mean_pct": "percent",
+    "probable_cases": "persons/week"
+  },
+  "time_basis": "station-local Sunday 00:00 to next Sunday 00:00",
+  "split_status": "not_confirmed",
+  "2025_prior_model_selection_use": "unknown_confirmed_by_user_2026-10-05",
+  "case_calendar_2025_weeks": 53,
+  "missing_climate_weeks_in_2025": [
+    {
+      "epi_year_week": "2025-W53",
+      "week_start": "2025-12-28",
+      "week_end": "2026-01-03"
+    }
+  ],
+  "period_summaries": {
+    "baseline_63_weeks": {
+      "weeks": 63,
+      "first_week": "2023-W35",
+      "last_week": "2024-W45",
+      "rain_min_valid_uf_count": 25,
+      "rain_weeks_all_27_ufs": 30,
+      "rain_min_valid_uf_population_share": 0.9848525392933374
+    },
+    "2025_available_weeks": {
+      "weeks": 52,
+      "first_week": "2025-W01",
+      "last_week": "2025-W52",
+      "rain_min_valid_uf_count": 1,
+      "rain_weeks_all_27_ufs": 8,
+      "rain_min_valid_uf_population_share": 0.013650596529603
+    }
+  },
+  "five_lowest_rain_coverage_weeks": [
+    {
+      "epi_year_week": "2025-W52",
+      "week_start": "2025-12-21",
+      "week_end": "2025-12-27",
+      "rain_valid_uf_count": 1,
+      "rain_valid_uf_population_share": 0.013650596529603
+    },
+    {
+      "epi_year_week": "2025-W43",
+      "week_start": "2025-10-19",
+      "week_end": "2025-10-25",
+      "rain_valid_uf_count": 20,
+      "rain_valid_uf_population_share": 0.7916854980684084
+    },
+    {
+      "epi_year_week": "2025-W42",
+      "week_start": "2025-10-12",
+      "week_end": "2025-10-18",
+      "rain_valid_uf_count": 22,
+      "rain_valid_uf_population_share": 0.9150681084513752
+    },
+    {
+      "epi_year_week": "2025-W36",
+      "week_start": "2025-08-31",
+      "week_end": "2025-09-06",
+      "rain_valid_uf_count": 24,
+      "rain_valid_uf_population_share": 0.9336944192582924
+    },
+    {
+      "epi_year_week": "2025-W49",
+      "week_start": "2025-11-30",
+      "week_end": "2025-12-06",
+      "rain_valid_uf_count": 23,
+      "rain_valid_uf_population_share": 0.964498387106258
+    }
+  ],
+  "limitations": [
+    "No imputation, lag selection, scaling, split assignment or model fitting performed.",
+    "2025-W52 has only one eligible UF: do not use its rain as a national predictor.",
+    "2025-W43 reduced coverage requires review; no exclusion threshold is approved.",
+    "2025-W53 needs 2026 hourly climate input and is absent here.",
+    "Full hourly completeness does not ensure adequate national spatial coverage.",
+    "Fixed 2024 weights and revised case snapshots do not recreate real-time availability."
+  ],
+  "checks_passed": [
+    "156 continuous Sunday-Saturday week keys match the source case calendar",
+    "63 baseline week keys and observed counts unchanged",
+    "156 selected rain values and coverage independently recomputed from station-weeks",
+    "nonnegative counts/rain, bounded humidity/coverage, no missing national aggregates"
+  ],
+  "inputs_sha256": {
+    "brazil_weekly_climate.csv": "a206680ffa203b636ac9a085a63380d891bfd681cbd4803078ebe1f09ac1ed2c",
+    "inmet_rain_completeness_sensitivity_2023_2025.csv": "3cf15f7988d5302783cd35f500e1c88a7c18fdf68083d02594b488370d2b7803",
+    "brazil_weekly_chikungunya_cases.csv": "1ac5fbaf853cd666a75075cc053dda392c2cf2f1435560e2f9b9a006ef381374",
+    "baseline_fitting_cases_2023W35_2024W45.csv": "88f6f804bb2b29997a90e1163dc5f40f776709762a3ca7330223fb3a121547d3",
+    "inmet_station_week_quality_2023_2025.csv": "96b21173c6ebdf799993fff5650f062b0b932d5ab6ca8e86c703589f1aa8e06a",
+    "inmet_state_week_climate_2023_2025.csv": "790d9f25c0783f97cc91176eedd3cb249db1091ade0865cfdebb0ccbd60943bb"
+  },
+  "output_sha256": "1a29cd257239586e03aebf27b104d14f2b5ab584da7b1e11e6bbc196367f483c"
+}

@@ -1,0 +1,12 @@
+﻿parameter,estimate,unit,role
+beta,0.22566144020449824,day^-1,constrained beta_h=beta_v
+N_eff,316353.96801824827,persons,effective surveillance-scale host population
+E_h0,290.3008740108767,persons,initial exposed hosts
+I_h0,1.000000000082734,persons,initial infectious hosts
+i_v0,1.0000000055093051e-08,proportion,initial infectious vector proportion
+sigma_h,0.3333333333333333,day^-1,fixed
+gamma_h,0.16666666666666666,day^-1,fixed
+sigma_v,0.09090909090909091,day^-1,fixed
+mu_v,0.07142857142857142,day^-1,fixed
+q,1.0,dimensionless,fixed
+R0,1.5477150727432745,dimensionless,derived

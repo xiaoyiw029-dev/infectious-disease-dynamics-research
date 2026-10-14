@@ -1,0 +1,5 @@
+# Additional dependencies for 02_prepare_weekly_climate.py.
+timezonefinder==9.0.0
+timezonefinder-data==3.2026.4
+h3==4.5.0
+flatbuffers==25.12.19

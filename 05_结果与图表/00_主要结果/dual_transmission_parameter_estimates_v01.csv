@@ -1,0 +1,15 @@
+﻿parameter,estimate,unit,role
+beta_h,0.04414877826974168,day^-1,vector-to-host transmission
+beta_v,1.6014907851321487,day^-1,host-to-vector transmission
+beta_h_beta_v,0.07070386157383375,day^-2,transmission product
+beta_h_over_beta_v,0.027567300842195417,dimensionless,transmission ratio
+N_eff,324979.9144816075,persons,effective surveillance-scale host population
+E_h0,29.837191449898178,persons,initial exposed hosts
+I_h0,1.0006171834843174,persons,initial infectious hosts
+i_v0,1.233375794637391e-08,proportion,initial infectious vector proportion
+sigma_h,0.3333333333333333,day^-1,fixed
+gamma_h,0.16666666666666666,day^-1,fixed
+sigma_v,0.09090909090909091,day^-1,fixed
+mu_v,0.07142857142857142,day^-1,fixed
+q,1.0,dimensionless,fixed
+R0,1.8237076652888038,dimensionless,derived

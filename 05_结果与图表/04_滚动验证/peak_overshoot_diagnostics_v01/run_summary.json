@@ -1,0 +1,255 @@
+{
+  "date": "2026-10-07",
+  "status": "completed",
+  "scope": "retrospective parameter and forecast diagnostics; no model change",
+  "near_optimal_sse_thresholds": [
+    0.001,
+    0.01,
+    0.05
+  ],
+  "origins": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "profile_origins": [
+    23,
+    24
+  ],
+  "profile_N_eff_grid": [
+    300000.0,
+    500000.0,
+    1000000.0,
+    3000000.0,
+    10000000.0,
+    30000000.0,
+    100000000.0,
+    212583750.0
+  ],
+  "profile_starts": 3,
+  "profile_refinements": 1,
+  "profile_max_nfev": 250,
+  "profile_refine_nfev": 1000,
+  "source_hashes": {
+    "baseline_fitting_cases_2023W35_2024W45.csv": "88f6f804bb2b29997a90e1163dc5f40f776709762a3ca7330223fb3a121547d3",
+    "rolling_fits.csv": "3d40085c46cd91b3cf1ae2ef7360b62bfb2453c3e4d34e021be4e1ba344f0ff6",
+    "rolling_multistart.csv": "bcfda95c228070f384cf46a111e7c436bd4d30a37cf1008c126a43ba3a828630",
+    "run_summary.json": "0640d12ac48e82bc861b6594f18c92eb6bdffb034192aeb7dcbf64c1a613483d"
+  },
+  "runner_sha256": "c5bbbd3249da9f39bb5ca4119cc27a638bd1a32738a822aa239806be5f7110e6",
+  "model_source_sha256": {
+    "A2": "ae44884f75e8352659febe868c89f0153282020077db038940149f91580e7c6f",
+    "A4": "663bab89ec3d6e8a7d925e6ab0d27b994ec026cf224ddd47eb90304e57166b62"
+  },
+  "reference_source_sha256": "678995864a434425e0571dd972b1839345809aac0e9976bf42936ac25d23ed35",
+  "selection": "training SSE only; future outcomes used only for retrospective evaluation",
+  "elapsed_seconds": 39.67406159999882,
+  "python": "3.14.7",
+  "numpy": "2.4.6",
+  "pandas": "3.0.5",
+  "scipy": "1.18.0",
+  "replayed_starts": 286,
+  "profile_points": 32,
+  "profile_optimization_attempts": 128,
+  "profile_nonconverged_selected": 0,
+  "max_reference_step_halving_difference": 6.166885668790201e-09,
+  "origin23_near_optimal": [
+    {
+      "model": "A2",
+      "origin_n": 23,
+      "sse_tolerance": 0.001,
+      "count_including_refinement": 13,
+      "converged_count": 13,
+      "forecast4_min": 34866.73888642289,
+      "forecast4_max": 34899.74991300293,
+      "forecast4_span": 33.01102658003947,
+      "beta_product_min": 0.05181819311279954,
+      "beta_product_max": 0.05183468575312847,
+      "beta_h_max_over_min": 38.86582170253486,
+      "beta_v_max_over_min": 38.86926199531083,
+      "N_eff_max_over_min": 2.388179638618836,
+      "beta_ratio_max_over_min": 1510.685806418865
+    },
+    {
+      "model": "A2",
+      "origin_n": 23,
+      "sse_tolerance": 0.01,
+      "count_including_refinement": 13,
+      "converged_count": 13,
+      "forecast4_min": 34866.73888642289,
+      "forecast4_max": 34899.74991300293,
+      "forecast4_span": 33.01102658003947,
+      "beta_product_min": 0.05181819311279954,
+      "beta_product_max": 0.05183468575312847,
+      "beta_h_max_over_min": 38.86582170253486,
+      "beta_v_max_over_min": 38.86926199531083,
+      "N_eff_max_over_min": 2.388179638618836,
+      "beta_ratio_max_over_min": 1510.685806418865
+    },
+    {
+      "model": "A2",
+      "origin_n": 23,
+      "sse_tolerance": 0.05,
+      "count_including_refinement": 13,
+      "converged_count": 13,
+      "forecast4_min": 34866.73888642289,
+      "forecast4_max": 34899.74991300293,
+      "forecast4_span": 33.01102658003947,
+      "beta_product_min": 0.05181819311279954,
+      "beta_product_max": 0.05183468575312847,
+      "beta_h_max_over_min": 38.86582170253486,
+      "beta_v_max_over_min": 38.86926199531083,
+      "N_eff_max_over_min": 2.388179638618836,
+      "beta_ratio_max_over_min": 1510.685806418865
+    },
+    {
+      "model": "A4",
+      "origin_n": 23,
+      "sse_tolerance": 0.001,
+      "count_including_refinement": 13,
+      "converged_count": 13,
+      "forecast4_min": 31541.390907107096,
+      "forecast4_max": 31544.956814671586,
+      "forecast4_span": 3.5659075644907716,
+      "beta_product_min": 0.048898229345899005,
+      "beta_product_max": 0.048901808880473206,
+      "beta_h_max_over_min": 1.1800357150244118,
+      "beta_v_max_over_min": 1.1801220980836193,
+      "N_eff_max_over_min": 1.000102377660735,
+      "beta_ratio_max_over_min": 1.3925862238282127
+    },
+    {
+      "model": "A4",
+      "origin_n": 23,
+      "sse_tolerance": 0.01,
+      "count_including_refinement": 13,
+      "converged_count": 13,
+      "forecast4_min": 31541.390907107096,
+      "forecast4_max": 31544.956814671586,
+      "forecast4_span": 3.5659075644907716,
+      "beta_product_min": 0.048898229345899005,
+      "beta_product_max": 0.048901808880473206,
+      "beta_h_max_over_min": 1.1800357150244118,
+      "beta_v_max_over_min": 1.1801220980836193,
+      "N_eff_max_over_min": 1.000102377660735,
+      "beta_ratio_max_over_min": 1.3925862238282127
+    },
+    {
+      "model": "A4",
+      "origin_n": 23,
+      "sse_tolerance": 0.05,
+      "count_including_refinement": 13,
+      "converged_count": 13,
+      "forecast4_min": 31541.390907107096,
+      "forecast4_max": 31544.956814671586,
+      "forecast4_span": 3.5659075644907716,
+      "beta_product_min": 0.048898229345899005,
+      "beta_product_max": 0.048901808880473206,
+      "beta_h_max_over_min": 1.1800357150244118,
+      "beta_v_max_over_min": 1.1801220980836193,
+      "N_eff_max_over_min": 1.000102377660735,
+      "beta_ratio_max_over_min": 1.3925862238282127
+    }
+  ],
+  "local_jacobians": [
+    {
+      "model": "A2",
+      "origin_n": 23,
+      "parameter_names": [
+        "beta_h",
+        "beta_v",
+        "N_eff",
+        "E_h0",
+        "I_h0",
+        "i_v0"
+      ],
+      "singular_values": [
+        15.695228174264301,
+        0.14732043506088466,
+        0.0001460164203941016,
+        8.604860435676788e-05,
+        1.3500349591959904e-05,
+        1.9110095532537016e-09
+      ],
+      "condition_number": 8213055841.370059,
+      "beta_sensitivity_column_cosine": 0.9999999971016256,
+      "note": "Feasible finite differences of scaled training outputs in log parameters; not a confidence interval."
+    },
+    {
+      "model": "A2",
+      "origin_n": 24,
+      "parameter_names": [
+        "beta_h",
+        "beta_v",
+        "N_eff",
+        "E_h0",
+        "I_h0",
+        "i_v0"
+      ],
+      "singular_values": [
+        12.143432010407086,
+        0.4588944466292487,
+        0.06300387922774378,
+        0.00209645803654674,
+        7.595473557261075e-05,
+        2.408764985252502e-08
+      ],
+      "condition_number": 504135193.12819695,
+      "beta_sensitivity_column_cosine": 0.9998101531200596,
+      "note": "Feasible finite differences of scaled training outputs in log parameters; not a confidence interval."
+    },
+    {
+      "model": "A4",
+      "origin_n": 23,
+      "parameter_names": [
+        "beta_h",
+        "beta_v",
+        "N_eff",
+        "i_v0"
+      ],
+      "singular_values": [
+        15.367203297900105,
+        0.00036659632032843187,
+        0.00021230709843496546,
+        3.7248307277073788e-09
+      ],
+      "condition_number": 4125611181.09079,
+      "beta_sensitivity_column_cosine": 0.9999999998830029,
+      "note": "Feasible finite differences of scaled training outputs in log parameters; not a confidence interval."
+    },
+    {
+      "model": "A4",
+      "origin_n": 24,
+      "parameter_names": [
+        "beta_h",
+        "beta_v",
+        "N_eff",
+        "i_v0"
+      ],
+      "singular_values": [
+        15.911961943084677,
+        0.11001276989937621,
+        7.602637498581613e-05,
+        1.0255981394831694e-05
+      ],
+      "condition_number": 1551481.1630901755,
+      "beta_sensitivity_column_cosine": 0.9999999955396139,
+      "note": "Feasible finite differences of scaled training outputs in log parameters; not a confidence interval."
+    }
+  ],
+  "warnings": [
+    "Finite multi-start/profile searches do not prove global optimality.",
+    "Near-optimal solution ranges are not prediction or confidence intervals.",
+    "Observed data are revised development snapshots, not independent evaluation.",
+    "Profile N values are diagnostics, not new fixed-population decisions.",
+    "Climate variables and final constraints require project-owner approval."
+  ]
+}

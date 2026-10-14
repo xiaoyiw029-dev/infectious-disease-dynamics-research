@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-07",
+  "status": "completed",
+  "scope": "supplemental retrospective development validation; no climate",
+  "authorization": "User requested earlier origins and a simple trend comparator",
+  "setting_status": "20-week start and 4-week trend proposed; not claimed as human-confirmed optimum",
+  "initial_train_weeks": 20,
+  "horizons": [
+    1,
+    2,
+    4
+  ],
+  "trend_window": 4,
+  "trend_rule": "OLS in raw counts; max(0, fitted endpoint + h*slope)",
+  "models": [
+    "A2",
+    "A4",
+    "Naive",
+    "Trend4"
+  ],
+  "input_sha256": "88f6f804bb2b29997a90e1163dc5f40f776709762a3ca7330223fb3a121547d3",
+  "model_source_sha256": {
+    "A2": "ae44884f75e8352659febe868c89f0153282020077db038940149f91580e7c6f",
+    "A4": "663bab89ec3d6e8a7d925e6ab0d27b994ec026cf224ddd47eb90304e57166b62"
+  },
+  "base_runner_sha256": "2f750dc6aa752c4a88fe62ddd5882a8236845fd6cd14443abc371c94c4fdcf15",
+  "runner_sha256": "678995864a434425e0571dd972b1839345809aac0e9976bf42936ac25d23ed35",
+  "reused_files_sha256": {
+    "run_summary.json": "e4f62e71e84858a705892e086e5d953531c3934b436c28fb3bd759261d0ca110",
+    "rolling_predictions_v01.csv": "bad7af2833ff38a4fc2b166062194323ffc51771e724c4e8f46fe242a54ee815",
+    "rolling_fits_v01.csv": "d77de6cdee15f1f27f9e4f8426875c7711866b265b570f909b0c4bc0ef8eaf29",
+    "rolling_multistart_v01.csv": "cda5d30da2cd94722a04cd76ff6db4e52f359c80bcc81d9531ca793ee7af0254"
+  },
+  "seed": 20261007,
+  "starts_per_fit": 12,
+  "max_nfev": 250,
+  "refine_nfev": 1000,
+  "A4_fixed_initials": [
+    189,
+    63
+  ],
+  "workers": 6,
+  "numerical_audit": {
+    "new_fit_rtol": 1e-10,
+    "new_fit_atol": 1e-13,
+    "reused_fit_rtol": 1e-08,
+    "reused_fit_atol": 1e-10,
+    "reference_rtol": 1e-11,
+    "reference_atol": 1e-14,
+    "reference_max_steps_days": [
+      1,
+      0.5
+    ],
+    "step_halving_tolerance": "max(1e-5, 1e-6 * training_max)",
+    "original_count_tolerance": "max(.05, .001 * training_max)",
+    "training_sse_relative_tolerance": 0.005,
+    "action_if_failed": "abort; no successful result or silent exclusion",
+    "reused_fits_and_predictions": "unchanged if independent numerical audit passes",
+    "new_fits": "same equations, bounds, starts and SSE, with tighter numerical integration"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-07",
+  "status": "completed",
+  "scope": "retrospective parameter and forecast diagnostics; no model change",
+  "near_optimal_sse_thresholds": [
+    0.001,
+    0.01,
+    0.05
+  ],
+  "origins": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "profile_origins": [
+    23,
+    24
+  ],
+  "profile_N_eff_grid": [
+    300000.0,
+    500000.0,
+    1000000.0,
+    3000000.0,
+    10000000.0,
+    30000000.0,
+    100000000.0,
+    212583750.0
+  ],
+  "profile_starts": 3,
+  "profile_refinements": 1,
+  "profile_max_nfev": 250,
+  "profile_refine_nfev": 1000,
+  "source_hashes": {
+    "baseline_fitting_cases_2023W35_2024W45.csv": "88f6f804bb2b29997a90e1163dc5f40f776709762a3ca7330223fb3a121547d3",
+    "rolling_fits.csv": "3d40085c46cd91b3cf1ae2ef7360b62bfb2453c3e4d34e021be4e1ba344f0ff6",
+    "rolling_multistart.csv": "bcfda95c228070f384cf46a111e7c436bd4d30a37cf1008c126a43ba3a828630",
+    "run_summary.json": "0640d12ac48e82bc861b6594f18c92eb6bdffb034192aeb7dcbf64c1a613483d"
+  },
+  "runner_sha256": "c5bbbd3249da9f39bb5ca4119cc27a638bd1a32738a822aa239806be5f7110e6",
+  "model_source_sha256": {
+    "A2": "ae44884f75e8352659febe868c89f0153282020077db038940149f91580e7c6f",
+    "A4": "663bab89ec3d6e8a7d925e6ab0d27b994ec026cf224ddd47eb90304e57166b62"
+  },
+  "reference_source_sha256": "678995864a434425e0571dd972b1839345809aac0e9976bf42936ac25d23ed35",
+  "selection": "training SSE only; future outcomes used only for retrospective evaluation"
+}

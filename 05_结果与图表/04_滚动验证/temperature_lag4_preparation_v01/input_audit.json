@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-07",
+  "status": "prepared_not_fitted",
+  "lag_weeks": 4,
+  "target_weeks": 63,
+  "forecast_rows": 125,
+  "first_temperature_week": "2023-W31",
+  "last_temperature_week": "2024-W41",
+  "missing_temperature_weeks": 0,
+  "minimum_valid_uf_count": 26,
+  "minimum_valid_uf_population_share": 0.9966281853622396,
+  "temperature_min_c": 19.751280805862493,
+  "temperature_max_c": 27.599640305761664,
+  "all_calendar_available": true,
+  "nested_eta_zero_and_product_ratio_tests": "PASS",
+  "input_sha256": {
+    "baseline_fitting_cases_2023W35_2024W45.csv": "88f6f804bb2b29997a90e1163dc5f40f776709762a3ca7330223fb3a121547d3",
+    "brazil_weekly_climate_main_candidate_2023_2025_v02.csv": "d819df6fb9d4d18bac89f606291211d1a7d2061f83750b35f8c4782a39e7f23c"
+  },
+  "runner_sha256": "7d9f5f84336c9c35e3669f7a04c5128f850628067238d6cf1f0212f2c90af38d",
+  "warnings": [
+    "Calendar availability only; actual publication delay unverified.",
+    "No climate coefficient or forecast gain estimated by this script.",
+    "Ratio scenarios, coefficient bounds and profile treatment remain to be fixed before fitting."
+  ]
+}

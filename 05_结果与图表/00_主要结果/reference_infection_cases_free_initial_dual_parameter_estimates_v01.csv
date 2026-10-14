@@ -1,0 +1,15 @@
+﻿parameter,estimate,unit,role
+beta_h,0.04402117035850014,day^-1,estimated
+beta_v,1.6339700241383306,day^-1,estimated
+beta_h_beta_v,0.07192927279327603,day^-2,derived
+beta_h_over_beta_v,0.026941234972602743,dimensionless,derived
+N_eff,377454.91963264806,persons,estimated
+E_h0,34.55655310476143,persons,estimated
+I_h0,1.000760148939178,persons,estimated
+i_v0,1.3229560725619873e-07,proportion,estimated
+sigma_h,0.3333333333333333,day^-1,fixed
+gamma_h,0.16666666666666666,day^-1,fixed
+sigma_v,0.09090909090909091,day^-1,fixed
+mu_v,0.07142857142857142,day^-1,fixed
+q,1.0,dimensionless,fixed
+R0,1.8394436637732903,dimensionless,derived

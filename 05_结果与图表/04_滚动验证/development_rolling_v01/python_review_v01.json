@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "question_id": "development_rolling",
+  "language": "python",
+  "decision_id": "dev_rolling_30_1_2_4_20261007",
+  "reviewed_at": "2026-10-07",
+  "reviewed_files": [
+    "04_代码与计算/00_脚本/16_validate_baseline_rolling.py",
+    "04_代码与计算/00_脚本/test_validate_baseline_rolling.py"
+  ],
+  "checks": {
+    "syntax": {"status": "PASS", "evidence": ["66 fits and 285 forecast rows completed; eight tests passed"]},
+    "input_contract": {"status": "PASS", "evidence": ["63 continuous source weeks checked; original input and model source hashes recorded; no climate or 2025 inputs"]},
+    "method_alignment": {"status": "PASS", "evidence": ["Existing A2/A4 weekly-flow simulators reused; A4 explicitly uses 189/63; starts use training data only; best fit selected solely by training SSE"]},
+    "reproducibility": {"status": "PASS", "evidence": ["Deterministic per-fold seeds, source hashes and package versions saved", "A4 n=30 repeated with training SSE absolute difference 0.0; full run not repeated"]},
+    "output_contract": {"status": "PASS", "evidence": ["Expected per-model horizon counts 33/32/30 verified; scores independently recalculated from predictions; saved plot visually inspected, no clipping or empty panels"]},
+    "leakage": {"status": "PASS", "evidence": ["Worker receives only its training prefix; future-value perturbation leaves training scale and starting points unchanged; targets occur after origin", "Historical model/parameter-bound selection may have used full development data; no untouched-test claim"]},
+    "numerical_consistency": {"status": "PASS", "evidence": ["A2 equals A4 under identical initial conditions; output is incidence not stock; forecast integration passes nonnegativity/mass checks; max training-prefix difference 0.0002968997107473115"]}
+  },
+  "findings": [
+    {"severity": "limitation", "text": "All 66 selected fits touch at least one parameter bound; optimization convergence does not establish identifiability."},
+    {"severity": "limitation", "text": "Observed peak is week 27, before the first forecast origin; main-peak early warning not evaluated."},
+    {"severity": "limitation", "text": "A2 improves overall scores against persistence but loses to persistence in the last ten target weeks; tail analysis is post hoc."},
+    {"severity": "limitation", "text": "No prediction intervals, untouched final test, real-time-vintage reconstruction or global optimum guarantee."}
+  ],
+  "verdict": "PASSED_WITH_SCIENTIFIC_LIMITATIONS"
+}
