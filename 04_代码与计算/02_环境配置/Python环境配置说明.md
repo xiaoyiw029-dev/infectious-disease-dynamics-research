@@ -1,88 +1,20 @@
-# Python 环境配置说明
+# Python运行环境
 
-当前检查结果：
+更新日期：2026-10-15。项目已有 `.venv`，不需要因旧说明写着“尚未安装”而重复安装。当前可通过 `.venv/Scripts/python.exe` 调用解释器；本轮检查发现启动时有基础解释器定位提示，环境迁移前应核查，不要直接删除现有环境。
 
-- `python --version` 不可用。
-- `py --version` 不可用。
-- `python3` 不可用。
+## 本地运行
 
-说明当前 VS Code/PowerShell 尚未识别 Python。需要先安装 Python 或 Conda，再创建项目虚拟环境。
-
-## 推荐方案 A：官方 Python + venv
-
-1. 安装 Python 3.11 或 3.12。
-2. 安装时勾选 `Add Python to PATH`。
-3. 在 VS Code 打开本项目文件夹：
-
-```text
-D:\传染病动力学科研
-```
-
-4. 在 VS Code 终端运行：
+在VS Code打开项目根目录，选择 `Python: Select Interpreter`，指定 `.venv/Scripts/python.exe`。也可在根目录终端直接运行：
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r .\04_代码与计算\02_环境配置\requirements.txt
+.\.venv\Scripts\python.exe --version
+.\.venv\Scripts\python.exe -B tools\run_project_checks.py
 ```
 
-5. 在 VS Code 中选择解释器：
+脚本及结果位置见[计算索引](../README.md)。滚动拟合计算量较大，运行前查看对应入口的 `--help` 并指定新的输出目录，不直接覆盖既有结果。
 
-```text
-Ctrl + Shift + P
-Python: Select Interpreter
-选择 .venv
-```
+## 依赖与迁移
 
-## 推荐方案 B：Miniconda
+`requirements.txt` 保留既有环境导出记录。本次未调整版本、未安装软件，也未确认该清单在一台新电脑上能够完整重建全部气候处理依赖；迁移时需检查例如 `timezonefinder` 等实际导入包。
 
-若后续大量使用地理数据、`geopandas`、`cartopy` 等包，Miniconda 通常更省心。
-
-```powershell
-conda create -n chikungunya python=3.11
-conda activate chikungunya
-pip install -r .\04_代码与计算\02_环境配置\requirements.txt
-```
-
-## 包用途
-
-| 包 | 用途 |
-| --- | --- |
-| numpy | 数值计算 |
-| pandas | 表格数据清洗 |
-| scipy | ODE 求解、优化拟合 |
-| matplotlib | 基础绘图 |
-| seaborn | 统计图 |
-| scikit-learn | 模型评估、数据处理 |
-| statsmodels | 统计模型 |
-| jupyter/ipykernel | Notebook 分析 |
-| openpyxl | Excel 文件读取 |
-| requests | 下载数据 |
-| tqdm | 进度条 |
-| SALib | 全局敏感性分析 |
-| geopandas/shapely/pyproj | 地理数据处理 |
-| pyarrow | 高效保存 parquet 数据 |
-
-## 环境验证脚本
-
-建议安装完成后创建并运行：
-
-```text
-04_代码与计算/00_脚本/环境测试.py
-```
-
-内容：
-
-```python
-import numpy as np
-import pandas as pd
-import scipy
-import matplotlib
-
-print("Python environment is ready.")
-print("numpy:", np.__version__)
-print("pandas:", pd.__version__)
-print("scipy:", scipy.__version__)
-print("matplotlib:", matplotlib.__version__)
-```
+主要用途：numpy/pandas处理数组和表格，scipy求解ODE及优化，matplotlib绘图，mistune生成总档案阅读版。运行环境不上传GitHub，合作者应单独创建环境并先通过测试。

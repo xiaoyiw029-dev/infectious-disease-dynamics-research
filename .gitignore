@@ -1,5 +1,21 @@
 /02_数据/00_原始数据/inmet/*.zip
 
+# Local environments and generated caches
+.venv/
+.codex_tmp_pydeps/
+tmp/
+__pycache__/
+*.py[cod]
+debug.log
+~$*
+.env
+.env.*
+!.env.example
+
+# Raw and intermediate data remain local
+/02_数据/00_原始数据/
+/02_数据/02_中间数据/
+
 # Local environments, caches, and generated temporary files
 .venv/
 venv/
